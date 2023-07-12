@@ -13,7 +13,7 @@ type ColumnProps = {
 }
 
 const FooterColumn = ( {title, links}:ColumnProps ) => (
-    <div className="flex flex-col gap-4 p-4">
+    <div className="flex flex-col gap-4 py-4">
         <h1 className="font-bold text-md">{title}</h1>
         <ul className="flex flex-col gap-2">
             {links.map((link) => (
@@ -25,13 +25,13 @@ const FooterColumn = ( {title, links}:ColumnProps ) => (
 
 export default function Footer() {
     return(
-        <footer className="flex flex-col gap-6 w-full p-16">
+        <footer className="sectionPadding flex flex-col gap-6 w-full p-16">
             <div className="w-full lg:w-1/3 flex flex-col gap-2">
                 <h1>Logo</h1>
                 <h1>The Road Is The Way. Our Way.</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque veniam temporibus officiis quae eveniet ut.</p>
             </div>
-            <div className="flex flex-row gap-6">
+            <div className="flex flex-row flex-wrap gap-10">
                 <FooterColumn title={FooterLinks[0].title} links={FooterLinks[0].links}></FooterColumn>
                 <FooterColumn title={FooterLinks[1].title} links={FooterLinks[1].links}></FooterColumn>
                 <FooterColumn title={FooterLinks[2].title} links={FooterLinks[2].links}></FooterColumn>

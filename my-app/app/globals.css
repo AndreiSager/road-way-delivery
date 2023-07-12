@@ -30,3 +30,7 @@ html {
     )
     rgb(var(--background-start-rgb));
 } */
+
+.sectionPadding {
+  @apply pt-60
+}

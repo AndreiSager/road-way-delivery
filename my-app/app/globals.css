@@ -36,5 +36,5 @@ html {
 }
 
 .sectionPadding {
-  @apply pt-28
+  @apply py-28 px-6
 }

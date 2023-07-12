@@ -25,7 +25,7 @@ export default function Navbar() {
                     <MdAccountCircle size={sizeIcon}/>
                     <CgNotes size={sizeIcon}/>
                 </div>
-                <button type="button" className="px-12 py-4 bg-accent-1 flex flex-row justify-center items-center gap-2 text-white font-bold"><GiCarWheel size={sizeIcon}/>Drive Now</button>
+                <button type="button" className="rounded-full px-12 py-4 bg-accent-1 flex flex-row justify-center items-center gap-2 text-white font-bold"><GiCarWheel size={sizeIcon}/>Drive Now</button>
             </div>
             <div className="flex lg:hidden">
                 <GiHamburgerMenu size={sizeIcon}/>

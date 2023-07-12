@@ -116,6 +116,29 @@ export const FooterLinks = [
     },
 ]
 
+export const Testimonials = [
+    {
+        client:"Shaners",
+        residence:"Bayani Shrine",
+        review:'"This is the best place where I could run. He brought me to this place with speed and dedication I hope I can ride with his car again. Someday I will buy this car with my own money and I will also buy the driver as my personal driver."',
+    },
+    {
+        client:"Shaners",
+        residence:"Bayani Shrine",
+        review:'"This is the best place where I could run. He brought me to this place with speed and dedication I hope I can ride with his car again. Someday I will buy this car with my own money and I will also buy the driver as my personal driver."',
+    },
+    {
+        client:"Shaners",
+        residence:"Bayani Shrine",
+        review:'"This is the best place where I could run. He brought me to this place with speed and dedication I hope I can ride with his car again. Someday I will buy this car with my own money and I will also buy the driver as my personal driver."',
+    },
+    {
+        client:"Shaners",
+        residence:"Bayani Shrine",
+        review:'"This is the best place where I could run. He brought me to this place with speed and dedication I hope I can ride with his car again. Someday I will buy this car with my own money and I will also buy the driver as my personal driver."',
+    },
+]
+
 export const DownloadLinks = [
     { storelink:"", key:"", title:""},
     { storelink:"", key:"", title:""},

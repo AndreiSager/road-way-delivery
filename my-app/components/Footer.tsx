@@ -31,7 +31,7 @@ export default function Footer() {
                 <h1>The Road Is The Way. Our Way.</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque veniam temporibus officiis quae eveniet ut.</p>
             </div>
-            <div className="flex flex-row">
+            <div className="flex flex-row gap-6">
                 <FooterColumn title={FooterLinks[0].title} links={FooterLinks[0].links}></FooterColumn>
                 <FooterColumn title={FooterLinks[1].title} links={FooterLinks[1].links}></FooterColumn>
                 <FooterColumn title={FooterLinks[2].title} links={FooterLinks[2].links}></FooterColumn>

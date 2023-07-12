@@ -12,7 +12,7 @@ export default function Navbar() {
                 <h1><a href="/" className="block p-4">Logo</a></h1>
                 <ul className="hidden lg:flex flex-row">
                     {links.map((link) => (
-                        <li className="font-semibold text-lg">
+                        <li className="font-semibold text-md">
                             <a href={link.href}
                                 className="block p-4"
                                 >{link.title}</a>

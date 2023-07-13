@@ -22,7 +22,7 @@ export default function Navbar() {
                     <h1><a href="/" className="block p-4">Logo</a></h1>
                     <ul className="hidden lg:flex flex-row">
                         {links.map((link) => (
-                            <li className="font-semibold text-md">
+                            <li key={link.id} className="font-semibold text-md">
                                 <a href={link.href}
                                     className="block p-4"
                                     >{link.title}</a>
@@ -44,7 +44,7 @@ export default function Navbar() {
             <div className={nav ? "flex flex-row gap-8 relative top-0 left-0 bg-white w-full h-fit pb-8 shadow-md" : "hidden"}>
                 <ul className="flex flex-col w-full text-center">
                     {links.map((link) => (
-                        <li className="font-semibold text-md block w-full">
+                        <li key={link.id} className="font-semibold text-md block w-full">
                             <a onClick={handleNav} href={link.href}
                                 className="block p-4"
                                 >{link.title}</a>

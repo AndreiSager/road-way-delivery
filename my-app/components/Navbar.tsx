@@ -16,28 +16,41 @@ export default function Navbar() {
     )
 
     return(
-        <nav className="flex flex-row justify-between items-center w-full py-4 px-12 sticky top-0 bg-white shadow-md">
-            <div className="flex flex-row gap-8">
-                <h1><a href="/" className="block p-4">Logo</a></h1>
-                <ul className="hidden lg:flex flex-row">
+        <nav className="w-full sticky top-0">
+            <div className="flex flex-row justify-between items-center w-full py-4 px-4 md:px-12 bg-white shadow-md">
+                <div className="flex flex-row gap-8">
+                    <h1><a href="/" className="block p-4">Logo</a></h1>
+                    <ul className="hidden lg:flex flex-row">
+                        {links.map((link) => (
+                            <li className="font-semibold text-md">
+                                <a href={link.href}
+                                    className="block p-4"
+                                    >{link.title}</a>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+                <div className="hidden lg:flex flex-row gap-8 justify-center items-center">
+                    <div className="flex flex-row gap-4 justify-center items-center">
+                        <MdAccountCircle size={sizeIcon}/>
+                        <CgNotes size={sizeIcon}/>
+                    </div>
+                    <button type="button" className="rounded-full px-12 py-4 bg-accent-1 flex flex-row justify-center items-center gap-2 text-white font-bold"><GiCarWheel size={sizeIcon}/>Drive Now</button>
+                </div>
+                <div onClick={handleNav} className="flex lg:hidden">
+                    <GiHamburgerMenu  size={sizeIcon}/>
+                </div>
+            </div>
+            <div className={nav ? "flex flex-row gap-8 relative top-0 left-0 bg-white w-full h-fit pb-8 shadow-md" : "hidden"}>
+                <ul className="flex flex-col w-full text-center">
                     {links.map((link) => (
-                        <li className="font-semibold text-md">
-                            <a href={link.href}
+                        <li className="font-semibold text-md block w-full">
+                            <a onClick={handleNav} href={link.href}
                                 className="block p-4"
                                 >{link.title}</a>
                         </li>
                     ))}
                 </ul>
-            </div>
-            <div className="hidden lg:flex flex-row gap-8 justify-center items-center">
-                <div className="flex flex-row gap-4 justify-center items-center">
-                    <MdAccountCircle size={sizeIcon}/>
-                    <CgNotes size={sizeIcon}/>
-                </div>
-                <button type="button" className="rounded-full px-12 py-4 bg-accent-1 flex flex-row justify-center items-center gap-2 text-white font-bold"><GiCarWheel size={sizeIcon}/>Drive Now</button>
-            </div>
-            <div onClick={handleNav} className="flex lg:hidden">
-                {nav ? <RxCross2 size={sizeIcon}/> : <GiHamburgerMenu  size={sizeIcon}/>}
             </div>
         </nav>
     )

@@ -1,9 +1,10 @@
-import Image from 'next/image'
+import PerformanceBanner from '@/components/PerfomanceBanner'
 
 export default function Home() {
   return (
-    <main className="flex">
+    <main className="flex flex-wrap">
       <h1>Home</h1>
+      <PerformanceBanner/>
     </main>
   )
 }

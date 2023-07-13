@@ -1,8 +1,8 @@
 export default function PerformanceBanner() {
     return(
-        <main>
-            <div>
-                <h1>Banner</h1>
+        <main className="w-full h-[300px] bg-accent-1">
+            <div className="">
+                
             </div>
         </main>
     )

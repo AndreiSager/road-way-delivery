@@ -150,8 +150,16 @@ export const Testimonials = [
     },
 ]
 
-export const Pricing = [
-
+export const PricingPlans = [
+    {
+        thumbnail:"Cars",
+        title:"Two-Seater",
+        price:"69",
+        services: [
+            "Accomodates 3 people",
+        ],
+        checkoutUrl:"/",
+    }
 ]
 
 export const DownloadLinks = [

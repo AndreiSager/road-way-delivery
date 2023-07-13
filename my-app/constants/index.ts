@@ -1,18 +1,25 @@
 export const NavLinks = [
     { id: 1, href:"/", key:"Home", title:"Home"},
     { id: 2, href:"/about", key:"About", title:"About"},
-    { id: 3, href:"/gallery", key:"Gallery", title:"Gallery"},
-    { id: 4, href:"/testimonials", key:"Testimonials", title:"Testimonials"},
-    { id: 5, href:"/pricing", key:"Pricing", title:"Pricing"},
-    { id: 6, href:"/contact", key:"Contact", title:"Contact"},
+    { id: 3, href:"/testimonials", key:"Testimonials", title:"Testimonials"},
+    { id: 4, href:"/pricing", key:"Pricing", title:"Pricing"},
+    { id: 5, href:"/contact", key:"Contact", title:"Contact"},
+]
+
+export const BannerContent = [
+    {
+        icon:"url(undraw_best_place_re_lne9)",
+        title:"",
+        description:"",
+    },
 ]
 
 export const FooterContent = {
     title:"",
     subtitle:"",
     contactInfo: [
-        { title:"email", info:""},
-        { title:"phone", info:""},
+        { title:"email", info:"roadwaydelivery@yahoo.com"},
+        { title:"phone", info:"XXX-XXX-XXXX"},
     ],
 }
 

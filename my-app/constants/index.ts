@@ -35,13 +35,14 @@ export const FooterLinks = [
     },
     {
         id: 2,
-        title:"RWV Rider",
+        title:"RWV Drivers",
         links: [
             { href:"/#no-link", key:"Catch Up", title:"Catch Up" },
             { href:"/#no-link", key:"RWV Market", title:"RWV Market" },
             { href:"/#no-link", key:"RWV Market", title:"RWV Biking" },
             { href:"/#no-link", key:"RWV Market", title:"RWV Local" },
             { href:"/#no-link", key:"RWV Express", title:"RWV Express" },
+            { href:"/#no-link", key:"RWV Express", title:"RWV Movers" },
             { href:"/#no-link", key:"RWV Premium", title:"RWV Premium" },
             { href:"/#no-link", key:"RWV Food", title:"RWV Food" },
 
@@ -118,26 +119,31 @@ export const FooterLinks = [
 
 export const Testimonials = [
     {
+        id: 1,
         client:"Shaners",
         residence:"Bayani Shrine",
         review:'"This is the best place where I could run. He brought me to this place with speed and dedication I hope I can ride with his car again. Someday I will buy this car with my own money and I will also buy the driver as my personal driver."',
     },
     {
+        id: 2,
         client:"Shaners",
         residence:"Bayani Shrine",
         review:'"This is the best place where I could run. He brought me to this place with speed and dedication I hope I can ride with his car again. Someday I will buy this car with my own money and I will also buy the driver as my personal driver."',
     },
     {
+        id: 3,
         client:"Shaners",
         residence:"Bayani Shrine",
         review:'"This is the best place where I could run. He brought me to this place with speed and dedication I hope I can ride with his car again. Someday I will buy this car with my own money and I will also buy the driver as my personal driver."',
     },
     {
+        id: 4,
         client:"Shaners",
         residence:"Bayani Shrine",
         review:'"This is the best place where I could run. He brought me to this place with speed and dedication I hope I can ride with his car again. Someday I will buy this car with my own money and I will also buy the driver as my personal driver."',
     },
     {
+        id: 5,
         client:"Shaners",
         residence:"Bayani Shrine",
         review:'"This is the best place where I could run. He brought me to this place with speed and dedication I hope I can ride with his car again. Someday I will buy this car with my own money and I will also buy the driver as my personal driver."',

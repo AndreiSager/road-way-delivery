@@ -1,4 +1,7 @@
-import { FooterLinks } from "@/constants"
+import { FooterLinks, FooterContent } from "@/constants"
+import Image from "next/image";
+import { BsFacebook, BsYoutube, BsTwitter, BsTiktok, BsMailbox, BsTelephone } from "react-icons/bs"
+import { FaInstagramSquare } from 'react-icons/fa'
 
 type LinksProps = {
     href: string;
@@ -24,14 +27,44 @@ const FooterColumn = ( {title, links}:ColumnProps ) => (
 )
 
 export default function Footer() {
+    const sizeIcon = 30;
+
     return(
-        <footer className="sectionPadding flex flex-col gap-6 w-full p-16">
-            <div className="w-full lg:w-1/3 flex flex-col gap-2">
-                <h1>Logo</h1>
-                <h1>The Road Is The Way. Our Way.</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque veniam temporibus officiis quae eveniet ut.</p>
+        <footer className="sectionPadding flex flex-row flex-wrap gap-6 w-full p-16">
+            <div className="w-full lg:w-fit flex flex-col gap-4">
+                <Image src="/rwd_logo.svg"
+                    height={200}
+                    width={150}
+                    alt="Road Way Delivery">
+                </Image>
+                <h1 className="font-bold text-lg">The Road Is The Way. Our Way.</h1>
+                <p className="sm:w-[320px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque veniam temporibus officiis quae eveniet ut.</p>
+                <div className="flex flex-col gap-4">
+                    <div className="flex flex-row gap-4 items-center">
+                        <BsMailbox size={sizeIcon}/>
+                        <div className="flex flex-col">
+                            <h1 className="font-bold text-md capitalize">{FooterContent.contactInfo[0].title}</h1>
+                            <h1>{FooterContent.contactInfo[0].info}</h1>
+                        </div>
+                    </div>
+                    <div className="flex flex-row gap-4 items-center">
+                        <BsTelephone size={sizeIcon}/>
+                        <div className="flex flex-col">
+                            <h1 className="font-bold text-md capitalize">{FooterContent.contactInfo[1].title}</h1>
+                            <h1>{FooterContent.contactInfo[1].info}</h1>
+                        </div>
+                    </div>
+                </div>
+                <div className="flex flex-row gap-4 mt-4">
+                    <a href="#facebook" className="hover:text-accent-1"><BsFacebook size={sizeIcon}/></a>
+                    <a href="#youtube" className="hover:text-accent-1"><BsYoutube size={sizeIcon}/></a>
+                    <a href="#twitter" className="hover:text-accent-1"><BsTwitter size={sizeIcon}/></a>
+                    <a href="#instagram" className="hover:text-accent-1"><FaInstagramSquare size={sizeIcon}/></a>
+                    <a href="#tiktok" className="hover:text-accent-1"><BsTiktok size={sizeIcon}/></a>
+                </div>
+          
             </div>
-            <div className="flex flex-row flex-wrap gap-10">
+            <div className="flex flex-row flex-wrap gap-8 w-full lg:w-fit ">
                 <FooterColumn title={FooterLinks[0].title} links={FooterLinks[0].links}></FooterColumn>
                 <FooterColumn title={FooterLinks[1].title} links={FooterLinks[1].links}></FooterColumn>
                 <FooterColumn title={FooterLinks[2].title} links={FooterLinks[2].links}></FooterColumn>
@@ -40,7 +73,7 @@ export default function Footer() {
                 <FooterColumn title={FooterLinks[5].title} links={FooterLinks[5].links}></FooterColumn>
             </div>
             <div className="w-full justify-center items-center text-center">
-                <h1>Copyright</h1>
+                <p>@ 20XX Road Way Delivery. All rights reserved</p>
             </div>
         </footer>
     )

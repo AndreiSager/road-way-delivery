@@ -1,10 +1,10 @@
 export const NavLinks = [
-    { href:"/", key:"Home", title:"Home"},
-    { href:"/about", key:"About", title:"About"},
-    { href:"/gallery", key:"Gallery", title:"Gallery"},
-    { href:"/testimonials", key:"Testimonials", title:"Testimonials"},
-    { href:"/pricing", key:"Pricing", title:"Pricing"},
-    { href:"/contact", key:"Contact", title:"Contact"},
+    { id: 1, href:"/", key:"Home", title:"Home"},
+    { id: 2, href:"/about", key:"About", title:"About"},
+    { id: 3, href:"/gallery", key:"Gallery", title:"Gallery"},
+    { id: 4, href:"/testimonials", key:"Testimonials", title:"Testimonials"},
+    { id: 5, href:"/pricing", key:"Pricing", title:"Pricing"},
+    { id: 6, href:"/contact", key:"Contact", title:"Contact"},
 ]
 
 export const FooterContent = {

@@ -72,7 +72,7 @@ export default function Footer() {
                 <FooterColumn title={FooterLinks[4].title} links={FooterLinks[4].links}></FooterColumn>
                 <FooterColumn title={FooterLinks[5].title} links={FooterLinks[5].links}></FooterColumn>
             </div>
-            <div className="w-full justify-center items-center text-center">
+            <div className="w-full justify-center items-center text-center mt-6">
                 <p>@ 20XX Road Way Delivery. All rights reserved</p>
             </div>
         </footer>

@@ -6,15 +6,15 @@ export default function Testimonials() {
 
     return(
         <main className="sectionPadding flex flex-row flex-wrap justify-center items-center gap-16">
-            <div className="flex flex-col w-full lg:w-2/4 text-center">
+            <div className="flex flex-col w-full lg:w-[600px] text-center">
                 <h1 className="sectionHeader">Testimonials</h1>
                 <p className="font-medium text-gray-500">Discover the positive impact we've made on the our clients by reading through their testimonials. Our clients have experienced our service and results, and they're eager to share their positive experiences with you.</p>
             </div>
             <div className="w-full flex flex-row flex-wrap gap-8 m-auto justify-center">
                 {Reviews.map((review) => (
-                    <div key={review.id} className="w-full lg:w-[350px] aspect-video bg-slate-200 shadow-lg p-8 flex flex-wrap gap-4 rounded-xl">
-                        <p className="font-medium text-md text-black">{review.review}</p>
-                        <div className="flex flex-row justify-between w-full">
+                    <div key={review.id} className="w-full sm:w-[350px] aspect-video bg-slate-200 shadow-xl p-8 flex flex-wrap gap-4 rounded-xl">
+                        <p className="font-medium text-md text-black flex items-center">{review.review}</p>
+                        <div className="flex flex-row justify-between items-center w-full sm:w-[350px]">
                             <BiMessageSquareDetail size={sizeIcon} className="text-accent-1"/>
                             <div className="flex flex-row items-center">
                                 <div className="flex flex-col text-right items-right mr-4">

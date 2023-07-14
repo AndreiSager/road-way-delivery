@@ -30,7 +30,7 @@ export default function Footer() {
     const sizeIcon = 30;
 
     return(
-        <footer className="sectionPadding flex flex-row flex-wrap gap-6 w-full p-16">
+        <footer className="sectionPadding flex flex-row flex-wrap gap-6 w-full p-16 bg-slate-50">
             <div className="w-full lg:w-fit flex flex-col gap-4">
                 <Image src="/rwd_logo.svg"
                     height={200}

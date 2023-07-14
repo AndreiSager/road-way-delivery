@@ -17,7 +17,7 @@ export const BannerContent = [
         id: 2,
         icon:"/undraw_best_place_re_lne9.svg",
         alt:"",
-        title:"200+ philippine branches",
+        title:"200+ delivery branches",
     },
     {
         id: 3,

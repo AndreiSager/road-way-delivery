@@ -8,9 +8,28 @@ export const NavLinks = [
 
 export const BannerContent = [
     {
-        icon:"url(undraw_best_place_re_lne9)",
-        title:"",
-        description:"",
+        id: 1,
+        icon:"/undraw_package_arrived_63rf.svg",
+        alt:"",
+        title:"100+ packages delivered",
+    },
+    {
+        id: 2,
+        icon:"/undraw_best_place_re_lne9.svg",
+        alt:"",
+        title:"200+ philippine branches",
+    },
+    {
+        id: 3,
+        icon:"/undraw_delivery_truck_vt6p.svg",
+        alt:"",
+        title:"10,000+ modes of transportation",
+    },
+    {
+        id: 4,
+        icon:"/undraw_city_driver_re_9xyv.svg",
+        alt:"",
+        title:"17,000+ registered drivers",
     },
 ]
 

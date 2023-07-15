@@ -12,7 +12,7 @@ export default function Testimonials() {
             </div>
             <div className="w-full flex flex-row flex-wrap gap-8 m-auto justify-center">
                 {Reviews.map((review) => (
-                    <div key={review.id} className="w-full sm:w-[350px] aspect-video bg-slate-200 shadow-xl p-8 flex flex-wrap gap-4 rounded-xl">
+                    <div key={review.id} className="w-full sm:w-[350px] aspect-video bg-slate-200 shadow-xl p-8 flex flex-wrap gap-4 rounded-xl hover:scale-105 linear duration-100 transition">
                         <p className="font-medium text-md text-black flex items-center">{review.review}</p>
                         <div className="flex flex-row justify-between items-center w-full sm:w-[350px]">
                             <BiMessageSquareDetail size={sizeIcon} className="text-accent-1"/>

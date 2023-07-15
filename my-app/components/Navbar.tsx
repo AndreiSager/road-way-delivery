@@ -17,7 +17,7 @@ export default function Navbar() {
     )
 
     return(
-        <nav className="w-full sticky top-0">
+        <nav className="w-full sticky top-0 z-50">
             <div className="flex flex-row justify-between items-center w-full py-4 px-4 md:px-12 bg-white shadow-md">
                 <div className="flex flex-row gap-8">
                     <Image src="/rwd_logo.svg"

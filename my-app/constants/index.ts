@@ -176,6 +176,33 @@ export const Testimonials = [
     },
 ]
 
+export const StepsContent = [
+    {
+        id: 1,
+        title:"Step 1",
+        icon:"/undraw_best_place_re_lne9.svg",
+        alt:"undefined",
+        subtitle:"Know About Us",
+        description:"Lorem ipsum dolor sit amet adipisicing elit. Placeat quos nulla quis quod, quaerat neque minus facilis.",
+    },
+    {
+        id: 1,
+        title:"Step 2",
+        icon:"/undraw_best_place_re_lne9.svg",
+        alt:"undefined",
+        subtitle:"Know About Us",
+        description:"Lorem ipsum dolor sit amet adipisicing elit. Placeat quos nulla quis quod, quaerat neque minus facilis.",
+    },
+    {
+        id: 1,
+        title:"Step 3",
+        icon:"/undraw_best_place_re_lne9.svg",
+        alt:"undefined",
+        subtitle:"Know About Us",
+        description:"Lorem ipsum dolor sit amet adipisicing elit. Placeat quos nulla quis quod, quaerat neque minus facilis.",
+    }
+]
+
 export const PricingPlans = [
     {
         thumbnail:"Cars",

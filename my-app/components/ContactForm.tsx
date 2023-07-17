@@ -7,7 +7,7 @@ export default function ContactForm() {
     return(
         <div className="sectionPadding flex flex-col flex-wrap lg:flex-row justify-center gap-12">
             <h1 className="sectionHeader w-full text-center">Contact Us</h1>
-            <div className="w-full lg:w-2/5 lg:order-2 gap-2 text-center lg:text-left lg:items-start flex flex-col items-center">
+            <div className="w-full lg:w-2/5 lg:order-2 gap-6 text-center lg:text-left lg:items-start flex flex-col items-center">
                 <h1 className="font-bold text-2xl">Want To Know Even More About Us?</h1>
                 <p className="font-bold text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit laborum optio iste beatae error, nesciunt eius tempora aperiam aspernatur molestiae totam cumque possimus inventore reiciendis id aliquid ea cum! Doloremque ipsum, saepe eligendi animi itaque obcaecati reiciendis. In a necessitatibus consectetur explicabo ex quibusdam. Voluptatem laboriosam suscipit accusantium perspiciatis amet!</p>
                 <div className="w-fit">

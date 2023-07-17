@@ -40,7 +40,7 @@ html {
 }
 
 .callToAction {
-  @apply w-full bg-accent-1 text-xl font-extrabold text-white p-4  rounded-md
+  @apply w-full bg-accent-1 text-xl font-extrabold text-white p-4 rounded-full
 }
 
 .inputField {

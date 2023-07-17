@@ -38,3 +38,15 @@ html {
 .sectionPadding {
   @apply py-28 px-6
 }
+
+.callToAction {
+  @apply w-full bg-accent-1 text-xl font-extrabold text-white p-4  rounded-md
+}
+
+.inputField {
+  @apply border border-solid border-slate-400 rounded-md p-4
+}
+
+.textArea {
+  @apply h-[190px] resize-none
+}

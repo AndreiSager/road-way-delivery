@@ -1,7 +1,10 @@
+import ContactForm from "@/components/ContactForm";
+import PerformanceBanner from "@/components/PerfomanceBanner";
+
 export default function Contact() {
     return(
         <main>
-            <h1>Contact</h1>
+            <ContactForm/>
         </main>
     )
 }

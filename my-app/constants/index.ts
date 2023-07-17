@@ -180,25 +180,25 @@ export const StepsContent = [
     {
         id: 1,
         title:"Step 1",
-        icon:"/undraw_best_place_re_lne9.svg",
+        icon:"/undraw_order_delivered_re_v4ab.svg",
         alt:"undefined",
-        subtitle:"Know About Us",
+        subtitle:"Prepare Your Package",
         description:"Lorem ipsum dolor sit amet adipisicing elit. Placeat quos nulla quis quod, quaerat neque minus facilis.",
     },
     {
         id: 1,
         title:"Step 2",
-        icon:"/undraw_best_place_re_lne9.svg",
+        icon:"/undraw_order_a_car_-3-tww.svg",
         alt:"undefined",
-        subtitle:"Know About Us",
+        subtitle:"Choose Your Transportation",
         description:"Lorem ipsum dolor sit amet adipisicing elit. Placeat quos nulla quis quod, quaerat neque minus facilis.",
     },
     {
         id: 1,
         title:"Step 3",
-        icon:"/undraw_best_place_re_lne9.svg",
+        icon:"/undraw_map_dark_re_36sy.svg",
         alt:"undefined",
-        subtitle:"Know About Us",
+        subtitle:"Pick A Location",
         description:"Lorem ipsum dolor sit amet adipisicing elit. Placeat quos nulla quis quod, quaerat neque minus facilis.",
     }
 ]

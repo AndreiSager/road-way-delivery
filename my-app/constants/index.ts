@@ -176,6 +176,30 @@ export const Testimonials = [
     },
 ]
 
+export const AboutContent = [
+    {
+        id: 1,
+        image:"/entrepreneur_compressed.jpg",
+        alt:"Entrepreneur In Meeting",
+        title:"Know About Us",
+        description:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis iure laudantium repellat qui voluptas? Itaque quam error qui earum nobis? Totam quisquam nostrum cum, iure officia numquam? Illo a ipsum quae et non neque natus amet odio, mollitia eaque corrupti, ut, eligendi beatae quod id ullam? Totam numquam quidem vel?",
+    },
+    {
+        id: 2,
+        image:"/warehouse_compressed.jpg",
+        alt:"A Truck Warehouse Full Of Trucks",
+        title:"Our Mission",
+        description:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis iure laudantium repellat qui voluptas? Itaque quam error qui earum nobis? Totam quisquam nostrum cum, iure officia numquam? Illo a ipsum quae et non neque natus amet odio, mollitia eaque corrupti, ut, eligendi beatae quod id ullam? Totam numquam quidem vel?",
+    },
+    {
+        id: 3,
+        image:"/trucks_compressed.jpg",
+        alt:"A Line Of Trucks Taken Before Departure",
+        title:"Our Vision",
+        description:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis iure laudantium repellat qui voluptas? Itaque quam error qui earum nobis? Totam quisquam nostrum cum, iure officia numquam? Illo a ipsum quae et non neque natus amet odio, mollitia eaque corrupti, ut, eligendi beatae quod id ullam? Totam numquam quidem vel?",
+    },
+]
+
 export const StepsContent = [
     {
         id: 1,

@@ -7,7 +7,7 @@ export default function Steps() {
             <h1 className="font-bold text-4xl text-center">Get Delivered In Three Easy Steps</h1>
             <div className="flex flex-row flex-wrap justify-center items-center gap-4 w-full">
                 {StepsContent.map((steps) => (
-                    <div className="p-6 flex flex-col w-[350px] aspect-square text-center items-center ">
+                    <div key={steps.id} className="p-6 flex flex-col w-[350px] aspect-square text-center items-center ">
                         <h1 className="font-bold text-2xl ">{steps.title}</h1>
                         <Image
                             src={steps.icon}

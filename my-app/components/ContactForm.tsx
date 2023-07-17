@@ -31,24 +31,24 @@ export default function ContactForm() {
             </div>
             <div className="w-full lg:w-2/5 lg:order-1">
                 <form action="" className='flex flex-wrap w-full gap-3'>
-                    <h1 className="font-bold">Name*</h1>
+                    <h1 className="font-bold">Enter your name..*</h1>
                     <input 
                         type="text" 
                         name='Sender' 
-                        placeholder='Enter your name..  E.g:"Shaners Sager"'
+                        placeholder='E.g:"Shaners Sager"'
                         className='w-full inputField focus:placeholder:italic'
                         />
-                    <h1 className="font-bold">Email*</h1>
+                    <h1 className="font-bold">Enter your email..*</h1>
                     <input 
                         type="text" 
                         name='Email' 
-                        placeholder='Enter your email..  shanerssager@dummy.com'
+                        placeholder='shanerssager@dummy.com'
                         className='w-full inputField focus:placeholder:italic'
                         />
-                    <h1 className="font-bold">Message*</h1>
+                    <h1 className="font-bold">Write your message..*</h1>
                     <textarea 
                         name='Message' 
-                        placeholder='Write your message..  “Everything we hear is an opinion, not a fact. Everything we see is a perspective, not the truth.” -Marcus Aurelius'
+                        placeholder='“Everything we hear is an opinion, not a fact. Everything we see is a perspective, not the truth.” -Marcus Aurelius'
                         className='w-full inputField textArea focus:placeholder:italic'
                         />
                     <button type='submit' className='w-full callToAction mt-2 shadow-xl shadow-gray-300'>Send</button>

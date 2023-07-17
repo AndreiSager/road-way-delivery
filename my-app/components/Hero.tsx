@@ -15,8 +15,8 @@ export default function Hero() {
                 <h1 className="w-full md:w-[400px] font-bold text-5xl">Lorem ipsum dolor sit amet.</h1>
                 <p className="w-full md:w-[400px] font-medium text-slate-600 text-lg mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptates sit soluta aliquam laborum animi sit soluta aliquam.</p>
                 <div className="flex flex-row gap-4">
-                    <button type="button" className="w-fit py-4 px-10 font-bold text-white bg-accent-1 rounded-full mt-6">Rent Now</button>
-                    <button type="button" className="w-fit py-4 px-10 font-bold text-white bg-slate-600 rounded-full mt-6">Learn More</button>
+                    <button type="button" className="flex-1 w-fit py-4 px-10 font-bold text-white bg-accent-1 rounded-full mt-6">Rent Now</button>
+                    <button type="button" className="flex-1 w-fit py-4 px-10 font-bold text-white bg-slate-600 rounded-full mt-6">Learn More</button>
                 </div>
             </div>
         </div>

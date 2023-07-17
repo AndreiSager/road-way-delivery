@@ -14,8 +14,7 @@ export default function About() {
                     width={700}
                     alt="Hello"
                     className="object-cover"
-                    >
-                </Image>
+                    />
             </div>
             <div className="flex flex-row">
                 <div className="p-6 order-2 flex flex-col justify-center">
@@ -28,8 +27,7 @@ export default function About() {
                     width={700}
                     alt="Hello"
                     className="object-cover order-1"
-                    >
-                </Image>
+                    />
             </div>
             <div className="flex flex-row">
                 <div className="p-6 flex flex-col justify-center">
@@ -42,8 +40,7 @@ export default function About() {
                     width={700}
                     alt="Hello"
                     className="object-cover"
-                    >
-                </Image>
+                    />
             </div>
         </div>
     )

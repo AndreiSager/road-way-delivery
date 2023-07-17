@@ -62,7 +62,6 @@ export default function Footer() {
                     <a href="#instagram" className="text-gray-500 hover:text-accent-1"><FaInstagramSquare size={sizeIcon}/></a>
                     <a href="#tiktok" className="text-gray-500 hover:text-accent-1"><BsTiktok size={sizeIcon}/></a>
                 </div>
-          
             </div>
             <div className="flex flex-row flex-wrap gap-8 w-full lg:w-fit ">
                 <FooterColumn title={FooterLinks[0].title} links={FooterLinks[0].links}></FooterColumn>

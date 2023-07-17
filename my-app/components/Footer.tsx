@@ -39,7 +39,7 @@ export default function Footer() {
                 </Image>
                 <h1 className="font-bold text-lg">The Road Is The Way. Our Way.</h1>
                 <p className="sm:w-[320px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque veniam temporibus officiis quae eveniet ut.</p>
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-4 mt-4">
                     <div className="flex flex-row gap-4 items-center">
                         <BsMailbox size={sizeIcon}/>
                         <div className="flex flex-col">
@@ -56,11 +56,11 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="flex flex-row gap-4 mt-4">
-                    <a href="#facebook" className="hover:text-accent-1"><BsFacebook size={sizeIcon}/></a>
-                    <a href="#youtube" className="hover:text-accent-1"><BsYoutube size={sizeIcon}/></a>
-                    <a href="#twitter" className="hover:text-accent-1"><BsTwitter size={sizeIcon}/></a>
-                    <a href="#instagram" className="hover:text-accent-1"><FaInstagramSquare size={sizeIcon}/></a>
-                    <a href="#tiktok" className="hover:text-accent-1"><BsTiktok size={sizeIcon}/></a>
+                    <a href="#facebook" className="text-gray-500 hover:text-accent-1"><BsFacebook size={sizeIcon}/></a>
+                    <a href="#youtube" className="text-gray-500 hover:text-accent-1"><BsYoutube size={sizeIcon}/></a>
+                    <a href="#twitter" className="text-gray-500 hover:text-accent-1"><BsTwitter size={sizeIcon}/></a>
+                    <a href="#instagram" className="text-gray-500 hover:text-accent-1"><FaInstagramSquare size={sizeIcon}/></a>
+                    <a href="#tiktok" className="text-gray-500 hover:text-accent-1"><BsTiktok size={sizeIcon}/></a>
                 </div>
           
             </div>

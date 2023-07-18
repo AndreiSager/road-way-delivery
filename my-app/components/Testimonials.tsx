@@ -1,4 +1,5 @@
 import { Testimonials as Reviews } from "@/constants"
+import Image from "next/image";
 import { BiMessageSquareDetail } from "react-icons/bi"
 
 export default function Testimonials() {
@@ -21,7 +22,15 @@ export default function Testimonials() {
                                     <h1 className="font-bold text-md">{review.client}</h1>
                                     <h2 className="font-semibold text-sm text-gray-500">{review.residence}</h2>
                                 </div>
-                                <div className="w-[40px] h-[40px] rounded-full bg-black"></div>
+                                <div className="w-[50px] h-[50px] rounded-full bg-black overflow-hidden">
+                                    <Image
+                                        src={review.avatar}
+                                        width={50}
+                                        height={50}
+                                        alt={review.alt}
+                                        className=""
+                                        />
+                                </div>
                             </div>
                         </div>
                     </div>

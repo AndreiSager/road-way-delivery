@@ -182,21 +182,21 @@ export const AboutContent = [
         image:"/entrepreneur_compressed.jpg",
         alt:"Entrepreneur In Meeting",
         title:"Know About Us",
-        description:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis iure laudantium repellat qui voluptas? Itaque quam error qui earum nobis? Totam quisquam nostrum cum, iure officia numquam? Illo a ipsum quae et non neque natus amet odio, mollitia eaque corrupti, ut, eligendi beatae quod id ullam? Totam numquam quidem vel?",
+        description:"At Road Way Delivery, we provide efficient and reliable roadway delivery solutions. With years of industry expertise, we ensure safe and timely transportation of your packages. From small parcels to fragile goods, our skilled drivers and logistics experts handle it all. Our advanced tracking systems offer real-time updates, giving you peace of mind. Choose Road Way Delivery for professionalism, integrity, and exceptional customer service. Experience the difference our reliable and cost-effective services can make for your business.",
     },
     {
         id: 2,
         image:"/warehouse_compressed.jpg",
         alt:"A Truck Warehouse Full Of Trucks",
         title:"Our Mission",
-        description:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis iure laudantium repellat qui voluptas? Itaque quam error qui earum nobis? Totam quisquam nostrum cum, iure officia numquam? Illo a ipsum quae et non neque natus amet odio, mollitia eaque corrupti, ut, eligendi beatae quod id ullam? Totam numquam quidem vel?",
+        description:"Road Way Delivery aims to exceed customer expectations with exceptional roadway delivery services. Our priority is reliability, ensuring on-time and safe deliveries while offering personalized support tailored to unique needs. With advanced tracking systems, we provide real-time updates, ensuring complete shipment visibility. We are committed to sustainability, minimizing environmental impact, and fostering seamless operations and growth through collaboration with customers, suppliers, and partners. Our dedication to excellence, integrity, and continuous improvement sets us apart as a trusted transportation partner.",
     },
     {
         id: 3,
         image:"/trucks_compressed.jpg",
         alt:"A Line Of Trucks Taken Before Departure",
         title:"Our Vision",
-        description:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis iure laudantium repellat qui voluptas? Itaque quam error qui earum nobis? Totam quisquam nostrum cum, iure officia numquam? Illo a ipsum quae et non neque natus amet odio, mollitia eaque corrupti, ut, eligendi beatae quod id ullam? Totam numquam quidem vel?",
+        description:"Road Way Delivery envisions a future where roadway delivery services redefine efficiency and convenience. We strive to be the leading innovator in the industry, leveraging cutting-edge technologies to revolutionize the transportation experience. Our vision is to create a seamless and interconnected delivery network that connects businesses and individuals worldwide. Through sustainable practices and strategic partnerships, we aim to shape a greener and more sustainable future for the logistics industry. By consistently exceeding customer expectations and embracing a culture of continuous improvement, we aspire to be the trusted choice for all roadway delivery needs.",
     },
 ]
 
@@ -207,23 +207,23 @@ export const StepsContent = [
         icon:"/undraw_order_delivered_re_v4ab.svg",
         alt:"undefined",
         subtitle:"Prepare Your Package",
-        description:"Lorem ipsum dolor sit amet adipisicing elit. Placeat quos nulla quis quod, quaerat neque minus facilis.",
+        description:"Seal it, Ship it, Smile - Your Package in Good Hands!",
     },
     {
-        id: 1,
+        id: 2,
         title:"Step 2",
         icon:"/undraw_order_a_car_-3-tww.svg",
         alt:"undefined",
         subtitle:"Choose Your Transportation",
-        description:"Lorem ipsum dolor sit amet adipisicing elit. Placeat quos nulla quis quod, quaerat neque minus facilis.",
+        description:"Ride with Confidence - Choose Transportation Excellence!",
     },
     {
-        id: 1,
+        id: 3,
         title:"Step 3",
         icon:"/undraw_map_dark_re_36sy.svg",
         alt:"undefined",
         subtitle:"Pick A Location",
-        description:"Lorem ipsum dolor sit amet adipisicing elit. Placeat quos nulla quis quod, quaerat neque minus facilis.",
+        description:"Discover the Destination of Your Dreams - Unleash Your Wanderlust!",
     }
 ]
 

@@ -17,7 +17,7 @@ export default function Pricing() {
                     <p className="font-medium text-gray-500">Discover the different ways you can book our service. We provide a plethora of vehicles that may suit your transportation needs. Need food delivered? Need your possessions moved? Need to deliver goods? Road Way Delivery has your back with affordable prices ready for service.</p>
                 </div>
                 <div className="flex justify-center items-center w-full">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16 lg:gap-10 items-center lg:p-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16 lg:gap-10 items-start lg:p-4">
                         {PricingPlans.map((plan) => (
                             <div key={plan.id} className="rounded-lg bg-white drop-shadow-xl">
                                 <div className="w-full lg:w-[350px] h-[230px] flex flex-row justify-between p-6">
@@ -50,15 +50,15 @@ export default function Pricing() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="relative">
+                                <div className="relative w-full">
                                     <Image
                                         src={plan.thumbnail}
-                                        height={250}
+                                        height={1500}
                                         width={350}
                                         alt={plan.alt}
-                                        className="rounded-b-lg brightness-105"
+                                        className="rounded-b-lg brightness-105 object-cover"
                                         />
-                                    <div className="absolute bottom-4 left-4 flex flex-row gap-2 justify-center items-center text-white">
+                                    <div className="absolute bottom-4 left-4 flex flex-row gap-2 justify-center items-center text-white ">
                                         <BsStars size={40}/>
                                         <h1 className="font-bold text-2xl">{plan.rating}</h1>
                                     </div>

@@ -9,7 +9,7 @@ export default function ContactForm() {
             <h1 className="sectionHeader w-full text-center">Contact Us</h1>
             <div className="w-full lg:w-2/5 lg:order-2 gap-6 text-center lg:text-left lg:items-start flex flex-col items-center">
                 <h1 className="font-bold text-2xl">Want To Know Even More About Us?</h1>
-                <p className="font-bold text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit laborum optio iste beatae error, nesciunt eius tempora aperiam aspernatur molestiae totam cumque possimus inventore reiciendis id aliquid ea cum! Doloremque ipsum, saepe eligendi animi itaque obcaecati reiciendis. In a necessitatibus consectetur explicabo ex quibusdam. Voluptatem laboriosam suscipit accusantium perspiciatis amet!</p>
+                <p className="font-bold text-gray-500">We are Road Way Delivery, a trusted transportation provider dedicated to excellence in service. With a strong track record, we prioritize customer satisfaction and safety. Our skilled drivers, modern fleet, and advanced technology ensure efficient and reliable journeys. From local deliveries to long-haul shipments, we offer tailored solutions to diverse needs. Our commitment to professionalism, integrity, and personalized service sets us apart. Partner with us and experience exceptional transportation at Road Way Delivery</p>
                 <div className="w-fit">
                     <div className="flex flex-col gap-4 mt-4">
                         <div className="flex flex-row gap-4 items-center">

@@ -16,10 +16,10 @@ export default function Pricing() {
                     <h1 className="sectionHeader">Pricing</h1>
                     <p className="font-medium text-gray-500">Discover the different ways you can book our service. We provide a plethora of vehicles that may suit your transportation needs. Need food delivered? Need your possessions moved? Need to deliver goods? Road Way Delivery has your back with affordable prices ready for service.</p>
                 </div>
-                <div className="flex justify-center items-center w-full bg-slate-200">
-                    <div className="flex flex-row flex-wrap gap-16 lg:gap-10 items-center lg:p-4 bg-slate-400">
+                <div className="flex justify-center items-center w-full">
+                    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 max gap-16 lg:gap-10 items-center lg:p-4">
                         {PricingPlans.map((plan) => (
-                            <div key={plan.id} className="rounded-lg bg-white shadow-lg ">
+                            <div key={plan.id} className="rounded-lg bg-white shadow-lg">
                                 <div className="w-[350px] h-[230px] flex flex-row p-6 gap-5">
                                     <div className="w-2/3 flex flex-col justify-between">
                                         <div className="">

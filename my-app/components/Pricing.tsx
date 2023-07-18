@@ -17,21 +17,21 @@ export default function Pricing() {
                     <p className="font-medium text-gray-500">Discover the different ways you can book our service. We provide a plethora of vehicles that may suit your transportation needs. Need food delivered? Need your possessions moved? Need to deliver goods? Road Way Delivery has your back with affordable prices ready for service.</p>
                 </div>
                 <div className="flex justify-center items-center w-full">
-                    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 max gap-16 lg:gap-10 items-center lg:p-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16 lg:gap-10 items-center lg:p-4">
                         {PricingPlans.map((plan) => (
                             <div key={plan.id} className="rounded-lg bg-white shadow-lg">
-                                <div className="w-[350px] h-[230px] flex flex-row p-6 gap-5">
-                                    <div className="w-2/3 flex flex-col justify-between">
+                                <div className="w-full lg:w-[350px] h-full lg:h-[230px] flex flex-row justify-between p-6">
+                                    <div className="w-3/6 flex flex-col justify-between">
                                         <div className="">
                                             <h1 className="font-bold text-2xl">{plan.name}</h1>
                                             <h1 className="font-medium">{plan.model}</h1>
                                             <h1 className="font-bold text-lg">{plan.rating}</h1>
                                         </div>
                                         <div>
-                                            <button type="button" className="w-5/6 flex-1 p-4 bg-accent-1 text-white font-extrabold text-lg uppercase rounded-lg">{plan.price}$ /day</button>
+                                            <button type="button" className="w-full flex-1 p-4 bg-accent-1 text-white font-extrabold text-lg uppercase rounded-lg">{plan.price}$ /day</button>
                                         </div>
                                     </div>
-                                    <div className="w-1/3 flex flex-col gap-4">
+                                    <div className="w-2/5 flex flex-col gap-4">
                                         <div className="flex flex-row items-center gap-2">
                                             <FaWeightHanging size={sizeIcon} className="text-accent-1"/>
                                             <h1 className="font-medium text-sm">{plan.load}</h1>

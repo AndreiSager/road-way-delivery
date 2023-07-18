@@ -20,7 +20,7 @@ export default function Pricing() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16 lg:gap-10 items-start lg:p-4">
                         {PricingPlans.map((plan) => (
                             <div key={plan.id} className="rounded-lg bg-white drop-shadow-xl">
-                                <div className="w-full lg:w-[350px] h-[230px] flex flex-row justify-between p-6">
+                                <div className="w-full lg:w-[350px] h-[230px] flex flex-row justify-between p-4 lg:p-6">
                                     <div className="w-3/6 flex flex-col justify-between gap-4">
                                         <div className="">
                                             <h1 className="font-bold text-2xl">{plan.name}</h1>

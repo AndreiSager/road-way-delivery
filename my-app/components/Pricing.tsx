@@ -1,6 +1,6 @@
 import { PricingPlans } from "@/constants";
 import Image from "next/image";
-import { BsFuelPumpFill } from "react-icons/bs";
+import { BsFuelPumpFill, BsStars } from "react-icons/bs";
 import { FaWeightHanging } from "react-icons/fa";
 import { GiSteeringWheel } from "react-icons/gi";
 import { MdEventSeat } from "react-icons/md";
@@ -19,13 +19,12 @@ export default function Pricing() {
                 <div className="flex justify-center items-center w-full">
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16 lg:gap-10 items-center lg:p-4">
                         {PricingPlans.map((plan) => (
-                            <div key={plan.id} className="rounded-lg bg-white shadow-lg">
-                                <div className="w-full lg:w-[350px] h-full lg:h-[230px] flex flex-row justify-between p-6">
-                                    <div className="w-3/6 flex flex-col justify-between">
+                            <div key={plan.id} className="rounded-lg bg-white drop-shadow-xl">
+                                <div className="w-full lg:w-[350px] h-[230px] flex flex-row justify-between p-6">
+                                    <div className="w-3/6 flex flex-col justify-between gap-4">
                                         <div className="">
                                             <h1 className="font-bold text-2xl">{plan.name}</h1>
-                                            <h1 className="font-medium">{plan.model}</h1>
-                                            <h1 className="font-bold text-lg">{plan.rating}</h1>
+                                            <h1 className="font-medium text-sm">{plan.model}</h1>
                                         </div>
                                         <div>
                                             <button type="button" className="w-full flex-1 p-4 bg-accent-1 text-white font-extrabold text-lg uppercase rounded-lg">{plan.price}$ /day</button>
@@ -51,13 +50,19 @@ export default function Pricing() {
                                         </div>
                                     </div>
                                 </div>
-                                <Image
-                                    src={plan.thumbnail}
-                                    height={250}
-                                    width={350}
-                                    alt={plan.alt}
-                                    className="rounded-b-lg"
-                                    />
+                                <div className="relative">
+                                    <Image
+                                        src={plan.thumbnail}
+                                        height={250}
+                                        width={350}
+                                        alt={plan.alt}
+                                        className="rounded-b-lg brightness-105"
+                                        />
+                                    <div className="absolute bottom-4 left-4 flex flex-row gap-2 justify-center items-center text-white">
+                                        <BsStars size={40}/>
+                                        <h1 className="font-bold text-2xl">{plan.rating}</h1>
+                                    </div>
+                                </div>
                             </div>
                         ))}
                     </div>

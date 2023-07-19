@@ -35,6 +35,14 @@ html {
     rgb(var(--background-start-rgb));
 } */
 
+.navbar__white {
+  @apply text-white
+}
+
+.navbar__black {
+  @apply text-black bg-white
+}
+
 .sectionHeader {
   @apply text-4xl font-bold text-black mb-4
 }

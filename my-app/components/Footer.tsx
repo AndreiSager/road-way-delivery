@@ -4,6 +4,7 @@ import { BsFacebook, BsYoutube, BsTwitter, BsTiktok, BsMailbox, BsTelephone } fr
 import { FaInstagramSquare } from 'react-icons/fa'
 
 type LinksProps = {
+    id: number;
     href: string;
     key: string;
     title: string;
@@ -20,7 +21,7 @@ const FooterColumn = ( {title, links}:ColumnProps ) => (
         <h1 className="font-bold text-md">{title}</h1>
         <ul className="flex flex-col gap-2">
             {links.map((link) => (
-                <li className="font-medium text-gray-500 hover:underline hover:text-accent-1"><a href={link.href}>{link.title}</a></li>
+                <li key={link.id} className="font-medium text-gray-500 hover:underline hover:text-accent-1"><a href={link.href}>{link.title}</a></li>
             ))}
         </ul>
     </div>
@@ -32,7 +33,7 @@ export default function Footer() {
     return(
         <footer className="sectionPadding flex flex-row flex-wrap gap-6 w-full p-16 bg-slate-50">
             <div className="w-full lg:w-fit flex flex-col gap-4">
-                <Image src="/rwd_logo.svg"
+                <Image src="/rwd-logo_black.svg"
                     height={200}
                     width={150}
                     alt="Road Way Delivery">

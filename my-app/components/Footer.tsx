@@ -2,6 +2,7 @@ import { FooterLinks, FooterContent } from "@/constants"
 import Image from "next/image";
 import { BsFacebook, BsYoutube, BsTwitter, BsTiktok, BsMailbox, BsTelephone } from "react-icons/bs"
 import { FaInstagramSquare } from 'react-icons/fa'
+import { GoGear } from 'react-icons/go'
 
 type LinksProps = {
     id: number;
@@ -53,6 +54,13 @@ export default function Footer() {
                         <div className="flex flex-col">
                             <h1 className="font-bold text-md capitalize">{FooterContent.contactInfo[1].title}</h1>
                             <h1>{FooterContent.contactInfo[1].info}</h1>
+                        </div>
+                    </div>
+                    <div className="flex flex-row gap-4 items-center">
+                        <GoGear size={sizeIcon}/>
+                        <div className="flex flex-col">
+                            <h1 className="font-bold text-md capitalize">{FooterContent.contactInfo[2].title}</h1>
+                            <h1>{FooterContent.contactInfo[2].info}</h1>
                         </div>
                     </div>
                 </div>

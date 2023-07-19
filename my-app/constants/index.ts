@@ -39,6 +39,7 @@ export const FooterContent = {
     contactInfo: [
         { title:"email", info:"roadwaydelivery@yahoo.com"},
         { title:"phone", info:"XXX-XXX-XXXX"},
+        { title:"customer support hours", info:"Mon to Fri: 9:00AM - 5:00PM"},
     ],
 }
 

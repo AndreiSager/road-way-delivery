@@ -1,6 +1,6 @@
 export default function NewsletterBanner() {
     return(
-        <div className="w-full sectionPadding bg-mountain-sunset bg-contain bg-no-repeat bg-right bg-[#A06C20]">
+        <div className="w-full sectionPadding bg-mountain-sunset bg-contain bg-no-repeat bg-right bg-primary-1">
             <div className="w-full h-full lg:w-1/2 flex flex-col justify-center lg:mx-8 gap-4 text-center lg:text-left ">
                 <h1 className="font-bold text-3xl text-white">Join Our Newsletter</h1>
                 <p className="font-bold text-slate-200 w-full lg:w-[400px]">Sign-up for our newsletter. Be the first one to receive the latest news from Road Way Deliver.</p>

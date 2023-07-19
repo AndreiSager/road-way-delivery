@@ -15,12 +15,27 @@ export default function Navbar() {
     const handleNav = () => (
         setNav(!nav)
     )
+    
+    window.onscroll = function() {myFunction()};
+    const navbar = document.getElementById("navbar")!;
+    const [logo, setLogo] = useState<"/rwd-logo_white.svg" | "/rwd-logo_black.svg">("/rwd-logo_white.svg");
 
+    function myFunction() {
+        if (document.documentElement.scrollTop > 50) {
+            navbar.classList.add("navbar__black");
+            setLogo("/rwd-logo_black.svg");
+        } else {
+            navbar.classList.remove("navbar__black");
+            setLogo("/rwd-logo_white.svg");
+        }
+    }
+    
     return(
-        <nav className="w-full sticky top-0 z-50">
-            <div className="flex flex-row justify-between items-center w-full py-4 px-4 md:px-12 bg-white shadow-md">
+        <nav className="w-full">
+            <div id="navbar" className="flex flex-row justify-between items-center w-full py-4 px-4 md:px-12 shadow-md navbar__white fixed top-0 left-0 right-0 z-50">
                 <div className="flex flex-row gap-8">
-                    <Image src="/rwd_logo.svg"
+                    <Image 
+                        src={logo}
                         height={200}
                         width={150}
                         alt="Road Way Delivery">
@@ -46,7 +61,7 @@ export default function Navbar() {
                     {!nav ? <GiHamburgerMenu  size={sizeIcon}/> : <RxCross2  size={sizeIcon}/>}
                 </div>
             </div>
-            <div className={nav ? "flex flex-row gap-8 relative top-0 left-0 bg-white w-full h-fit pb-8 shadow-md" : "hidden"}>
+            <div className={nav ? "flex flex-row gap-8 bg-white w-full h-fit pb-8 shadow-md" : "hidden"}>
                 <ul className="flex flex-col w-full text-center">
                     {links.map((link) => (
                         <li key={link.id} className="font-semibold text-md block w-full">

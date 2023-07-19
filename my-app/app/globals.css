@@ -36,11 +36,15 @@ html {
 } */
 
 .navbar__white {
-  @apply text-white
+  @apply text-white 
 }
 
 .navbar__black {
   @apply text-black bg-white
+}
+
+.navbar__black a {
+  @apply hover:text-accent-1
 }
 
 .sectionHeader {

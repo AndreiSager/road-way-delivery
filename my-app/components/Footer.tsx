@@ -4,6 +4,7 @@ import { BsFacebook, BsYoutube, BsTwitter, BsTiktok, BsMailbox, BsTelephone } fr
 import { FaInstagramSquare } from 'react-icons/fa'
 
 type LinksProps = {
+    id: number;
     href: string;
     key: string;
     title: string;
@@ -20,7 +21,7 @@ const FooterColumn = ( {title, links}:ColumnProps ) => (
         <h1 className="font-bold text-md">{title}</h1>
         <ul className="flex flex-col gap-2">
             {links.map((link) => (
-                <li className="font-medium text-gray-500 hover:underline hover:text-accent-1"><a href={link.href}>{link.title}</a></li>
+                <li key={link.id} className="font-medium text-gray-500 hover:underline hover:text-accent-1"><a href={link.href}>{link.title}</a></li>
             ))}
         </ul>
     </div>
@@ -32,14 +33,14 @@ export default function Footer() {
     return(
         <footer className="sectionPadding flex flex-row flex-wrap gap-6 w-full p-16 bg-slate-50">
             <div className="w-full lg:w-fit flex flex-col gap-4">
-                <Image src="/rwd_logo.svg"
+                <Image src="/rwd-logo_black.svg"
                     height={200}
                     width={150}
                     alt="Road Way Delivery">
                 </Image>
                 <h1 className="font-bold text-lg">The Road Is The Way. Our Way.</h1>
                 <p className="sm:w-[320px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque veniam temporibus officiis quae eveniet ut.</p>
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-4 mt-4">
                     <div className="flex flex-row gap-4 items-center">
                         <BsMailbox size={sizeIcon}/>
                         <div className="flex flex-col">
@@ -56,13 +57,12 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="flex flex-row gap-4 mt-4">
-                    <a href="#facebook" className="hover:text-accent-1"><BsFacebook size={sizeIcon}/></a>
-                    <a href="#youtube" className="hover:text-accent-1"><BsYoutube size={sizeIcon}/></a>
-                    <a href="#twitter" className="hover:text-accent-1"><BsTwitter size={sizeIcon}/></a>
-                    <a href="#instagram" className="hover:text-accent-1"><FaInstagramSquare size={sizeIcon}/></a>
-                    <a href="#tiktok" className="hover:text-accent-1"><BsTiktok size={sizeIcon}/></a>
+                    <a href="#facebook" className="text-gray-500 hover:text-accent-1"><BsFacebook size={sizeIcon}/></a>
+                    <a href="#youtube" className="text-gray-500 hover:text-accent-1"><BsYoutube size={sizeIcon}/></a>
+                    <a href="#twitter" className="text-gray-500 hover:text-accent-1"><BsTwitter size={sizeIcon}/></a>
+                    <a href="#instagram" className="text-gray-500 hover:text-accent-1"><FaInstagramSquare size={sizeIcon}/></a>
+                    <a href="#tiktok" className="text-gray-500 hover:text-accent-1"><BsTiktok size={sizeIcon}/></a>
                 </div>
-          
             </div>
             <div className="flex flex-row flex-wrap gap-8 w-full lg:w-fit ">
                 <FooterColumn title={FooterLinks[0].title} links={FooterLinks[0].links}></FooterColumn>

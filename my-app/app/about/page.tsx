@@ -1,7 +1,15 @@
-export default function About() {
+import About from "@/components/About";
+import PerformanceBanner from "@/components/PerfomanceBanner";
+import Steps from "@/components/Steps";
+import TopBanner from "@/components/TopBanner";
+
+export default function AboutPage() {
     return(
         <main>
-            <h1>About</h1>
+            <TopBanner/>
+            <About/>
+            <PerformanceBanner/>
+            <Steps/>
         </main>
     )
 }

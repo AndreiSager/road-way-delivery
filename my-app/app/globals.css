@@ -16,6 +16,10 @@
   }
 } */
 
+* {
+  @apply box-border
+}
+
 html {
   --scroll-behavior: smooth !important;
   scroll-behavior: smooth !important;
@@ -31,10 +35,30 @@ html {
     rgb(var(--background-start-rgb));
 } */
 
+.navbar__white {
+  @apply text-white
+}
+
+.navbar__black {
+  @apply text-black bg-white
+}
+
 .sectionHeader {
   @apply text-4xl font-bold text-black mb-4
 }
 
 .sectionPadding {
   @apply py-28 px-6
+}
+
+.callToAction {
+  @apply w-full bg-accent-1 text-xl font-extrabold text-white p-4 rounded-lg hover:brightness-125
+}
+
+.inputField {
+  @apply border border-solid border-slate-400 rounded-md p-4
+}
+
+.textArea {
+  @apply h-[190px] resize-none
 }

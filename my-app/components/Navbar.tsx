@@ -35,7 +35,7 @@ export default function Navbar() {
 
     return(
         <nav className="w-full ">
-            <div id="navbar" className="flex flex-row justify-between items-center w-full py-4 px-4 md:px-12 shadow-md navbar__white fixed top-0 left-0 right-0 z-50 backdrop-blur-sm">
+            <div id="navbar" className="flex flex-row justify-between items-center w-full py-4 px-4 md:px-12 shadow-md navbar__white fixed top-0 left-auto right-auto z-50 backdrop-blur-sm max-w-screen-xl">
                 <div className="flex flex-row gap-8">
                     <Image 
                         src={logo}

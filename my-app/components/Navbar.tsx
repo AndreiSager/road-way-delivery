@@ -34,8 +34,8 @@ export default function Navbar() {
     }, []);
 
     return(
-        <nav className="w-full">
-            <div id="navbar" className="flex flex-row justify-between items-center w-full py-4 px-4 md:px-12 shadow-md navbar__white fixed top-0 left-0 right-0 z-50">
+        <nav className="w-full ">
+            <div id="navbar" className="flex flex-row justify-between items-center w-full py-4 px-4 md:px-12 shadow-md navbar__white fixed top-0 left-0 right-0 z-50 backdrop-blur-sm">
                 <div className="flex flex-row gap-8">
                     <Image 
                         src={logo}
@@ -67,9 +67,9 @@ export default function Navbar() {
             <div className={nav ? "flex flex-row gap-8 bg-white w-full h-fit pb-8 shadow-md" : "hidden"}>
                 <ul className="flex flex-col w-full text-center">
                     {links.map((link) => (
-                        <li key={link.id} className="font-semibold text-md block w-full">
+                        <li key={link.id} className="font-semibold text-md block w-full hover:text-gray-100">
                             <a onClick={handleNav} href={link.href}
-                                className="block p-4 hover:text-accent-1"
+                                className="block p-4"
                                 >{link.title}</a>
                         </li>
                     ))}

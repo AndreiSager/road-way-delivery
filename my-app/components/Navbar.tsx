@@ -17,22 +17,21 @@ export default function Navbar() {
     )
    
     const [logo, setLogo] = useState<'/rwd-logo_white.svg' | '/rwd-logo_black.svg'>('/rwd-logo_white.svg');
-
-    function myFunction() {
-        const navbar = document.getElementById("navbar")!;
-        if (document.documentElement.scrollTop > 50) {
-            navbar.classList.add("navbar__black");
-            setLogo("/rwd-logo_black.svg");
-        } else {
-            navbar.classList.remove("navbar__black");
-            setLogo("/rwd-logo_white.svg");
-        }
-    }
     
     useEffect(() => {
-        window.onscroll = function() {myFunction()};
-        myFunction();
-    });
+        const onScroll = () => {
+            const navbar = document.getElementById("navbar")!;
+            const distance = 50;
+            if (document.documentElement.scrollTop > distance) {
+                navbar.classList.add("navbar__black");
+                setLogo("/rwd-logo_black.svg");
+            } else {
+                navbar.classList.remove("navbar__black");
+                setLogo("/rwd-logo_white.svg");
+            }
+        }
+        window.addEventListener("scroll", onScroll);
+    }, []);
 
     return(
         <nav className="w-full">
@@ -40,7 +39,7 @@ export default function Navbar() {
                 <div className="flex flex-row gap-8">
                     <Image 
                         src={logo}
-                        height={200}
+                        height={100}
                         width={150}
                         alt="Road Way Delivery">
                     </Image>

@@ -5,7 +5,7 @@ import { MdAccountCircle } from "react-icons/md"
 import { CgNotes } from "react-icons/cg"
 import { GiCarWheel, GiHamburgerMenu } from "react-icons/gi"
 import { RxCross2 } from "react-icons/rx"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image"
 
 export default function Navbar() {
@@ -15,12 +15,11 @@ export default function Navbar() {
     const handleNav = () => (
         setNav(!nav)
     )
-    
-    window.onscroll = function() {myFunction()};
-    const navbar = document.getElementById("navbar")!;
-    const [logo, setLogo] = useState<"/rwd-logo_white.svg" | "/rwd-logo_black.svg">("/rwd-logo_white.svg");
+   
+    const [logo, setLogo] = useState<'/rwd-logo_white.svg' | '/rwd-logo_black.svg'>('/rwd-logo_white.svg');
 
     function myFunction() {
+        const navbar = document.getElementById("navbar")!;
         if (document.documentElement.scrollTop > 50) {
             navbar.classList.add("navbar__black");
             setLogo("/rwd-logo_black.svg");
@@ -30,6 +29,11 @@ export default function Navbar() {
         }
     }
     
+    useEffect(() => {
+        window.onscroll = function() {myFunction()};
+        myFunction();
+    });
+
     return(
         <nav className="w-full">
             <div id="navbar" className="flex flex-row justify-between items-center w-full py-4 px-4 md:px-12 shadow-md navbar__white fixed top-0 left-0 right-0 z-50">
@@ -66,7 +70,7 @@ export default function Navbar() {
                     {links.map((link) => (
                         <li key={link.id} className="font-semibold text-md block w-full">
                             <a onClick={handleNav} href={link.href}
-                                className="block p-4"
+                                className="block p-4 hover:text-accent-1"
                                 >{link.title}</a>
                         </li>
                     ))}

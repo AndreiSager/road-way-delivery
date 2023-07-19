@@ -44,7 +44,7 @@ html {
 }
 
 .callToAction {
-  @apply w-full bg-accent-1 text-xl font-extrabold text-white p-4 rounded-full
+  @apply w-full bg-accent-1 text-xl font-extrabold text-white p-4 rounded-lg hover:brightness-125
 }
 
 .inputField {

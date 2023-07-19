@@ -17,6 +17,7 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'mountain-sunset': 'url(/mountain-sunset_compressed.jpg)',
         'highway': 'url(/highway-dark_compressed.jpg)',
+        'truck': 'url(/hero-truck_dark.jpg)'
       },
     },
   },

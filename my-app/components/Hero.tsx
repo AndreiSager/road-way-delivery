@@ -8,7 +8,7 @@ export default function Hero() {
                     <h1 className="w-full md:w-[600px] font-bold text-3xl lg:text-5xl text-white uppercase">Where There's A Road, There's A Way.</h1>
                     <p className="w-full md:w-[600px] font-medium text-slate-200 text-lg mt-4">Embrace life's challenges with perseverance and unwavering belief in finding a way. With optimism and determination, unlock new opportunities and achieve your goals on this rewarding journey.</p>
                 </div>
-                <div className="flex flex-row gap-4">
+                <div className="flex flex-row gap-4 w-full lg:w-[450px]">
                     <button type="button" className="flex-1 w-fit py-4 px-10 font-bold text-white bg-accent-1 rounded-full mt-6 hover:brightness-125">Book Now</button>
                     <button type="button" className="flex-1 w-fit py-4 px-10 font-bold text-white bg-slate-600 rounded-full mt-6 hover:brightness-125">Learn More</button>
                 </div>

@@ -47,7 +47,7 @@ export default function Navbar() {
                         {links.map((link) => (
                             <li key={link.id} className="font-semibold text-md">
                                 <a href={link.href}
-                                    className="block p-4"
+                                    className="block p-4 hover:text-green-500"
                                     >{link.title}</a>
                             </li>
                         ))}
@@ -67,9 +67,9 @@ export default function Navbar() {
             <div className={nav ? "flex flex-row gap-8 bg-white w-full h-fit pb-8 shadow-md" : "hidden"}>
                 <ul className="flex flex-col w-full text-center">
                     {links.map((link) => (
-                        <li key={link.id} className="font-semibold text-md block w-full hover:text-gray-100">
+                        <li key={link.id} className="font-semibold text-md block w-full">
                             <a onClick={handleNav} href={link.href}
-                                className="block p-4"
+                                className="block p-4 w-full"
                                 >{link.title}</a>
                         </li>
                     ))}

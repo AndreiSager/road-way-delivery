@@ -235,6 +235,14 @@ export const StepsContent = [
         alt:"undefined",
         subtitle:"Pick A Location",
         description:"Discover the Destination of Your Dreams - Unleash Your Wanderlust!",
+    },
+    {
+        id: 4,
+        title:"Step 4",
+        icon:"/undraw_map_dark_re_36sy.svg",
+        alt:"undefined",
+        subtitle:"Pick A Location",
+        description:"Discover the Destination of Your Dreams - Unleash Your Wanderlust!",
     }
 ]
 

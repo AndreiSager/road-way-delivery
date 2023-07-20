@@ -319,19 +319,29 @@ export const BookingFormDate = [
 export const FQAContent = [
     {
         id:1,
-        question:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, voluptas.",
+        question:"1.) Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, voluptas.",
         answer:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis similique aut corrupti hic magnam, accusantium, delectus ratione molestiae facilis reiciendis commodi. Soluta sed, recusandae quidem ducimus sint maiores consequuntur, reiciendis dignissimos non optio, voluptates totam.",
     },
     {
         id:2,
-        question:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, voluptas.",
+        question:"2.) Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, voluptas.",
         answer:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis similique aut corrupti hic magnam, accusantium, delectus ratione molestiae facilis reiciendis commodi. Soluta sed, recusandae quidem ducimus sint maiores consequuntur, reiciendis dignissimos non optio, voluptates totam.",
     },    
     {
         id:3,
-        question:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, voluptas.",
+        question:"3.) Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, voluptas.",
         answer:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis similique aut corrupti hic magnam, accusantium, delectus ratione molestiae facilis reiciendis commodi. Soluta sed, recusandae quidem ducimus sint maiores consequuntur, reiciendis dignissimos non optio, voluptates totam.",
-    }
+    },
+    {
+        id:4,
+        question:"4.) Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, voluptas.",
+        answer:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis similique aut corrupti hic magnam, accusantium, delectus ratione molestiae facilis reiciendis commodi. Soluta sed, recusandae quidem ducimus sint maiores consequuntur, reiciendis dignissimos non optio, voluptates totam.",
+    },
+    {
+        id:5,
+        question:"5.) Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, voluptas.",
+        answer:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis similique aut corrupti hic magnam, accusantium, delectus ratione molestiae facilis reiciendis commodi. Soluta sed, recusandae quidem ducimus sint maiores consequuntur, reiciendis dignissimos non optio, voluptates totam.",
+    },
 ]
 
 export const PricingPlans = [

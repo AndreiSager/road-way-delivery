@@ -319,28 +319,28 @@ export const BookingFormDate = [
 export const FQAContent = [
     {
         id:1,
-        question:"1.) Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, voluptas.",
-        answer:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis similique aut corrupti hic magnam, accusantium, delectus ratione molestiae facilis reiciendis commodi. Soluta sed, recusandae quidem ducimus sint maiores consequuntur, reiciendis dignissimos non optio, voluptates totam.",
+        question:"1.) What areas do you cover for your road delivery service?",
+        answer:" We provide road delivery services across the entire country. Our extensive network of drivers and vehicles enables us to reach even the most remote locations, ensuring prompt and reliable deliveries nationwide wherever there's a road availble.",
     },
     {
         id:2,
-        question:"2.) Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, voluptas.",
-        answer:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis similique aut corrupti hic magnam, accusantium, delectus ratione molestiae facilis reiciendis commodi. Soluta sed, recusandae quidem ducimus sint maiores consequuntur, reiciendis dignissimos non optio, voluptates totam.",
+        question:"2.) How do you ensure the safety and security of the packages during transportation?",
+        answer:"The safety and security of our customers' packages are our top priorities. We employ robust packaging techniques and utilize specialized handling procedures to minimize the risk of damage. Additionally, our delivery vehicles are equipped with GPS tracking and real-time monitoring systems, allowing us to keep a close eye on the packages throughout the journey.",
     },    
     {
         id:3,
-        question:"3.) Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, voluptas.",
-        answer:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis similique aut corrupti hic magnam, accusantium, delectus ratione molestiae facilis reiciendis commodi. Soluta sed, recusandae quidem ducimus sint maiores consequuntur, reiciendis dignissimos non optio, voluptates totam.",
+        question:"3.) What are the typical delivery times for your road way delivery service?",
+        answer:"Our delivery times vary depending on the distance and location. Generally, we strive to deliver within 1-3 business days for domestic shipments, and 5-10 business days for international deliveries. However, for time-sensitive packages, we offer expedited shipping options to ensure a faster delivery.",
     },
     {
         id:4,
-        question:"4.) Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, voluptas.",
-        answer:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis similique aut corrupti hic magnam, accusantium, delectus ratione molestiae facilis reiciendis commodi. Soluta sed, recusandae quidem ducimus sint maiores consequuntur, reiciendis dignissimos non optio, voluptates totam.",
+        question:"4.)  How can customers track the status of their deliveries?",
+        answer:"Customers can easily track the status of their deliveries using our online tracking system. Upon booking a delivery, they will receive a unique tracking code, which they can enter on our website or mobile app to get real-time updates on the package's location and estimated delivery time.",
     },
     {
         id:5,
-        question:"5.) Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, voluptas.",
-        answer:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis similique aut corrupti hic magnam, accusantium, delectus ratione molestiae facilis reiciendis commodi. Soluta sed, recusandae quidem ducimus sint maiores consequuntur, reiciendis dignissimos non optio, voluptates totam.",
+        question:"5.) What happens if there's an issue with the delivery, such as a delay or damaged package?",
+        answer:"In the rare event of a delivery issue, our dedicated customer support team is available to assist 24/7 for filed requests. If a package is delayed, we proactively communicate with the customer and provide revised delivery estimates. Should a package arrive damaged, we have a straightforward claims process to resolve the matter promptly, offering compensation or arranging for a replacement shipment when necessary.",
     },
 ]
 

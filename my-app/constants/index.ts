@@ -241,9 +241,79 @@ export const StepsContent = [
         title:"Step 4",
         icon:"/undraw_map_dark_re_36sy.svg",
         alt:"undefined",
-        subtitle:"Pick A Location",
+        subtitle:"Decide A Timeframe",
         description:"Discover the Destination of Your Dreams - Unleash Your Wanderlust!",
     }
+]
+
+export const BookingFormSelect = [
+    {
+        id:1,
+        icon:"/truck-delivery.svg",
+        title:"Choose Transportation",
+        select: {
+            name:"transport",
+            id:"transportation",
+            default:"Motorcycle",
+        },
+        options: [
+            { id:1, value:"Motorcycle", option:"Motorcycle" },
+            { id:2, value:"Sedan", option:"Sedan" },
+            { id:3, value:"MPV", option:"MPV" },
+            { id:4, value:"L300/Van", option:"L300/Van" },
+            { id:5, value:"Closed Truck", option:"Closed Truck" },
+            { id:6, value:"6w Fwd Truck", option:"6w Fwd Truck" },
+            { id:7, value:"Wing Truck", option:"Wing Truck" },
+        ]
+    },
+    {
+        id:2,
+        icon:"/map-pin.svg",
+        title:"Pick-Up Location",
+        select: {
+            name:"pick-up location",
+            id:"pick-up__location",
+            default:"New Zealand",
+        },
+        options: [
+            { id:1, value:"Los Angeles", option:"Los Angeles" },
+            { id:2, value:"New Zealand", option:"New Zealand" },
+        ]
+    },
+    {
+        id:3,
+        icon:"/map-pin-check.svg",
+        title:"Drop-Off Location",
+        select: {
+            name:"drop-off location",
+            id:"drop-off__location",
+            default:"Mexico",
+        },
+        options: [
+            { id:1, value:"Mexico", option:"Mexico" },
+        ]
+    },
+]
+
+export const BookingFormDate = [
+    {
+        id:1,
+        icon:"/calendar-time.svg",
+        title:"Pick-Up Date",
+        date: {
+            name:"pick-up date",
+            id:"pick-up__date",
+        },
+    },
+    {
+        id:2,
+        icon:"/calendar-check.svg",
+        title:"Drop-Off Date",
+        date: {
+            name:"drop-off date",
+            id:"drop-off__date",
+        },
+    },
 ]
 
 export const PricingPlans = [

@@ -6,7 +6,7 @@ export default function Testimonials() {
     const sizeIcon = 40;
 
     return(
-        <main className="sectionPadding flex flex-row flex-wrap justify-center items-center gap-16">
+        <div className="sectionPadding flex flex-row flex-wrap justify-center items-center gap-16">
             <div className="flex flex-col w-full lg:w-[600px] text-center">
                 <h1 className="sectionHeader">Testimonials</h1>
                 <p className="font-medium text-gray-500">Discover the positive impact we've made on the our clients by reading through their testimonials. Our clients have experienced our service and results, and they're eager to share their positive experiences with you.</p>
@@ -36,6 +36,6 @@ export default function Testimonials() {
                     </div>
                 ))}
             </div>
-        </main>
+        </div>
     )
 }

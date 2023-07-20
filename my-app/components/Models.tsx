@@ -1,6 +1,6 @@
 export default function Models() {
     return(
-        <div>
+        <div className="w-full">
             <h1>Choose your car</h1>
             <div>
                 <h1>Selection</h1>  

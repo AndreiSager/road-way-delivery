@@ -1,4 +1,4 @@
-import { FrequentlyAskedQuestions as Questions } from '@/constants'
+import { FQAContent as Questions } from '@/constants'
 
 export default function FAQ() {
     return(

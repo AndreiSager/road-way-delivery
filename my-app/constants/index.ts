@@ -316,7 +316,7 @@ export const BookingFormDate = [
     },
 ]
 
-export const FrequentlyAskedQuestions = [
+export const FQAContent = [
     {
         id:1,
         question:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, voluptas.",

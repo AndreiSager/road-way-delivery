@@ -106,7 +106,7 @@ export default function Steps() {
                 </div>
             </div>
             <div className="w-full lg:w-fit">
-                <form action="" className="flex flex-col gap-4 p-8 bg-slate-200 rounded-lg shadow-lg lg:w-[410px]">
+                <form action="" className="flex flex-col gap-4 p-8 bg-slate-100 rounded-lg shadow-xl lg:w-[410px]">
                     <SelectColumn id={BookingFormSelect[0].id} icon={BookingFormSelect[0].icon} title={BookingFormSelect[0].title} select={BookingFormSelect[0].select} options={BookingFormSelect[0].options}/>
                     <Divider/>
                     <SelectColumn id={BookingFormSelect[1].id} icon={BookingFormSelect[1].icon} title={BookingFormSelect[1].title} select={BookingFormSelect[1].select} options={BookingFormSelect[1].options}/>

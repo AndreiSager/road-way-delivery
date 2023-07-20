@@ -12,7 +12,6 @@ export default function Home() {
       <Hero/>
       <Steps/>
       <PerformanceBanner/>
-      <Booking/>
       <Models/>
       <Testimonials/>
       <FAQ/>

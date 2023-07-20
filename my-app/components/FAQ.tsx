@@ -10,8 +10,8 @@ export default function FAQ() {
             <div className='flex flex-col gap-8 '>
                 {Questions.map((question) => (
                     <div key={question.id} className='flex flex-col gap-2 w-full lg:w-[800px] p-6 bg-white shadow-xl border-l-8 border-accent-1 rounded-xl'>
-                        <h1 className='font-bold text-lg'>{question.question}</h1>
-                        <p className='font-medium text-md text-slate-600'>{question.answer}</p>
+                        <h1 className='font-bold text-lg lg:text-left'>{question.question}</h1>
+                        <p className='font-medium text-md text-slate-600 text-justify'>{question.answer}</p>
                     </div>
                 ))}
             </div>

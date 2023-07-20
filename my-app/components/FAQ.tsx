@@ -7,9 +7,9 @@ export default function FAQ() {
                 <h1 className="sectionHeader">Frequently Asked Questions</h1>
                 <p className="font-medium text-gray-500">Discover the positive impact we've made on the our clients by reading through their testimonials. Our clients have experienced our service and results, and they're eager to share their positive experiences with you.</p>
             </div>
-            <div className='flex flex-col gap-8 p-6 bg-white shadow-xl'>
+            <div className='flex flex-col gap-8 '>
                 {Questions.map((question) => (
-                    <div key={question.id} className='flex flex-col gap-2 w-full lg:w-[800px]'>
+                    <div key={question.id} className='flex flex-col gap-2 w-full lg:w-[800px] p-6 bg-white shadow-xl'>
                         <h1 className='font-bold text-lg'>{question.question}</h1>
                         <p className='font-medium text-md text-slate-600'>{question.answer}</p>
                     </div>

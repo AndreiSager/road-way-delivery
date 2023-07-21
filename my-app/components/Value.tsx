@@ -10,7 +10,7 @@ export default function Value() {
                     width={520}
                     height={300}
                     alt={content.alt}
-                    className=""
+                    className="rounded-lg"
                     />
                 <div className="flex flex-col gap-6">
                     <div className="flex flex-col gap-2">

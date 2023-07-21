@@ -479,8 +479,8 @@ export const DownloadLinks = [
 ]
 
 export const ValueContent = {
-    image:"",
-    alt:"",
+    image:"/road_compressed.jpg",
+    alt:"A truck",
     overline:"Lorem ipsum dolor",
     title:"Lorem ipsum dolor sit amet consectetur",
     description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eius, odio quas at provident temporibus nemo enim quia odit laborum. Accusantium nihil pariatur consequatur voluptatibus doloremque natus cumque inventore dolor consectetur, quo cum, autem aliquid magni accusamus. Ea, explicabo dolores.",

@@ -35,19 +35,21 @@ export default function Navbar() {
 
     return(
         <nav className="w-full ">
-            <div id="navbar" className="flex flex-row justify-between items-center w-full py-4 px-4 md:px-12 shadow-md navbar__white fixed top-0 left-0 right-0 z-50 backdrop-blur-sm">
+            <div id="navbar" className="flex flex-row justify-between items-center w-full py-4 px-4 md:px-12 shadow-md navbar__white fixed top-0 left-auto right-auto z-50 backdrop-blur-sm max-w-screen-xl">
                 <div className="flex flex-row gap-8">
-                    <Image 
-                        src={logo}
-                        height={100}
-                        width={150}
-                        alt="Road Way Delivery">
-                    </Image>
+                    <a href="/">
+                        <Image 
+                            src={logo}
+                            height={100}
+                            width={150}
+                            alt="Road Way Delivery">
+                        </Image>
+                    </a>
                     <ul className="hidden lg:flex flex-row">
                         {links.map((link) => (
                             <li key={link.id} className="font-semibold text-md">
                                 <a href={link.href}
-                                    className="block p-4"
+                                    className="block p-4 hover:text-green-500"
                                     >{link.title}</a>
                             </li>
                         ))}
@@ -67,9 +69,9 @@ export default function Navbar() {
             <div className={nav ? "flex flex-row gap-8 bg-white w-full h-fit pb-8 shadow-md" : "hidden"}>
                 <ul className="flex flex-col w-full text-center">
                     {links.map((link) => (
-                        <li key={link.id} className="font-semibold text-md block w-full hover:text-gray-100">
+                        <li key={link.id} className="font-semibold text-md block w-full">
                             <a onClick={handleNav} href={link.href}
-                                className="block p-4"
+                                className="block p-4 w-full"
                                 >{link.title}</a>
                         </li>
                     ))}

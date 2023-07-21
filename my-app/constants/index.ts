@@ -39,6 +39,7 @@ export const FooterContent = {
     contactInfo: [
         { title:"email", info:"roadwaydelivery@yahoo.com"},
         { title:"phone", info:"XXX-XXX-XXXX"},
+        { title:"customer support hours", info:"Mon to Fri: 9:00AM - 5:00PM"},
     ],
 }
 
@@ -234,7 +235,113 @@ export const StepsContent = [
         alt:"undefined",
         subtitle:"Pick A Location",
         description:"Discover the Destination of Your Dreams - Unleash Your Wanderlust!",
+    },
+    {
+        id: 4,
+        title:"Step 4",
+        icon:"/undraw_map_dark_re_36sy.svg",
+        alt:"undefined",
+        subtitle:"Decide A Timeframe",
+        description:"Discover the Destination of Your Dreams - Unleash Your Wanderlust!",
     }
+]
+
+export const BookingFormSelect = [
+    {
+        id:1,
+        icon:"/truck-delivery.svg",
+        title:"Choose Transportation",
+        select: {
+            name:"transport",
+            id:"transportation",
+            default:"Motorcycle",
+        },
+        options: [
+            { id:1, value:"Motorcycle", option:"Motorcycle" },
+            { id:2, value:"Sedan", option:"Sedan" },
+            { id:3, value:"MPV", option:"MPV" },
+            { id:4, value:"L300/Van", option:"L300/Van" },
+            { id:5, value:"Closed Truck", option:"Closed Truck" },
+            { id:6, value:"6w Fwd Truck", option:"6w Fwd Truck" },
+            { id:7, value:"Wing Truck", option:"Wing Truck" },
+        ]
+    },
+    {
+        id:2,
+        icon:"/map-pin.svg",
+        title:"Pick-Up Location",
+        select: {
+            name:"pick-up location",
+            id:"pick-up__location",
+            default:"New Zealand",
+        },
+        options: [
+            { id:1, value:"Los Angeles", option:"Los Angeles" },
+            { id:2, value:"New Zealand", option:"New Zealand" },
+        ]
+    },
+    {
+        id:3,
+        icon:"/map-pin-check.svg",
+        title:"Drop-Off Location",
+        select: {
+            name:"drop-off location",
+            id:"drop-off__location",
+            default:"Mexico",
+        },
+        options: [
+            { id:1, value:"Mexico", option:"Mexico" },
+        ]
+    },
+]
+
+export const BookingFormDate = [
+    {
+        id:1,
+        icon:"/calendar-time.svg",
+        title:"Pick-Up Date",
+        date: {
+            name:"pick-up date",
+            id:"pick-up__date",
+        },
+    },
+    {
+        id:2,
+        icon:"/calendar-check.svg",
+        title:"Drop-Off Date",
+        date: {
+            name:"drop-off date",
+            id:"drop-off__date",
+        },
+    },
+]
+
+export const FQAContent = [
+    {
+        id:1,
+        question:"1.) What areas do you cover for your road delivery service?",
+        answer:" We provide road delivery services across the entire country. Our extensive network of drivers and vehicles enables us to reach even the most remote locations, ensuring prompt and reliable deliveries nationwide wherever there's a road availble.",
+    },
+    {
+        id:2,
+        question:"2.) How do you ensure the safety and security of the packages during transportation?",
+        answer:"The safety and security of our customers' packages are our top priorities. We employ robust packaging techniques and utilize specialized handling procedures to minimize the risk of damage. Additionally, our delivery vehicles are equipped with GPS tracking and real-time monitoring systems, allowing us to keep a close eye on the packages throughout the journey.",
+    },    
+    {
+        id:3,
+        question:"3.) What are the typical delivery times for your road way delivery service?",
+        answer:"Our delivery times vary depending on the distance and location. Generally, we strive to deliver within 1-3 business days for domestic shipments, and 5-10 business days for international deliveries. However, for time-sensitive packages, we offer expedited shipping options to ensure a faster delivery.",
+    },
+    {
+        id:4,
+        question:"4.)  How can customers track the status of their deliveries?",
+        answer:"Customers can easily track the status of their deliveries using our online tracking system. Upon booking a delivery, they will receive a unique tracking code, which they can enter on our website or mobile app to get real-time updates on the package's location and estimated delivery time.",
+    },
+    {
+        id:5,
+        question:"5.) What happens if there's an issue with the delivery, such as a delay or damaged package?",
+        answer:"In the rare event of a delivery issue, our dedicated customer support team is available to assist 24/7 for filed requests. If a package is delayed, we proactively communicate with the customer and provide revised delivery estimates. Should a package arrive damaged, we have a straightforward claims process to resolve the matter promptly, offering compensation or arranging for a replacement shipment when necessary.",
+    },
 ]
 
 export const PricingPlans = [

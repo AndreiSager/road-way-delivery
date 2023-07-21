@@ -1,5 +1,6 @@
 import { FooterContent } from "@/constants";
 import { BsMailbox, BsTelephone } from "react-icons/bs";
+import { GoGear } from "react-icons/go";
 
 export default function ContactForm() {
     const sizeIcon = 30; 
@@ -24,6 +25,13 @@ export default function ContactForm() {
                             <div className="flex flex-col text-left">
                                 <h1 className="font-bold text-md capitalize text-left">{FooterContent.contactInfo[1].title}</h1>
                                 <h1>{FooterContent.contactInfo[1].info}</h1>
+                            </div>
+                        </div>
+                        <div className="flex flex-row gap-4 items-center">
+                            <GoGear size={sizeIcon}/>
+                            <div className="flex flex-col">
+                                <h1 className="font-bold text-md capitalize">{FooterContent.contactInfo[2].title}</h1>
+                                <h1>{FooterContent.contactInfo[2].info}</h1>
                             </div>
                         </div>
                     </div>

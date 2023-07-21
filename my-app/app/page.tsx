@@ -1,15 +1,21 @@
 import Hero from '@/components/Hero'
 import PerformanceBanner from '@/components/PerfomanceBanner'
-import Renting from '@/components/Models'
 import Testimonials from '@/components/Testimonials'
+import Steps from '@/components/Steps'
+import Models from '@/components/Models'
+import FAQ from '@/components/FAQ'
+import Promotion from '@/components/Promotion'
 
 export default function Home() {
   return (
     <main className="flex flex-wrap">
       <Hero/>
+      <Steps/>
       <PerformanceBanner/>
-      <Renting/>
+      <Models/>
+      <Promotion/>
       <Testimonials/>
+      <FAQ/>
     </main>
   )
 }

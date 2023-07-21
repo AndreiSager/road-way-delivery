@@ -352,15 +352,17 @@ export const PricingPlans = [
         name:"Motorcycle",
         price:35,
         rating:"⭐⭐⭐⭐⭐",
+
         load:"200kg",
-        model:"Nissan Altima or Similar",
+        model:"Altima",
         brand:"Nissan",
-        year:"2010 and up",
-        seats:5,
-        doors:4,
-        ac:"",
+        year:"2010",
+        seats:4,
+        doors:5,
+        ac:"yes",
         transmission:"automatic",
         fuel:"gasoline",
+
         checkoutUrl:"/",
     },
     {

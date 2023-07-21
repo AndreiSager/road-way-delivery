@@ -37,12 +37,14 @@ export default function Navbar() {
         <nav className="w-full ">
             <div id="navbar" className="flex flex-row justify-between items-center w-full py-4 px-4 md:px-12 shadow-md navbar__white fixed top-0 left-auto right-auto z-50 backdrop-blur-sm max-w-screen-xl">
                 <div className="flex flex-row gap-8">
-                    <Image 
-                        src={logo}
-                        height={100}
-                        width={150}
-                        alt="Road Way Delivery">
-                    </Image>
+                    <a href="/">
+                        <Image 
+                            src={logo}
+                            height={100}
+                            width={150}
+                            alt="Road Way Delivery">
+                        </Image>
+                    </a>
                     <ul className="hidden lg:flex flex-row">
                         {links.map((link) => (
                             <li key={link.id} className="font-semibold text-md">

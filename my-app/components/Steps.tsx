@@ -116,7 +116,7 @@ export default function Steps() {
                     <DateColumn id={BookingFormDate[1].id} icon={BookingFormDate[1].icon} title={BookingFormDate[1].title} date={BookingFormDate[1].date}/>
                     <Divider/>
                     <input 
-                        type="submit" 
+                        type="button" 
                         value="Submit"
                         className="callToAction"
                         />

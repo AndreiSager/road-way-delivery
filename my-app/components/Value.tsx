@@ -7,7 +7,7 @@ export default function Value() {
             <div className="w-full lg:w-1/2 flex flex-col gap-8">
                 <Image
                     src={content.image}
-                    width={300}
+                    width={520}
                     height={300}
                     alt={content.alt}
                     className=""

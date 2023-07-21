@@ -477,3 +477,42 @@ export const DownloadLinks = [
     { storelink:"", key:"", title:""},
     { storelink:"", key:"", title:""},
 ]
+
+export const ValueContent = {
+    image:"",
+    alt:"",
+    overline:"Lorem ipsum dolor",
+    title:"Lorem ipsum dolor sit amet consectetur",
+    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eius, odio quas at provident temporibus nemo enim quia odit laborum. Accusantium nihil pariatur consequatur voluptatibus doloremque natus cumque inventore dolor consectetur, quo cum, autem aliquid magni accusamus. Ea, explicabo dolores.",
+    cta:"Learn More",
+    feature: [
+        {
+            id:1,
+            icon:"/undraw_city_driver_re_9xyv.svg",
+            alt:"lorem",
+            title:"sit amet.",
+            sentence:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores",
+        },
+        {
+            id:2,
+            icon:"/undraw_city_driver_re_9xyv.svg",
+            alt:"lorem",
+            title:"sit amet.",
+            sentence:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores",
+        },
+        {
+            id:3,
+            icon:"/undraw_city_driver_re_9xyv.svg",
+            alt:"lorem",
+            title:"sit amet.",
+            sentence:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores",
+        },
+        {
+            id:4,
+            icon:"/undraw_city_driver_re_9xyv.svg",
+            alt:"lorem",
+            title:"sit amet.",
+            sentence:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores",
+        },
+    ]
+}

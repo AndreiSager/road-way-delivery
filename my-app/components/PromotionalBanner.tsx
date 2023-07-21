@@ -1,4 +1,4 @@
-export default function PromotionBanner() {
+export default function PromotionalBanner() {
     return(
         <div>
             <h1>Promotional Banner</h1>

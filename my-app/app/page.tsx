@@ -1,5 +1,6 @@
 import Hero from '@/components/Hero'
 import PerformanceBanner from '@/components/PerfomanceBanner'
+import PromotionalBanner from '@/components/PromotionalBanner'
 import Testimonials from '@/components/Testimonials'
 import Steps from '@/components/Steps'
 import Models from '@/components/Models'
@@ -13,6 +14,7 @@ export default function Home() {
       <Steps/>
       <PerformanceBanner/>
       <Models/>
+      <PromotionalBanner/>
       <Value/>
       <Testimonials/>
       <FAQ/>

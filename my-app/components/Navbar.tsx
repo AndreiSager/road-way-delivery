@@ -36,7 +36,7 @@ export default function Navbar() {
     const signedIn = useState<true | false>(true);
 
     return(
-        <nav className="w-full ">
+        <nav className="w-full relative">
             <div id="navbar" className="flex flex-row justify-between items-center w-full py-4 px-4 md:px-12 shadow-md navbar__white fixed top-0 left-auto right-auto z-50 backdrop-blur-sm max-w-screen-xl">
                 <div className="flex flex-row gap-8">
                     <a href="/">
@@ -74,10 +74,13 @@ export default function Navbar() {
                     </div>
                 )}
                 <div onClick={handleNav} className="flex lg:hidden">
-                    {!nav ? <GiHamburgerMenu  size={sizeIcon}/> : <RxCross2  size={sizeIcon}/>}
+                    <GiHamburgerMenu size={sizeIcon}/>
                 </div>
             </div>
-            <div className={nav ? "flex flex-row gap-8 bg-white w-full h-fit pb-8 shadow-md" : "hidden"}>
+            <div className={nav ? "flex flex-col justify-between items-center gap-8 bg-white w-full h-full fixed top-0 left-0 lg:hidden z-50 ease-in-out duration-500" : "flex flex-col justify-between items-center gap-8 bg-white w-full h-full fixed top-0 left-[-100%] lg:hidden z-50 ease-in-out duration-500"}>
+                <div onClick={handleNav} className="flex w-full h-[85px] justify-end items-center p-4 md:px-12">
+                    <RxCross2 size={sizeIcon}/>
+                </div>
                 <ul className="flex flex-col w-full text-center">
                     {links.map((link) => (
                         <li key={link.id} className="font-semibold text-md block w-full">
@@ -87,6 +90,7 @@ export default function Navbar() {
                         </li>
                     ))}
                 </ul>
+                <div></div>
             </div>
         </nav>
     )

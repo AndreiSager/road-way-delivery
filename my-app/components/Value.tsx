@@ -26,10 +26,10 @@ export default function Value() {
                     <div key={content.id} className="flex flex-row justify-center items-center w-full">
                         <div className="rounded-full border-2 border-accent-1 min-w-[150px] aspect-square flex flex-col justify-center items-center z-10 overflow-hidden bg-white hover:scale-105 ease-out duration-150">
                             <Image
-                            src=""
+                            src={content.icon}
                             width={100}
                             height={100}
-                            alt=""
+                            alt={content.alt}
                             className="object-cover"
                             />
                         </div>

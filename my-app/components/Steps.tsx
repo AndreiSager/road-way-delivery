@@ -117,7 +117,7 @@ export default function Steps() {
                     <Divider/>
                     <input 
                         type="button" 
-                        value="Submit"
+                        value="Book"
                         className="callToAction"
                         />
                 </form>

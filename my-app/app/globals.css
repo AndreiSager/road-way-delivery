@@ -66,3 +66,15 @@ html {
 .textArea {
   @apply h-[190px] resize-none
 }
+
+.tableTitle {
+  @apply flex-1 flex flex-row justify-center items-center gap-2 bg-slate-500 text-white py-3 px-4 rounded-lg capitalize font-bold text-lg
+}
+
+.tableContainer {
+  @apply w-full flex flex-row gap-2 lg:gap-4
+}
+
+.tableContent {
+  @apply flex-1 flex flex-row items-center gap-2 border border-slate-300 py-2 px-4 rounded-lg capitalize text-sm
+}

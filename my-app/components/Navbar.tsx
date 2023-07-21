@@ -2,7 +2,7 @@
 
 import { NavLinks as links } from "@/constants"
 import { MdAccountCircle } from "react-icons/md"
-import { CgNotes } from "react-icons/cg"
+import { IoMdNotifications } from "react-icons/io"
 import { GiCarWheel, GiHamburgerMenu } from "react-icons/gi"
 import { RxCross2 } from "react-icons/rx"
 import { useState, useEffect } from "react";
@@ -33,8 +33,10 @@ export default function Navbar() {
         window.addEventListener("scroll", onScroll);
     }, []);
 
+    const signedIn = useState<true | false>(true);
+
     return(
-        <nav className="w-full ">
+        <nav className="w-full relative">
             <div id="navbar" className="flex flex-row justify-between items-center w-full py-4 px-4 md:px-12 shadow-md navbar__white fixed top-0 left-auto right-auto z-50 backdrop-blur-sm max-w-screen-xl">
                 <div className="flex flex-row gap-8">
                     <a href="/">
@@ -55,18 +57,30 @@ export default function Navbar() {
                         ))}
                     </ul>
                 </div>
-                <div className="hidden lg:flex flex-row gap-8 justify-center items-center">
-                    <div className="flex flex-row gap-4 justify-center items-center">
-                        <MdAccountCircle size={sizeIcon}/>
-                        <CgNotes size={sizeIcon}/>
+                {signedIn ? (
+                    <div className="hidden lg:flex flex-row gap-8 justify-center items-center">
+                        <div className="flex flex-row gap-4 justify-center items-center">
+                            <IoMdNotifications size={sizeIcon}/>
+                            <MdAccountCircle size={sizeIcon}/>
+                        </div>
+                        <button type="button" className="rounded-lg px-12 py-4 bg-accent-1 flex flex-row justify-center items-center gap-2 text-white font-bold capitalize hover:brightness-125">Book Now</button>
                     </div>
-                    <button type="button" className="rounded-full px-12 py-4 bg-accent-1 flex flex-row justify-center items-center gap-2 text-white font-bold"><GiCarWheel size={sizeIcon}/>Drive Now</button>
-                </div>
+                ) : ( 
+                    <div className="hidden lg:flex flex-row gap-8 justify-center items-center">
+                        <div className="flex flex-row gap-4 justify-center items-center">
+                            <h1 className="hover:underline">Sign-Up</h1>
+                        </div>
+                        <button type="button" className="rounded-lg px-12 py-4 bg-accent-1 flex flex-row justify-center items-center gap-2 text-white font-bold capitalize hover:brightness-125">Sign-In</button>
+                    </div>
+                )}
                 <div onClick={handleNav} className="flex lg:hidden">
-                    {!nav ? <GiHamburgerMenu  size={sizeIcon}/> : <RxCross2  size={sizeIcon}/>}
+                    <GiHamburgerMenu size={sizeIcon}/>
                 </div>
             </div>
-            <div className={nav ? "flex flex-row gap-8 bg-white w-full h-fit pb-8 shadow-md" : "hidden"}>
+            <div className={nav ? "flex flex-col justify-between items-center gap-8 bg-white w-full h-full fixed top-0 left-0 lg:hidden z-50 ease-in-out duration-500" : "flex flex-col justify-between items-center gap-8 bg-white w-full h-full fixed top-0 left-[-100%] lg:hidden z-50 ease-in-out duration-500"}>
+                <div onClick={handleNav} className="flex w-full h-[85px] justify-end items-center p-4 md:px-12">
+                    <RxCross2 size={sizeIcon}/>
+                </div>
                 <ul className="flex flex-col w-full text-center">
                     {links.map((link) => (
                         <li key={link.id} className="font-semibold text-md block w-full">
@@ -76,6 +90,7 @@ export default function Navbar() {
                         </li>
                     ))}
                 </ul>
+                <div></div>
             </div>
         </nav>
     )

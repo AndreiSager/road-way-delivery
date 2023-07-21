@@ -352,15 +352,17 @@ export const PricingPlans = [
         name:"Motorcycle",
         price:35,
         rating:"⭐⭐⭐⭐⭐",
+
         load:"200kg",
-        model:"Nissan Altima or Similar",
+        model:"Altima",
         brand:"Nissan",
-        year:"2010 and up",
-        seats:5,
-        doors:4,
-        ac:"",
+        year:"2010",
+        seats:4,
+        doors:5,
+        ac:"yes",
         transmission:"automatic",
         fuel:"gasoline",
+
         checkoutUrl:"/",
     },
     {
@@ -477,3 +479,42 @@ export const DownloadLinks = [
     { storelink:"", key:"", title:""},
     { storelink:"", key:"", title:""},
 ]
+
+export const ValueContent = {
+    image:"/road_compressed.jpg",
+    alt:"A truck",
+    overline:"Lorem ipsum dolor",
+    title:"Lorem ipsum dolor sit amet consectetur",
+    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eius, odio quas at provident temporibus nemo enim quia odit laborum. Accusantium nihil pariatur consequatur voluptatibus doloremque natus cumque inventore dolor consectetur, quo cum, autem aliquid magni accusamus. Ea, explicabo dolores.",
+    cta:"Learn More",
+    feature: [
+        {
+            id:1,
+            icon:"/undraw_city_driver_re_9xyv.svg",
+            alt:"lorem",
+            title:"sit amet.",
+            sentence:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores",
+        },
+        {
+            id:2,
+            icon:"/undraw_city_driver_re_9xyv.svg",
+            alt:"lorem",
+            title:"sit amet.",
+            sentence:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores",
+        },
+        {
+            id:3,
+            icon:"/undraw_city_driver_re_9xyv.svg",
+            alt:"lorem",
+            title:"sit amet.",
+            sentence:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores",
+        },
+        {
+            id:4,
+            icon:"/undraw_city_driver_re_9xyv.svg",
+            alt:"lorem",
+            title:"sit amet.",
+            sentence:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores",
+        },
+    ]
+}

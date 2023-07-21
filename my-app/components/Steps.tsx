@@ -84,12 +84,12 @@ export default function Steps() {
     const sizeIcon = 20;
 
     return(
-        <div className="sectionPadding w-full flex flex-row flex-wrap gap-8">
+        <div className="sectionPadding w-full flex flex-row flex-wrap gap-8 justify-center items-center">
             <div className="flex flex-col justify-center items-center gap-16 w-full lg:w-3/5">
                 <h1 className="font-bold text-4xl text-center">Get Delivered In Four Easy Steps</h1>
                 <div className="flex flex-row flex-wrap justify-center items-center gap-12 w-full">
                     {StepsContent.map((steps) => (
-                        <div key={steps.id} className="flex flex-col w-[300px] aspect-video text-center items-center ">
+                        <div key={steps.id} className="flex flex-row flex-wrap w-[300px] aspect-video text-center justify-center ">
                             <h1 className="font-bold text-lg w-full lg:w-[205px]">{steps.title}: <span className="text-accent-1 uppercase">{steps.subtitle}</span></h1>
                             <div className="flex flex-row justify-center items-center gap-4">
                                 <Image
@@ -117,7 +117,7 @@ export default function Steps() {
                     <Divider/>
                     <input 
                         type="button" 
-                        value="Submit"
+                        value="Book"
                         className="callToAction"
                         />
                 </form>

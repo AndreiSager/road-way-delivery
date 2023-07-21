@@ -13,7 +13,7 @@ export default function NewsletterBanner() {
                         placeholder='shanerssager@dummy.com'
                         className='w-full lg:w-2/3 inputField focus:placeholder:italic'
                         />
-                    <button type='submit' className='w-full lg:w-1/3 flex-auto callToAction mt-2 lg:mt-0 shadow-xl'>Join Now</button>
+                    <button type='button' className='w-full lg:w-1/3 flex-auto callToAction mt-2 lg:mt-0 shadow-xl'>Join Now</button>
                 </form>
             </div>
         </div>

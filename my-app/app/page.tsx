@@ -4,7 +4,7 @@ import Testimonials from '@/components/Testimonials'
 import Steps from '@/components/Steps'
 import Models from '@/components/Models'
 import FAQ from '@/components/FAQ'
-import Promotion from '@/components/Promotion'
+import Value from '@/components/Value'
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
       <Steps/>
       <PerformanceBanner/>
       <Models/>
-      <Promotion/>
+      <Value/>
       <Testimonials/>
       <FAQ/>
     </main>

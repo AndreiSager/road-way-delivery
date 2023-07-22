@@ -51,26 +51,24 @@ export default function Navbar() {
                         {links.map((link) => (
                             <li key={link.id} className="font-semibold text-md">
                                 <a href={link.href}
-                                    className="block p-4 hover:text-green-500"
+                                    className="block p-4 hover:text-accent-1"
                                     >{link.title}</a>
                             </li>
                         ))}
                     </ul>
                 </div>
                 {signedIn ? (
-                    <div className="hidden lg:flex flex-row gap-8 justify-center items-center">
+                    <div className="flex flex-row gap-8 justify-center items-center">
                         <div className="flex flex-row gap-4 justify-center items-center">
-                            <IoMdNotifications size={sizeIcon}/>
-                            <MdAccountCircle size={sizeIcon}/>
+                            <IoMdNotifications size={sizeIcon} className="hover:text-accent-1"/>
+                            <MdAccountCircle size={sizeIcon} className="hover:text-accent-1"/>
                         </div>
-                        <button type="button" className="rounded-lg px-12 py-4 bg-accent-1 flex flex-row justify-center items-center gap-2 text-white font-bold capitalize hover:brightness-125">Book Now</button>
+                        <button type="button" className="callToAction !px-12 !py-4">Book Now</button>
                     </div>
                 ) : ( 
-                    <div className="hidden lg:flex flex-row gap-8 justify-center items-center">
-                        <div className="flex flex-row gap-4 justify-center items-center">
-                            <h1 className="hover:underline">Sign-Up</h1>
-                        </div>
-                        <button type="button" className="rounded-lg px-12 py-4 bg-accent-1 flex flex-row justify-center items-center gap-2 text-white font-bold capitalize hover:brightness-125">Sign-In</button>
+                    <div className="flex flex-row gap-8 justify-center items-center w-fit">
+                        <h1 className="block whitespace-nowrap hover:underline p-4">Sign-Up</h1>
+                        <button type="button" className="callToAction !px-12 !py-4">Sign-In</button>
                     </div>
                 )}
                 <div onClick={handleNav} className="flex lg:hidden">

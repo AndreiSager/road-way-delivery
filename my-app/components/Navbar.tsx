@@ -36,7 +36,7 @@ export default function Navbar() {
     const signedIn = useState<true | false>(true);
 
     return(
-        <nav className="w-full relative">
+        <nav className="w-full relative max-h-[85px]">
             <div id="navbar" className="flex flex-row justify-between items-center w-full py-4 px-4 md:px-12 shadow-md navbar__white fixed top-0 left-auto right-auto z-50 backdrop-blur-sm max-w-screen-xl">
                 <div className="flex flex-row gap-8">
                     <a href="/">

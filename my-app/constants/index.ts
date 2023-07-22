@@ -34,11 +34,11 @@ export const BannerContent = [
 ]
 
 export const FooterContent = {
-    title:"",
-    subtitle:"",
+    title:"The Road Is The Way. Our Way.",
+    address:"Suite 15B/16B Emerald Plaza, Block 2A Sapphire Street, Greenville District, Metroville, Fakeville.",
     contactInfo: [
         { title:"email", info:"roadwaydelivery@yahoo.com"},
-        { title:"phone", info:"XXX-XXX-XXXX"},
+        { title:"phone", info:"XXX-234-1231"},
         { title:"customer support hours", info:"Mon to Fri: 9:00AM - 5:00PM"},
     ],
 }
@@ -46,47 +46,37 @@ export const FooterContent = {
 export const FooterLinks = [
     {
         id: 1,
-        title:"Road Way Valley",
+        title:"About Us",
         links: [
             { id:1, href:"/#no-link", key:"About", title:"About" },
             { id:2, href:"/#no-link", key:"Insider", title:"Insider" },
             { id:3, href:"/#no-link", key:"Guides", title:"Guides" },
             { id:4, href:"/#no-link", key:"Blog", title:"Blog" },
-            { id:5, href:"/#no-link", key:"Location", title:"Location" },
+            { id:5, href:"/#no-link", key:"Locations", title:"Locations" },
             { id:6, href:"/#no-link", key:"Careers", title:"Careers" },
             { id:7, href:"/#no-link", key:"Hiring", title:"Hiring" },
             { id:8, href:"/#no-link", key:"Newsroom", title:"Newsroom" },
-            { id:9, href:"/#no-link", key:"Location Range", title:"Location Range" },
-            { id:10, href:"/#no-link", key:"Help Center", title:"Help Center" },
+            { id:9, href:"/#no-link", key:"Road Way Impact", title:"Road Way Impact" },
+            { id:10, href:"/#no-link", key:"Safety & Security", title:"Safety & Security" },
+            { id:11, href:"/#no-link", key:"Help Center", title:"Help Center" },
         ]
     },
     {
         id: 2,
-        title:"RWV Drivers",
+        title:"Services",
         links: [
             { id:1, href:"/#no-link", key:"Catch Up", title:"Catch Up" },
-            { id:2, href:"/#no-link", key:"RWV Market", title:"RWV Market" },
-            { id:3, href:"/#no-link", key:"RWV Market", title:"RWV Biking" },
-            { id:4, href:"/#no-link", key:"RWV Market", title:"RWV Local" },
-            { id:5, href:"/#no-link", key:"RWV Express", title:"RWV Express" },
-            { id:6, href:"/#no-link", key:"RWV Express", title:"RWV Movers" },
-            { id:7, href:"/#no-link", key:"RWV Premium", title:"RWV Premium" },
-            { id:8, href:"/#no-link", key:"RWV Food", title:"RWV Food" },
-
-            { id:9, href:"/#no-link", key:"RWV Food", title:"RWV Food" },
-            { id:10, href:"/#no-link", key:"RWV Food", title:"RWV Food" },
-            { id:11, href:"/#no-link", key:"RWV Food", title:"RWV Food" },
-        ]
-    },
-    {
-        id: 3,
-        title:"RWV Delivery",
-        links: [
-            { id:1, href:"/#no-link", key:"Catch Up", title:"Catch Up" },
-            { id:2, href:"/#no-link", key:"RWV Food", title:"RWV Food" },
-            { id:3, href:"/#no-link", key:"RWV Market", title:"RWV Market" },
-            { id:4, href:"/#no-link", key:"RWV Express", title:"RWV Express" },
-            { id:5, href:"/#no-link", key:"RWV Premium", title:"RWV Premium" },
+            { id:2, href:"/#no-link", key:"RWD Guides", title:"RWD Guides" },        
+            { id:3, href:"/#no-link", key:"RWD Market", title:"RWD Market" },
+            { id:4, href:"/#no-link", key:"RWD Biking", title:"RWD Biking" },
+            { id:5, href:"/#no-link", key:"RWD Local", title:"RWD Local" },
+            { id:6, href:"/#no-link", key:"RWD Express", title:"RWD Express" },
+            { id:7, href:"/#no-link", key:"RWD Movers", title:"RWD Movers" },
+            { id:8, href:"/#no-link", key:"RWD Premium", title:"RWD Premium" },
+            { id:9, href:"/#no-link", key:"RWD Food", title:"RWD Food" },
+            { id:10, href:"/#no-link", key:"RWD Pay", title:"RWD Pay" },
+            { id:11, href:"/#no-link", key:"RWD Bonus", title:"RWD Bonus" },
+            { id:12, href:"/#no-link", key:"RWD Goodies", title:"RWD Goodies" },
         ]
     },
     {
@@ -94,52 +84,66 @@ export const FooterLinks = [
         title:"Drivers",
         links: [
             { id:1, href:"/#no-link", key:"Catch Up", title:"Catch Up" },
-            { id:2, href:"/#no-link", key:"RWV Food", title:"RWV Food" },
-            { id:3, href:"/#no-link", key:"RWV Market", title:"RWV Market" },
-            { id:4, href:"/#no-link", key:"RWV Express", title:"RWV Express" },
-            { id:5, href:"/#no-link", key:"RWV Premium", title:"RWV Premium" },
+            { id:2, href:"/#no-link", key:"Ride with us", title:"Ride with us" },
+            { id:3, href:"/#no-link", key:"Deliver with us", title:"Deliver with us" },
+            { id:4, href:"/#no-link", key:"Driver Hub", title:"Driver Hub" },
+            { id:5, href:"/#no-link", key:"Driver Benefits", title:"Driver Benefits" },
         ]
     },
     {
         id: 4,
-        title:"Commerce",
+        title:"Charity",
         links: [
-            { id:1, href:"/#no-link", key:"RWV Food", title:"RWV Food" },
-            { id:2, href:"/#no-link", key:"RWV Market", title:"RWV Market" },
-            { id:3, href:"/#no-link", key:"RWV Express", title:"RWV Express" },
-            { id:4, href:"/#no-link", key:"RWV Premium", title:"RWV Premium" },
+            { id:1, href:"/#no-link", key:"Catch Up", title:"Catch Up" },
+            { id:2, href:"/#no-link", key:"Blog", title:"Blog" },
+            { id:3, href:"/#no-link", key:"Delivered Donations", title:"Delivered Donations" },
+            { id:4, href:"/#no-link", key:"Road Trip", title:"Road Trip" },
+            { id:5, href:"/#no-link", key:"Road Food", title:"Road Food" },
+            { id:6, href:"/#no-link", key:"Road Health", title:"Road Health" },
+            { id:7, href:"/#no-link", key:"Road Aid", title:"Road Aid" },
+            { id:8, href:"/#no-link", key:"Calamity Support", title:"Calamity Support" },
         ]
     },
     {
         id: 5,
-        title:"Corporation",
+        title:"Special Delivery",
         links: [
-            { id:1, href:"/#no-link", key:"RWV Food", title:"RWV Food" },
-            { id:2, href:"/#no-link", key:"RWV Market", title:"RWV Market" },
-            { id:3, href:"/#no-link", key:"RWV Express", title:"RWV Express" },
-            { id:4, href:"/#no-link", key:"RWV Premium", title:"RWV Premium" },
+            { id:1, href:"/#no-link", key:"Chain Deliveries", title:"Chain Deliveries" },
+            { id:2, href:"/#no-link", key:"Distance Deliveries", title:"Distance Deliveries" },
+            { id:3, href:"/#no-link", key:"Private Deliveries", title:"Private Deliveries" },
         ]
     },
     {
         id: 6,
-        title:"Terms and Policies",
+        title:"Branches",
         links: [
-            { id:1, href:"/#no-link", key:"Catch Up", title:"Catch Up" },
-            { id:2, href:"/#no-link", key:"RWV Food", title:"RWV Food" },
-            { id:3, href:"/#no-link", key:"RWV Market", title:"RWV Market" },
-            { id:4, href:"/#no-link", key:"RWV Express", title:"RWV Express" },
-            { id:5, href:"/#no-link", key:"RWV Premium", title:"RWV Premium" },
+            { id:1, href:"/#no-link", key:"First Branch", title:"First Branch" },
+            { id:2, href:"/#no-link", key:"Main Branch", title:"Main Branch" },
+            { id:3, href:"/#no-link", key:"Sub-Branches", title:"Sub-Branches" },
         ]
     },
     {
         id: 7,
-        title:"Catch Up",
+        title:"Terms and Policies",
         links: [
             { id:1, href:"/#no-link", key:"Catch Up", title:"Catch Up" },
-            { id:2, href:"/#no-link", key:"RWV Food", title:"RWV Food" },
-            { id:3, href:"/#no-link", key:"RWV Market", title:"RWV Market" },
-            { id:4, href:"/#no-link", key:"RWV Express", title:"RWV Express" },
-            { id:5, href:"/#no-link", key:"RWV Premium", title:"RWV Premium" },
+            { id:2, href:"/#no-link", key:"Terms", title:"Terms" },
+            { id:3, href:"/#no-link", key:"Policies", title:"Policies" },
+            { id:4, href:"/#no-link", key:"Trust", title:"Trust" },
+            { id:5, href:"/#no-link", key:"Safety", title:"Safety" },
+            { id:6, href:"/#no-link", key:"Security", title:"Security" },
+            { id:7, href:"/#no-link", key:"Privacy", title:"Privacy" },
+            { id:8, href:"/#no-link", key:"Copyright", title:"Copyright" },
+        ]
+    },
+    {
+        id: 8,
+        title:"Quick Links",
+        links: [
+            { id:1, href:"/#no-link", key:"Support Center", title:"Support Center" },
+            { id:2, href:"/#no-link", key:"Car Catalogue", title:"Car Catalogue" },
+            { id:3, href:"/#no-link", key:"Road Updates", title:"Road Updates" },
+            { id:4, href:"/#no-link", key:"Developers Only", title:"Developers Only" },
         ]
     },
 ]

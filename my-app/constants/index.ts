@@ -502,8 +502,8 @@ export const ValueContent = {
             id:2,
             icon:"/undraw_automobile_repair_ywci.svg",
             alt:"automobile maintenance",
-            title:"performance ensurance",
-            sentence:"we make sure that our vehicles receive regular checks and maintenace to ensure safe delivery.",
+            title:"ensured performance",
+            sentence:"regular checks and maintenace to ensure safe delivery.",
         },
         {
             id:3,

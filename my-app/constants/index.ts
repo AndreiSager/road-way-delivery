@@ -57,8 +57,7 @@ export const FooterLinks = [
             { id:7, href:"/#no-link", key:"Hiring", title:"Hiring" },
             { id:8, href:"/#no-link", key:"Newsroom", title:"Newsroom" },
             { id:9, href:"/#no-link", key:"Road Way Impact", title:"Road Way Impact" },
-            { id:10, href:"/#no-link", key:"Safety & Security", title:"Safety & Security" },
-            { id:11, href:"/#no-link", key:"Help Center", title:"Help Center" },
+            { id:10, href:"/#no-link", key:"Help Center", title:"Help Center" },
         ]
     },
     {

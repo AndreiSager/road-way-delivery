@@ -34,11 +34,11 @@ export const BannerContent = [
 ]
 
 export const FooterContent = {
-    title:"",
-    subtitle:"",
+    title:"The Road Is The Way. Our Way.",
+    address:"Suite 15B/16B Emerald Plaza, Block 2A Sapphire Street, Greenville District, Metroville, Fakeville.",
     contactInfo: [
         { title:"email", info:"roadwaydelivery@yahoo.com"},
-        { title:"phone", info:"XXX-XXX-XXXX"},
+        { title:"phone", info:"XXX-234-1231"},
         { title:"customer support hours", info:"Mon to Fri: 9:00AM - 5:00PM"},
     ],
 }
@@ -46,47 +46,36 @@ export const FooterContent = {
 export const FooterLinks = [
     {
         id: 1,
-        title:"Road Way Valley",
+        title:"About Us",
         links: [
             { id:1, href:"/#no-link", key:"About", title:"About" },
             { id:2, href:"/#no-link", key:"Insider", title:"Insider" },
             { id:3, href:"/#no-link", key:"Guides", title:"Guides" },
             { id:4, href:"/#no-link", key:"Blog", title:"Blog" },
-            { id:5, href:"/#no-link", key:"Location", title:"Location" },
+            { id:5, href:"/#no-link", key:"Locations", title:"Locations" },
             { id:6, href:"/#no-link", key:"Careers", title:"Careers" },
             { id:7, href:"/#no-link", key:"Hiring", title:"Hiring" },
             { id:8, href:"/#no-link", key:"Newsroom", title:"Newsroom" },
-            { id:9, href:"/#no-link", key:"Location Range", title:"Location Range" },
+            { id:9, href:"/#no-link", key:"Road Way Impact", title:"Road Way Impact" },
             { id:10, href:"/#no-link", key:"Help Center", title:"Help Center" },
         ]
     },
     {
         id: 2,
-        title:"RWV Drivers",
+        title:"Services",
         links: [
             { id:1, href:"/#no-link", key:"Catch Up", title:"Catch Up" },
-            { id:2, href:"/#no-link", key:"RWV Market", title:"RWV Market" },
-            { id:3, href:"/#no-link", key:"RWV Market", title:"RWV Biking" },
-            { id:4, href:"/#no-link", key:"RWV Market", title:"RWV Local" },
-            { id:5, href:"/#no-link", key:"RWV Express", title:"RWV Express" },
-            { id:6, href:"/#no-link", key:"RWV Express", title:"RWV Movers" },
-            { id:7, href:"/#no-link", key:"RWV Premium", title:"RWV Premium" },
-            { id:8, href:"/#no-link", key:"RWV Food", title:"RWV Food" },
-
-            { id:9, href:"/#no-link", key:"RWV Food", title:"RWV Food" },
-            { id:10, href:"/#no-link", key:"RWV Food", title:"RWV Food" },
-            { id:11, href:"/#no-link", key:"RWV Food", title:"RWV Food" },
-        ]
-    },
-    {
-        id: 3,
-        title:"RWV Delivery",
-        links: [
-            { id:1, href:"/#no-link", key:"Catch Up", title:"Catch Up" },
-            { id:2, href:"/#no-link", key:"RWV Food", title:"RWV Food" },
-            { id:3, href:"/#no-link", key:"RWV Market", title:"RWV Market" },
-            { id:4, href:"/#no-link", key:"RWV Express", title:"RWV Express" },
-            { id:5, href:"/#no-link", key:"RWV Premium", title:"RWV Premium" },
+            { id:2, href:"/#no-link", key:"RWD Guides", title:"RWD Guides" },        
+            { id:3, href:"/#no-link", key:"RWD Market", title:"RWD Market" },
+            { id:4, href:"/#no-link", key:"RWD Biking", title:"RWD Biking" },
+            { id:5, href:"/#no-link", key:"RWD Local", title:"RWD Local" },
+            { id:6, href:"/#no-link", key:"RWD Express", title:"RWD Express" },
+            { id:7, href:"/#no-link", key:"RWD Movers", title:"RWD Movers" },
+            { id:8, href:"/#no-link", key:"RWD Premium", title:"RWD Premium" },
+            { id:9, href:"/#no-link", key:"RWD Food", title:"RWD Food" },
+            { id:10, href:"/#no-link", key:"RWD Pay", title:"RWD Pay" },
+            { id:11, href:"/#no-link", key:"RWD Bonus", title:"RWD Bonus" },
+            { id:12, href:"/#no-link", key:"RWD Goodies", title:"RWD Goodies" },
         ]
     },
     {
@@ -94,52 +83,66 @@ export const FooterLinks = [
         title:"Drivers",
         links: [
             { id:1, href:"/#no-link", key:"Catch Up", title:"Catch Up" },
-            { id:2, href:"/#no-link", key:"RWV Food", title:"RWV Food" },
-            { id:3, href:"/#no-link", key:"RWV Market", title:"RWV Market" },
-            { id:4, href:"/#no-link", key:"RWV Express", title:"RWV Express" },
-            { id:5, href:"/#no-link", key:"RWV Premium", title:"RWV Premium" },
+            { id:2, href:"/#no-link", key:"Ride with us", title:"Ride with us" },
+            { id:3, href:"/#no-link", key:"Deliver with us", title:"Deliver with us" },
+            { id:4, href:"/#no-link", key:"Driver Hub", title:"Driver Hub" },
+            { id:5, href:"/#no-link", key:"Driver Benefits", title:"Driver Benefits" },
         ]
     },
     {
         id: 4,
-        title:"Commerce",
+        title:"Charity",
         links: [
-            { id:1, href:"/#no-link", key:"RWV Food", title:"RWV Food" },
-            { id:2, href:"/#no-link", key:"RWV Market", title:"RWV Market" },
-            { id:3, href:"/#no-link", key:"RWV Express", title:"RWV Express" },
-            { id:4, href:"/#no-link", key:"RWV Premium", title:"RWV Premium" },
+            { id:1, href:"/#no-link", key:"Catch Up", title:"Catch Up" },
+            { id:2, href:"/#no-link", key:"Blog", title:"Blog" },
+            { id:3, href:"/#no-link", key:"Delivered Donations", title:"Delivered Donations" },
+            { id:4, href:"/#no-link", key:"Road Trip", title:"Road Trip" },
+            { id:5, href:"/#no-link", key:"Road Food", title:"Road Food" },
+            { id:6, href:"/#no-link", key:"Road Health", title:"Road Health" },
+            { id:7, href:"/#no-link", key:"Road Aid", title:"Road Aid" },
+            { id:8, href:"/#no-link", key:"Calamity Support", title:"Calamity Support" },
         ]
     },
     {
         id: 5,
-        title:"Corporation",
+        title:"Special Delivery",
         links: [
-            { id:1, href:"/#no-link", key:"RWV Food", title:"RWV Food" },
-            { id:2, href:"/#no-link", key:"RWV Market", title:"RWV Market" },
-            { id:3, href:"/#no-link", key:"RWV Express", title:"RWV Express" },
-            { id:4, href:"/#no-link", key:"RWV Premium", title:"RWV Premium" },
+            { id:1, href:"/#no-link", key:"Chain Deliveries", title:"Chain Deliveries" },
+            { id:2, href:"/#no-link", key:"Distance Deliveries", title:"Distance Deliveries" },
+            { id:3, href:"/#no-link", key:"Private Deliveries", title:"Private Deliveries" },
         ]
     },
     {
         id: 6,
-        title:"Terms and Policies",
+        title:"Branches",
         links: [
-            { id:1, href:"/#no-link", key:"Catch Up", title:"Catch Up" },
-            { id:2, href:"/#no-link", key:"RWV Food", title:"RWV Food" },
-            { id:3, href:"/#no-link", key:"RWV Market", title:"RWV Market" },
-            { id:4, href:"/#no-link", key:"RWV Express", title:"RWV Express" },
-            { id:5, href:"/#no-link", key:"RWV Premium", title:"RWV Premium" },
+            { id:1, href:"/#no-link", key:"First Branch", title:"First Branch" },
+            { id:2, href:"/#no-link", key:"Main Branch", title:"Main Branch" },
+            { id:3, href:"/#no-link", key:"Sub-Branches", title:"Sub-Branches" },
         ]
     },
     {
         id: 7,
-        title:"Catch Up",
+        title:"Terms and Policies",
         links: [
             { id:1, href:"/#no-link", key:"Catch Up", title:"Catch Up" },
-            { id:2, href:"/#no-link", key:"RWV Food", title:"RWV Food" },
-            { id:3, href:"/#no-link", key:"RWV Market", title:"RWV Market" },
-            { id:4, href:"/#no-link", key:"RWV Express", title:"RWV Express" },
-            { id:5, href:"/#no-link", key:"RWV Premium", title:"RWV Premium" },
+            { id:2, href:"/#no-link", key:"Terms", title:"Terms" },
+            { id:3, href:"/#no-link", key:"Policies", title:"Policies" },
+            { id:4, href:"/#no-link", key:"Trust", title:"Trust" },
+            { id:5, href:"/#no-link", key:"Safety", title:"Safety" },
+            { id:6, href:"/#no-link", key:"Security", title:"Security" },
+            { id:7, href:"/#no-link", key:"Privacy", title:"Privacy" },
+            { id:8, href:"/#no-link", key:"Copyright", title:"Copyright" },
+        ]
+    },
+    {
+        id: 8,
+        title:"Quick Links",
+        links: [
+            { id:1, href:"/#no-link", key:"Support Center", title:"Support Center" },
+            { id:2, href:"/#no-link", key:"Car Catalogue", title:"Car Catalogue" },
+            { id:3, href:"/#no-link", key:"Road Updates", title:"Road Updates" },
+            { id:4, href:"/#no-link", key:"Developers Only", title:"Developers Only" },
         ]
     },
 ]
@@ -148,7 +151,7 @@ export const Testimonials = [
     {
         id: 1,
         avatar:"/avatar-1-female_compressed.jpg",
-        alt:"",
+        alt:"avatar of a woman",
         client:"Sarah Johnson",
         residence:" New York City",
         review:'"I have been using Road Way Valley for all my delivery needs, and I couldn\'t be happier with their service. The drivers are always punctual, and my packages arrive in perfect condition. I highly recommend them!"',
@@ -156,7 +159,7 @@ export const Testimonials = [
     {
         id: 2,
         avatar:"/avatar-2-male_compressed.jpg",
-        alt:"",
+        alt:"avatar of a man",
         client:"Mark Thompson in",
         residence:"Los Angeles",
         review:'"Road Way Valley has been an invaluable partner for my business. Their reliable delivery service has helped me streamline operations and satisfy my customers. I\'m grateful for their professionalism and attention to detail."',
@@ -164,7 +167,7 @@ export const Testimonials = [
     {
         id: 3,
         avatar:"/avatar-2-female_compressed.jpg",
-        alt:"",
+        alt:"avatar of a woman",
         client:"Emily Davis",
         residence:"Chicago",
         review:'"As an e-commerce entrepreneur, I rely on Road Way Valley for timely and efficient deliveries. Their exceptional customer service and seamless tracking system give me peace of mind. I couldn\'t ask for a better delivery partner!"',
@@ -172,7 +175,7 @@ export const Testimonials = [
     {
         id: 4,
         avatar:"/avatar-1-male_compressed.jpg",
-        alt:"",
+        alt:"avatar of a man",
         client:"David Rodriguez",
         residence:"Miami",
         review:'"I\'ve used several delivery services in the past, but Road Way Valley stands out. Their drivers are friendly, and the team goes above and beyond to ensure my packages are delivered on time. I highly recommend their services."',
@@ -180,7 +183,7 @@ export const Testimonials = [
     {
         id: 5,
         avatar:"/avatar-3-female_compressed.jpg",
-        alt:"",
+        alt:"avatar of a woman",
         client:"Lisa Smith",
         residence:"San Francisco",
         review:'"Road Way Valley has been my go-to delivery service for years. Their commitment to professionalism and reliability is unmatched. I appreciate their attention to detail and the seamless experience they provide."',
@@ -216,33 +219,33 @@ export const StepsContent = [
         id: 1,
         title:"Step 1",
         icon:"/undraw_order_delivered_re_v4ab.svg",
-        alt:"undefined",
-        subtitle:"Prepare Your Package",
+        alt:"order delivered",
+        subtitle:"prepare your package",
         description:"Seal it, Ship it, Smile - Your Package in Good Hands!",
     },
     {
         id: 2,
         title:"Step 2",
         icon:"/undraw_order_a_car_-3-tww.svg",
-        alt:"undefined",
-        subtitle:"Choose Your Transportation",
+        alt:"order a car",
+        subtitle:"choose your transportation",
         description:"Ride with Confidence - Choose Transportation Excellence!",
     },
     {
         id: 3,
         title:"Step 3",
         icon:"/undraw_map_dark_re_36sy.svg",
-        alt:"undefined",
-        subtitle:"Pick A Location",
+        alt:"dark map",
+        subtitle:"pick your destination",
         description:"Discover the Destination of Your Dreams - Unleash Your Wanderlust!",
     },
     {
         id: 4,
         title:"Step 4",
-        icon:"/undraw_map_dark_re_36sy.svg",
-        alt:"undefined",
-        subtitle:"Decide A Timeframe",
-        description:"Discover the Destination of Your Dreams - Unleash Your Wanderlust!",
+        icon:"/undraw_online_calendar_re_wk3t.svg",
+        alt:"delivery calendar",
+        subtitle:"select your date",
+        description:"Time Escapade - Unlock Your delivery's Perfect Date!",
     }
 ]
 
@@ -482,39 +485,39 @@ export const DownloadLinks = [
 
 export const ValueContent = {
     image:"/road_compressed.jpg",
-    alt:"A truck",
-    overline:"Lorem ipsum dolor",
-    title:"Lorem ipsum dolor sit amet consectetur",
-    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eius, odio quas at provident temporibus nemo enim quia odit laborum. Accusantium nihil pariatur consequatur voluptatibus doloremque natus cumque inventore dolor consectetur, quo cum, autem aliquid magni accusamus. Ea, explicabo dolores.",
+    alt:"road into the sunset",
+    overline:"What Sets Us Apart",
+    title:"Your roadway to an unforgettable experience.",
+    description:"Uncover unparalleled deals on Your Roadway To An Unforgettable Experience. Our commitment to offering exceptional value ensures you enjoy top-quality services and products without stretching your budget. Immerse yourself in a curated selection of destinations and activities that promise awe-inspiring sights and cherished memories. Don't miss this opportunity to save big and indulge in a journey where exploration, wonder, and exhilaration come together to bring your travel dreams to life.",
     cta:"Learn More",
     feature: [
         {
             id:1,
-            icon:"/undraw_city_driver_re_9xyv.svg",
-            alt:"lorem",
-            title:"sit amet.",
-            sentence:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores",
+            icon:"/undraw_navigator_a479.svg",
+            alt:"navigating the road",
+            title:"road way delivery",
+            sentence:"we can deliver any package to its destination connected to a road.",
         },
         {
             id:2,
-            icon:"/undraw_city_driver_re_9xyv.svg",
-            alt:"lorem",
-            title:"sit amet.",
-            sentence:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores",
+            icon:"/undraw_automobile_repair_ywci.svg",
+            alt:"automobile maintenance",
+            title:"ensured performance",
+            sentence:"regular checks and maintenace to ensure safe delivery.",
         },
         {
             id:3,
-            icon:"/undraw_city_driver_re_9xyv.svg",
-            alt:"lorem",
-            title:"sit amet.",
-            sentence:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores",
+            icon:"/undraw_savings_re_eq4w.svg",
+            alt:"saved money",
+            title:"affordable pricing",
+            sentence:"we support a range of clients allowing them to get the best deal to save their money.",
         },
         {
             id:4,
-            icon:"/undraw_city_driver_re_9xyv.svg",
-            alt:"lorem",
-            title:"sit amet.",
-            sentence:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores",
+            icon:"/undraw_online_payments_re_y8f2.svg",
+            alt:"straight forward payment",
+            title:"Transparent Pricing",
+            sentence:"No surprises nor hidden fees. may your worries begone.",
         },
     ]
 }

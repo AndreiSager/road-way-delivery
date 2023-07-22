@@ -36,7 +36,7 @@ export default function Navbar() {
     const signedIn = useState<true | false>(true);
 
     return(
-        <nav className="w-full relative">
+        <nav className="w-full relative max-h-[85px]">
             <div id="navbar" className="flex flex-row justify-between items-center w-full py-4 px-4 md:px-12 shadow-md navbar__white fixed top-0 left-auto right-auto z-50 backdrop-blur-sm max-w-screen-xl">
                 <div className="flex flex-row gap-8">
                     <a href="/">
@@ -51,7 +51,7 @@ export default function Navbar() {
                         {links.map((link) => (
                             <li key={link.id} className="font-semibold text-md">
                                 <a href={link.href}
-                                    className="block p-4 hover:text-green-500"
+                                    className="block p-4 hover:text-accent-1"
                                     >{link.title}</a>
                             </li>
                         ))}
@@ -60,17 +60,15 @@ export default function Navbar() {
                 {signedIn ? (
                     <div className="hidden lg:flex flex-row gap-8 justify-center items-center">
                         <div className="flex flex-row gap-4 justify-center items-center">
-                            <IoMdNotifications size={sizeIcon}/>
-                            <MdAccountCircle size={sizeIcon}/>
+                            <IoMdNotifications size={sizeIcon} className="hover:text-accent-1"/>
+                            <MdAccountCircle size={sizeIcon} className="hover:text-accent-1"/>
                         </div>
-                        <button type="button" className="rounded-lg px-12 py-4 bg-accent-1 flex flex-row justify-center items-center gap-2 text-white font-bold capitalize hover:brightness-125">Book Now</button>
+                        <button type="button" className="callToAction !px-12 !py-4">Book Now</button>
                     </div>
                 ) : ( 
-                    <div className="hidden lg:flex flex-row gap-8 justify-center items-center">
-                        <div className="flex flex-row gap-4 justify-center items-center">
-                            <h1 className="hover:underline">Sign-Up</h1>
-                        </div>
-                        <button type="button" className="rounded-lg px-12 py-4 bg-accent-1 flex flex-row justify-center items-center gap-2 text-white font-bold capitalize hover:brightness-125">Sign-In</button>
+                    <div className="hidden lg:flex flex-row gap-8 justify-center items-center w-fit">
+                        <h1 className="block whitespace-nowrap hover:underline p-4">Sign-Up</h1>
+                        <button type="button" className="callToAction !px-12 !py-4">Sign-In</button>
                     </div>
                 )}
                 <div onClick={handleNav} className="flex lg:hidden">

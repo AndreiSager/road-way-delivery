@@ -20,8 +20,8 @@ export default function Models() {
     return(
         <div className="sectionPadding w-full flex flex-col text-center gap-8">
             <div className="text-center flex flex-col justify-center items-center">
-                <h1 className="font-bold text-3xl">Choose your car</h1>
-                <p className="font-medium text-md text-slate-500 m-2 w-full lg:w-[500px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, asperiores temporibus dolor eligendi amet magni cupiditate laudantium consectetur doloremque eum ipsa!</p>
+                <h1 className="font-bold text-3xl capitalize">Choose your transport</h1>
+                <p className="font-medium text-md text-slate-500 m-2 w-full lg:w-[500px]">Explore our diverse selection of incredible vehicles, select whatever perfectly matches your needs for your upcoming adventure or corporate journey.</p>
             </div>
             <div className="order-3 lg:order-2 flex flex-col lg:flex-row mt-4 gap-4 lg:gap-12 lg:m-8">
                 <Image

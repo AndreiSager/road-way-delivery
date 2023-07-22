@@ -33,9 +33,9 @@ export default function Value() {
                             className="object-cover"
                             />
                         </div>
-                        <div className="rounded-r-full h-[120px] flex flex-col justify-center p-10 pl-12 -ml-8 shadow-xl bg-white">
-                            <h1 className="font-bold text-lg capitalize">{content.title}</h1>
-                            <p className="font-medium text-xs lg:text-sm text-slate-500">{content.sentence}</p>
+                        <div className="rounded-r-full h-[120px] flex flex-col justify-center py-10 pl-12 pr-6 -ml-8 shadow-xl bg-white">
+                            <h1 className="font-bold text-md capitalize">{content.title}</h1>
+                            <p className="font-medium text-xs lg:text-sm text-slate-500 sentence">{content.sentence}</p>
                         </div>
                     </div>
                 ))}

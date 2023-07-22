@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       colors: {
         'primary-1': '#A06C20',
-        'accent-1': '#006600',
+        'accent-1': '#16a34a',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

@@ -4,18 +4,9 @@ import { FQAContent as Questions } from '@/constants'
 import { useEffect, useState } from 'react'
 
 export default function FAQ() {
-    const [accordion, setAccordion] = useState<boolean>(false);
-    const handleAccordion = () => {
-        setAccordion(!accordion);
-    };
-
     useEffect(() => {
         setState({ ...appState, activeObject: appState.objects[1] })
     }, []);
-
-    type activeObjectProps = {
-        id: number;
-    }
 
     const [appState, setState] = useState({
         activeObject: { id: 1 },

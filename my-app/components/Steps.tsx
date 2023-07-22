@@ -22,8 +22,8 @@ type OptionsProps = {
     option: string;
 }
 
-const SelectColumn = ( {id, icon, title, select, options}:SelectProps ) => (
-    <div key={id} className="flex flex-col gap-2">
+const SelectColumn = ( {icon, title, select, options}:SelectProps ) => (
+    <div className="flex flex-col gap-2">
         <label htmlFor="pick-up__date" className="font-bold capitalize flex flex-row gap-2 items-center">
             <Image 
                 src={icon}
@@ -56,8 +56,8 @@ type DateProps = {
     date: DateInputProps;
 }
 
-const DateColumn = ( {id, icon, title, date}:DateProps ) => (
-    <div key={id} className="flex flex-col gap-2">
+const DateColumn = ( {icon, title, date}:DateProps ) => (
+    <div className="flex flex-col gap-2">
         <label htmlFor="pick-up__date" className="font-bold capitalize flex flex-row gap-2 items-center">
             <Image 
                 src={icon}
@@ -94,8 +94,8 @@ export default function Steps() {
                             <div className="flex flex-row justify-center items-center gap-4">
                                 <Image
                                     src={steps.icon}
-                                    height={75}
                                     width={100}
+                                    height={100}
                                     alt={steps.alt}
                                     className="object-cover my-12 hover:scale-105 transition linear duration-200"
                                     />

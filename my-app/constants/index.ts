@@ -217,7 +217,7 @@ export const StepsContent = [
         title:"Step 1",
         icon:"/undraw_order_delivered_re_v4ab.svg",
         alt:"undefined",
-        subtitle:"Prepare Your Package",
+        subtitle:"prepare your package",
         description:"Seal it, Ship it, Smile - Your Package in Good Hands!",
     },
     {
@@ -225,7 +225,7 @@ export const StepsContent = [
         title:"Step 2",
         icon:"/undraw_order_a_car_-3-tww.svg",
         alt:"undefined",
-        subtitle:"Choose Your Transportation",
+        subtitle:"choose your transportation",
         description:"Ride with Confidence - Choose Transportation Excellence!",
     },
     {
@@ -233,16 +233,16 @@ export const StepsContent = [
         title:"Step 3",
         icon:"/undraw_map_dark_re_36sy.svg",
         alt:"undefined",
-        subtitle:"Pick A Location",
+        subtitle:"pick your destination",
         description:"Discover the Destination of Your Dreams - Unleash Your Wanderlust!",
     },
     {
         id: 4,
         title:"Step 4",
-        icon:"/undraw_map_dark_re_36sy.svg",
+        icon:"/undraw_online_calendar_re_wk3t.svg",
         alt:"undefined",
-        subtitle:"Decide A Timeframe",
-        description:"Discover the Destination of Your Dreams - Unleash Your Wanderlust!",
+        subtitle:"select your date",
+        description:"Time Escapade - Unlock Your delivery's Perfect Date!",
     }
 ]
 

@@ -58,7 +58,7 @@ export default function Navbar() {
                     </ul>
                 </div>
                 {signedIn ? (
-                    <div className="flex flex-row gap-8 justify-center items-center">
+                    <div className="hidden lg:flex flex-row gap-8 justify-center items-center">
                         <div className="flex flex-row gap-4 justify-center items-center">
                             <IoMdNotifications size={sizeIcon} className="hover:text-accent-1"/>
                             <MdAccountCircle size={sizeIcon} className="hover:text-accent-1"/>
@@ -66,7 +66,7 @@ export default function Navbar() {
                         <button type="button" className="callToAction !px-12 !py-4">Book Now</button>
                     </div>
                 ) : ( 
-                    <div className="flex flex-row gap-8 justify-center items-center w-fit">
+                    <div className="hidden lg:flex flex-row gap-8 justify-center items-center w-fit">
                         <h1 className="block whitespace-nowrap hover:underline p-4">Sign-Up</h1>
                         <button type="button" className="callToAction !px-12 !py-4">Sign-In</button>
                     </div>

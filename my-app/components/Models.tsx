@@ -76,9 +76,9 @@ export default function Models() {
     
     function toggleActiveQuestion(index: number) {
         if (appState.objects[index] === appState.activeObject) {
-            return "flex-none block p-4 w-full bg-accent-1 text-white hover:text-white font-bold text-lg rounded-lg hover:bg-accent-1 active:bg-accent-1 shadow-lg"; 
+            return "flex-none block p-4 w-full font-bold text-lg rounded-lg hover:bg-accent-1 active:bg-accent-1 shadow-lg capitalize  bg-accent-1 text-white"; 
         } else {
-            return "flex-none block p-4 w-full bg-slate-200 hover:text-white font-bold text-lg rounded-lg hover:bg-accent-1 active:bg-accent-1 shadow-lg";
+            return "flex-none block p-4 w-full font-bold text-lg rounded-lg hover:bg-accent-1 active:bg-accent-1 shadow-lg capitalize bg-slate-200 hover:text-white";
         }
     }
 
@@ -90,9 +90,9 @@ export default function Models() {
             </div>
             <div className="order-3 lg:order-2 flex flex-col lg:flex-row mt-4 gap-4 lg:gap-12 lg:m-8">
                 <Image
-                    className="w-full lg:w-3/5 rounded-lg"
+                    className="w-full lg:w-3/5 rounded-lg aspect-video object-cover"
                     src={content.thumbnail}
-                    width={300}
+                    width={400}
                     height={300}
                     alt={content.alt}
                     />
@@ -110,7 +110,7 @@ export default function Models() {
                                 <td className="tableContent">{content.model} {content.year}</td>
                             </tr>
                             <tr className="tableContainer">
-                                <td className="tableContent"><GiCarDoor size={iconSize}></GiCarDoor>doors</td>
+                                <td className="tableContent"><GiCarDoor size={iconSize}></GiCarDoor>doors/seats</td>
                                 <td className="tableContent">{content.doors}/{content.seats}</td>
                             </tr>
                             <tr className="tableContainer">
@@ -131,14 +131,14 @@ export default function Models() {
                             </tr>
                         </tbody>
                     </table>
-                    <button type="button" className="callToAction mt-6 uppercase shadow-lg">${content.price} / booking</button>
+                    <button type="button" className="callToAction mt-6 uppercase shadow-lg">${content.price} / day</button>
                 </div>
             </div>
             <div className="order-2 lg:order-3 grid grid-cols-2 lg:grid-cols-4 gap-4 lg:p-8">
                 {PricingPlans.map((content) => (
                     <div key={content.id} 
                         >
-                        <h1 onClick={ () => { toggleActive(content.id); handleContent(content.id);  } } 
+                        <h1 onClick={ () => { toggleActive(content.id); handleContent(content.id - 1);  } } 
                             className={toggleActiveQuestion(content.id)}
                         >{content.name}</h1>
                     </div>

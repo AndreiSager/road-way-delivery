@@ -1,15 +1,17 @@
 import About from "@/components/About";
 import PerformanceBanner from "@/components/PerfomanceBanner";
-import Steps from "@/components/Steps";
+import PromotionalBanner from "@/components/PromotionalBanner";
 import TopBanner from "@/components/TopBanner";
+import FAQ from "@/components/FAQ";
+import Value from "@/components/Value";
 
 export default function AboutPage() {
     return(
         <main>
             <TopBanner/>
             <About/>
-            <PerformanceBanner/>
-            <Steps/>
+            <PromotionalBanner/>
+            <FAQ/>
         </main>
     )
 }

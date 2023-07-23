@@ -76,5 +76,5 @@ html {
 }
 
 .tableContent {
-  @apply flex-1 flex flex-row items-center gap-2 border border-slate-300 py-2 px-4 rounded-lg capitalize text-sm
+  @apply flex-1 flex flex-row items-center gap-2 border border-slate-300 py-2 px-4 rounded-lg capitalize text-xs font-medium
 }

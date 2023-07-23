@@ -23,11 +23,11 @@ export default function Pricing() {
                                 <div className="w-full lg:w-[350px] h-[230px] flex flex-row justify-between p-4 lg:p-6">
                                     <div className="w-3/6 flex flex-col justify-between gap-4">
                                         <div className="">
-                                            <h1 className="font-bold text-2xl">{plan.name}</h1>
+                                            <h1 className="font-bold text-xl">{plan.name}</h1>
                                             <h1 className="font-medium text-sm">{plan.brand} {plan.model} {plan.year} similar or up</h1>
                                         </div>
                                         <div>
-                                            <button type="button" className="w-full flex-1 p-4 bg-accent-1 text-white font-extrabold text-lg uppercase rounded-lg">{plan.price}$ /day</button>
+                                            <button type="button" className="callToAction">{plan.price}$ /day</button>
                                         </div>
                                     </div>
                                     <div className="w-2/5 flex flex-col gap-4">

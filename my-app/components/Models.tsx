@@ -3,7 +3,7 @@
 import { PricingPlans } from "@/constants";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { FaGasPump } from "react-icons/fa";
+import { FaGasPump, FaPeace } from "react-icons/fa";
 import { GiCarDoor, GiGearStick, GiWeight } from "react-icons/gi";
 import { IoLogoModelS } from "react-icons/io";
 import { TbAirConditioning } from "react-icons/tb"
@@ -100,14 +100,14 @@ export default function Models() {
                     <table className="w-full table-fixed border-separate border-spacing-2 lg:border-spacing-4 rounded-lg">
                         <thead>
                             <tr className="tableContainer">
-                                <td className="tableTitle">Brand</td>
-                                <td className="tableTitle">{content.brand}</td>
+                                <td className="tableContent"><FaPeace size={iconSize}/>Brand</td>
+                                <td className="tableContent">{content.brand}</td>
                             </tr>
                         </thead>
                         <tbody className="flex flex-col gap-2 lg:gap-4">
                             <tr className="tableContainer">
                                 <td className="tableContent"><IoLogoModelS size={iconSize}></IoLogoModelS>model</td>
-                                <td className="tableContent">{content.brand} {content.model} {content.year}</td>
+                                <td className="tableContent">{content.model} {content.year}</td>
                             </tr>
                             <tr className="tableContainer">
                                 <td className="tableContent"><GiCarDoor size={iconSize}></GiCarDoor>doors</td>

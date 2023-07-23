@@ -11,12 +11,9 @@ import { TbAirConditioning } from "react-icons/tb"
 export default function Models() {
     const iconSize = 30;
 
-    let [contentIndex, setContentIndex] = useState<number>(0);
-    const handleContentIndex = (index: number) => {
-        setContentIndex(index - 1);
-    }
-
     type ModelProps = {
+        thumbnail: string;
+        alt: string;
         brand: string;
         model: string;
         year: string;
@@ -30,6 +27,8 @@ export default function Models() {
     }
 
     const [content, setContent] = useState<ModelProps>({
+        thumbnail: PricingPlans[0].thumbnail,
+        alt: PricingPlans[0].alt,
         brand: PricingPlans[0].brand,
         model: PricingPlans[0].model,
         year: PricingPlans[0].year,
@@ -42,18 +41,20 @@ export default function Models() {
         price: PricingPlans[0].price,
     });
 
-    const handleContent = (contentIndex: number) => {
+    const handleContent = (index: number) => {
         setContent({
-         brand: PricingPlans[contentIndex].brand,
-         model: PricingPlans[contentIndex].model,
-         year: PricingPlans[contentIndex].year,
-         doors: PricingPlans[contentIndex].doors,
-         seats: PricingPlans[contentIndex].seats,
-         load: PricingPlans[contentIndex].load,
-         ac: PricingPlans[contentIndex].ac,
-         transmission: PricingPlans[contentIndex].transmission,
-         fuel: PricingPlans[contentIndex].fuel,
-         price: PricingPlans[contentIndex].price,
+            thumbnail: PricingPlans[index].thumbnail,
+            alt: PricingPlans[0].alt,
+            brand: PricingPlans[index].brand,
+            model: PricingPlans[index].model,
+            year: PricingPlans[index].year,
+            doors: PricingPlans[index].doors,
+            seats: PricingPlans[index].seats,
+            load: PricingPlans[index].load,
+            ac: PricingPlans[index].ac,
+            transmission: PricingPlans[index].transmission,
+            fuel: PricingPlans[index].fuel,
+            price: PricingPlans[index].price,
          })
      }
 
@@ -61,9 +62,8 @@ export default function Models() {
         setState({ ...appState, activeObject: appState.objects[1] })
     }, []);
 
-    useEffect(() => {
-        handleContent(contentIndex);
-    }, [handleContentIndex])
+  
+
 
     const [appState, setState] = useState({
         activeObject: { id: 1 },
@@ -91,10 +91,10 @@ export default function Models() {
             <div className="order-3 lg:order-2 flex flex-col lg:flex-row mt-4 gap-4 lg:gap-12 lg:m-8">
                 <Image
                     className="w-full lg:w-3/5 rounded-lg"
-                    src={PricingPlans[contentIndex].thumbnail}
+                    src={content.thumbnail}
                     width={300}
                     height={300}
-                    alt={PricingPlans[contentIndex].thumbnail}
+                    alt={content.alt}
                     />
                 <div className="w-full lg:w-2/5">
                     <table className="w-full table-fixed border-separate border-spacing-2 lg:border-spacing-4 rounded-lg">
@@ -138,7 +138,7 @@ export default function Models() {
                 {PricingPlans.map((content) => (
                     <div key={content.id} 
                         >
-                        <h1 onClick={ () => { toggleActive(content.id); handleContentIndex(content.id)  } } 
+                        <h1 onClick={ () => { toggleActive(content.id); handleContent(content.id);  } } 
                             className={toggleActiveQuestion(content.id)}
                         >{content.name}</h1>
                     </div>

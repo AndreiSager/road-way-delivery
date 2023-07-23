@@ -21,7 +21,7 @@ export default function FAQ() {
         if (appState.objects[index] === appState.activeObject) {
             return 'cursor-pointer font-bold text-lg lg:text-left block p-6 shadow-xl rounded-lg bg-accent-1 text-white'; 
         } else {
-            return 'cursor-pointer font-bold text-lg lg:text-left block p-6 shadow-xl rounded-lg';
+            return 'cursor-pointer font-bold text-lg lg:text-left block p-6 shadow-xl rounded-lg hover:bg-accent-1 hover:text-white';
         }
     }
 

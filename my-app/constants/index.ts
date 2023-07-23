@@ -377,7 +377,7 @@ export const PricingPlans = [
         rating:"⭐⭐⭐",
         load:"200kg",
         model:"Nissan Altima or Similar",
-        brand:"Nissan",
+        brand:"Testing",
         year:"2010 and up",
         seats:5,
         doors:4,

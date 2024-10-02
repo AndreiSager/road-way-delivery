@@ -36,11 +36,11 @@ export default function FAQ() {
 
   return (
     <div className="flex w-full flex-col flex-wrap items-center justify-center gap-16 px-40 py-24">
-      <div className="flex w-full flex-col text-center lg:w-[600px]">
-        <h1 className="text-5xl font-medium text-black">
+      <div className="flex w-full max-w-[700px] flex-col gap-3 text-center">
+        <h1 className="text-4xl font-bold text-black">
           Frequently Asked Questions
         </h1>
-        <p className="font-medium text-gray-500">
+        <p className="text-base font-medium text-gray-500">
           Discover the positive impact we've made on the our clients by reading
           through their testimonials. Our clients have experienced our service
           and results, and they're eager to share their positive experiences
@@ -50,7 +50,10 @@ export default function FAQ() {
       <div className="flex flex-col gap-40 lg:flex-row lg:p-8">
         <div className="flex flex-col gap-24">
           {Categories.map(({ id, title, icon }) => (
-            <div key={id} className="flex flex-row items-center gap-4">
+            <div
+              key={id}
+              className="flex select-none flex-row items-center gap-4"
+            >
               <div className="h-10 w-10">{icon}</div>
               <p className="text-2xl font-bold">{title}</p>
             </div>

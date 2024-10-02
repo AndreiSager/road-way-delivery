@@ -16,7 +16,7 @@ export default function Footer() {
   const sizeIcon = 30;
 
   return (
-    <footer className="flex w-full flex-col items-center bg-slate-50">
+    <footer className="flex w-full flex-col items-center">
       <div className="flex max-w-center flex-col items-center justify-center gap-24 px-5 py-24 md:px-40">
         <div className="flex max-w-center flex-col items-start justify-center gap-24 md:flex-row">
           <div className="flex w-full flex-col gap-8 lg:w-fit">

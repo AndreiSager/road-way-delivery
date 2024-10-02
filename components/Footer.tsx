@@ -15,8 +15,8 @@ export default function Footer() {
   const sizeIcon = 30;
 
   return (
-    <footer className="flex max-w-center flex-col items-center justify-center gap-24 bg-slate-50 px-40 py-24">
-      <div className="flex max-w-center flex-row items-start justify-center gap-24">
+    <footer className="flex max-w-center flex-col items-center justify-center gap-24 bg-slate-50 px-5 py-24 md:px-40">
+      <div className="flex max-w-center flex-col items-start justify-center gap-24 md:flex-row">
         <div className="flex w-full flex-col gap-4 lg:w-fit">
           <Image
             src="/rwd-logo_black.svg"
@@ -54,38 +54,50 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex w-full flex-row gap-12 lg:w-fit">
-          <FooterColumn
-            title={FooterLinks[0].title}
-            links={FooterLinks[0].links}
-          />
-          <FooterColumn
-            title={FooterLinks[1].title}
-            links={FooterLinks[1].links}
-          />
-          <div className="flex flex-col gap-6 md:flex-row md:gap-12">
+        <div className="grid w-full grid-cols-2 gap-12 md:grid-cols-6 lg:w-fit">
+          <div className="row-span-2">
+            <FooterColumn
+              title={FooterLinks[0].title}
+              links={FooterLinks[0].links}
+            />
+          </div>
+          <div className="row-span-2">
+            <FooterColumn
+              title={FooterLinks[1].title}
+              links={FooterLinks[1].links}
+            />
+          </div>
+          <div className="row-span-1 row-start-3">
             <FooterColumn
               title={FooterLinks[2].title}
               links={FooterLinks[2].links}
             />
+          </div>
+          <div className="row-span-1 row-start-4">
             <FooterColumn
               title={FooterLinks[4].title}
               links={FooterLinks[4].links}
             />
           </div>
-          <FooterColumn
-            title={FooterLinks[3].title}
-            links={FooterLinks[3].links}
-          />
-          <FooterColumn
-            title={FooterLinks[6].title}
-            links={FooterLinks[6].links}
-          />
-          <div className="flex flex-col gap-6 md:flex-row md:gap-12">
+          <div className="row-span-2">
+            <FooterColumn
+              title={FooterLinks[3].title}
+              links={FooterLinks[3].links}
+            />
+          </div>
+          <div className="row-span-2">
+            <FooterColumn
+              title={FooterLinks[6].title}
+              links={FooterLinks[6].links}
+            />
+          </div>
+          <div className="col-start-2 row-span-1 row-start-5">
             <FooterColumn
               title={FooterLinks[5].title}
               links={FooterLinks[5].links}
             />
+          </div>
+          <div className="col-start-2 row-span-1 row-start-6">
             <FooterColumn
               title={FooterLinks[7].title}
               links={FooterLinks[7].links}
@@ -93,8 +105,8 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="mt-6 items-center justify-center text-center">
-        <p>@ 20XX Road Way Delivery. All rights reserved</p>
+      <div className="mt-6 w-full items-center justify-center text-center">
+        <p className="w-full">© 2022 Roadway Delivery. All rights reserved</p>
       </div>
     </footer>
   );
@@ -114,7 +126,7 @@ type ColumnProps = {
 };
 
 const FooterColumn = ({ title, links }: ColumnProps) => (
-  <div className="flex max-w-[125px] flex-col gap-4 py-4 md:max-w-none">
+  <div className="flex w-full flex-col gap-4 py-4 md:max-w-none">
     <h1 className="text-sm font-bold">{title}</h1>
     <ul className="flex flex-col gap-2">
       {links.map((link) => (

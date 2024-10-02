@@ -54,7 +54,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="grid w-full grid-cols-2 gap-12 md:grid-cols-6 lg:w-fit">
+        <div className="grid w-full grid-cols-2 gap-8 md:grid-cols-6 md:gap-12 lg:w-fit">
           <div className="row-span-2">
             <FooterColumn
               title={FooterLinks[0].title}
@@ -126,7 +126,7 @@ type ColumnProps = {
 };
 
 const FooterColumn = ({ title, links }: ColumnProps) => (
-  <div className="flex w-full flex-col gap-4 py-4 md:max-w-none">
+  <div className="flex w-full flex-col gap-4 md:max-w-none">
     <h1 className="text-sm font-bold">{title}</h1>
     <ul className="flex flex-col gap-2">
       {links.map((link) => (

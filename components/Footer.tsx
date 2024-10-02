@@ -105,7 +105,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="mt-6 w-full items-center justify-center text-center">
+      <div className="mt-6 w-full items-center justify-center text-center text-sm">
         <p className="w-full">© 2022 Roadway Delivery. All rights reserved</p>
       </div>
     </footer>

@@ -26,16 +26,16 @@ export default function Footer() {
           />
 
           <div className="flex flex-col gap-3">
-            <h1 className="text-lg font-bold capitalize sm:w-[320px]">
+            <h1 className="text-base font-bold capitalize sm:w-[320px]">
               {FooterContent.title}
             </h1>
-            <p className="sentence font-medium text-gray-500 sm:w-[320px]">
+            <p className="sentence text-sm font-normal text-gray-500 sm:w-[320px]">
               {FooterContent.address}
             </p>
           </div>
 
           <div className="flex flex-col gap-3">
-            <h1 className="text-md font-bold capitalize">Watch The Road!</h1>
+            <h1 className="text-sm font-bold capitalize">Watch The Road!</h1>
             <div className="flex flex-row gap-4">
               <a href="#facebook" className="text-gray-500 hover:text-accent-1">
                 <BsFacebook size={sizeIcon} />

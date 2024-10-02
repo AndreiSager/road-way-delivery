@@ -2,7 +2,7 @@ export default function NewsletterBanner() {
   return (
     <div className="flex w-full flex-col items-center bg-white">
       <div className="w-full max-w-center py-24 md:px-40">
-        <div className="relative h-[600px] w-full max-w-center overflow-hidden rounded-[3rem] bg-mountain-sunset bg-cover bg-right bg-no-repeat">
+        <div className="relative h-[600px] w-full max-w-center overflow-hidden rounded-[3rem] bg-mountain-sunset bg-cover bg-center bg-no-repeat">
           <div className="absolute inset-0 z-0 h-full w-full bg-gradient-to-r from-black from-30% to-transparent to-70% opacity-40" />
 
           <div className="z-10 flex h-full w-full flex-col items-start justify-center gap-12 text-center lg:mx-8 lg:ml-20 lg:w-1/2 lg:text-left">

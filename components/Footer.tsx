@@ -10,6 +10,7 @@ import {
 } from "react-icons/bs";
 import { FaInstagramSquare } from "react-icons/fa";
 import { GoGear } from "react-icons/go";
+import Icon from "@svgr-iconkit/entypo";
 
 export default function Footer() {
   const sizeIcon = 30;
@@ -36,24 +37,18 @@ export default function Footer() {
 
           <div className="flex flex-col gap-3">
             <h1 className="text-sm font-bold capitalize">Watch The Road!</h1>
-            <div className="flex flex-row gap-4">
-              <a href="#facebook" className="text-gray-500 hover:text-accent-1">
-                <BsFacebook size={sizeIcon} />
+            <div className="flex flex-row gap-2">
+              <a href="#facebook" className="h-8 w-8 text-accent-1">
+                <Icon name="facebook-with-circle" />
               </a>
-              <a href="#youtube" className="text-gray-500 hover:text-accent-1">
-                <BsYoutube size={sizeIcon} />
+              <a href="#youtube" className="h-8 w-8 text-accent-1">
+                <Icon name="youtube-with-circle" />
               </a>
-              <a href="#twitter" className="text-gray-500 hover:text-accent-1">
-                <BsTwitter size={sizeIcon} />
+              <a href="#twitter" className="h-8 w-8 text-accent-1">
+                <Icon name="twitter-with-circle" />
               </a>
-              <a
-                href="#instagram"
-                className="text-gray-500 hover:text-accent-1"
-              >
-                <FaInstagramSquare size={sizeIcon} />
-              </a>
-              <a href="#tiktok" className="text-gray-500 hover:text-accent-1">
-                <BsTiktok size={sizeIcon} />
+              <a href="#instagram" className="h-8 w-8 text-accent-1">
+                <Icon name="instagram-with-circle" />
               </a>
             </div>
           </div>

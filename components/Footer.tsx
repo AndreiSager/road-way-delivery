@@ -17,20 +17,24 @@ export default function Footer() {
   return (
     <footer className="flex max-w-center flex-col items-center justify-center gap-24 bg-slate-50 px-5 py-24 md:px-40">
       <div className="flex max-w-center flex-col items-start justify-center gap-24 md:flex-row">
-        <div className="flex w-full flex-col gap-4 lg:w-fit">
+        <div className="flex w-full flex-col gap-8 lg:w-fit">
           <Image
             src="/rwd-logo_black.svg"
             height={200}
             width={150}
             alt="Road Way Delivery"
-          ></Image>
-          <h1 className="text-lg font-bold capitalize sm:w-[320px]">
-            {FooterContent.title}
-          </h1>
-          <p className="sentence font-medium text-gray-500 sm:w-[320px]">
-            {FooterContent.address}
-          </p>
-          <div className="mt-4 flex flex-col gap-4">
+          />
+
+          <div className="flex flex-col gap-3">
+            <h1 className="text-lg font-bold capitalize sm:w-[320px]">
+              {FooterContent.title}
+            </h1>
+            <p className="sentence font-medium text-gray-500 sm:w-[320px]">
+              {FooterContent.address}
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-3">
             <h1 className="text-md font-bold capitalize">Watch The Road!</h1>
             <div className="flex flex-row gap-4">
               <a href="#facebook" className="text-gray-500 hover:text-accent-1">
@@ -105,9 +109,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <p className="w-full text-sm">
-        © 2022 Roadway Delivery. All rights reserved
-      </p>
+      <p className="text-sm">© 2022 Roadway Delivery. All rights reserved</p>
     </footer>
   );
 }

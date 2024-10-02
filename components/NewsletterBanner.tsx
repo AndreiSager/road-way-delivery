@@ -5,7 +5,7 @@ export default function NewsletterBanner() {
         <div className="relative h-[600px] w-full max-w-center overflow-hidden rounded-[3rem] bg-mountain-sunset bg-cover bg-right bg-no-repeat">
           <div className="absolute inset-0 z-0 h-full w-full bg-gradient-to-r from-black from-30% to-transparent to-70% opacity-40" />
 
-          <div className="z-10 flex h-full w-full flex-col justify-center gap-4 text-center lg:mx-8 lg:ml-24 lg:w-1/2 lg:text-left">
+          <div className="z-10 flex h-full w-full flex-col items-start justify-center gap-4 text-center lg:mx-8 lg:ml-24 lg:w-1/2 lg:text-left">
             <div className="z-10 flex flex-col gap-2 backdrop-brightness-50 lg:backdrop-brightness-100">
               <h1 className="z-10 text-4xl font-bold text-white">
                 Join Our Newsletter
@@ -17,17 +17,17 @@ export default function NewsletterBanner() {
             </div>
             <form
               action=""
-              className="z-10 mt-4 flex flex-col items-center justify-center gap-2 lg:flex-row"
+              className="z-10 mt-4 flex w-full flex-col items-center gap-2 lg:flex-row"
             >
               <input
                 type="email"
                 name="email"
                 placeholder="Enter your email..."
-                className="inputField w-full focus:placeholder:italic lg:w-2/3"
+                className="inputField w-full max-w-[500px] focus:placeholder:italic"
               />
               <button
                 type="button"
-                className="callToAction mt-2 w-full flex-auto shadow-xl lg:mt-0 lg:w-1/3"
+                className="callToAction mt-2 w-full max-w-[200px] flex-auto shadow-xl lg:mt-0"
               >
                 Join Now
               </button>

@@ -11,26 +11,19 @@ import DownloadBtns from "./Downloads/DownloadBtns";
 export default function Testimonials() {
   return (
     <div className="w-full items-center justify-center">
-      <div className="flex flex-col items-center justify-center gap-12 px-40 py-24">
-        <div className="flex w-full flex-col items-center justify-center text-center">
-          <h1 className="sectionHeader">Get Your Package Delivered Now!</h1>
-          <p className="font-medium text-gray-500">
-            Discover the positive impact we've made on the our clients by
-            reading through their testimonials. Our clients have experienced our
-            service and results, and they're eager to share their positive
-            experiences with you.
-          </p>
+      <div className="flex flex-col items-center justify-center gap-24 px-40 py-24">
+        <h1 className="text-5xl font-bold">Get Your Package Delivered Now!</h1>
 
-          <div className="flex flex-row gap-40">
-            {NumbersData.map(({ end, name }, id) => (
-              <Numbers key={id} end={end} name={name} />
-            ))}
-          </div>
+        <div className="flex flex-row gap-40">
+          {NumbersData.map(({ end, name }, id) => (
+            <Numbers key={id} end={end} name={name} />
+          ))}
+        </div>
 
-          <p className="font-medium text-gray-500">
+        <div className="flex flex-col items-center justify-center gap-12">
+          <p className="text-xl font-bold capitalize">
             Register now and experience seamless, dependable delivery services.
           </p>
-
           <DownloadBtns />
         </div>
         <div className="m-auto flex w-full max-w-center flex-row flex-wrap justify-center gap-8">
@@ -121,9 +114,11 @@ function Numbers({ end, name }: NumbersProps) {
       <div className="flex flex-row items-start justify-center">
         <div className="invisible h-6 w-6" />
         <CountUp
-          end={end}
           className="text-5xl font-bold text-accent-1"
+          start={0}
+          end={end}
           duration={5}
+          enableScrollSpy={true}
         />
         <AddPlus className="h-6 w-6 text-accent-1" />
       </div>

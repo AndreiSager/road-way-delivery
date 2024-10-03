@@ -1,15 +1,15 @@
 "use client";
 
-import { FQAContent as Questions } from "@/constants";
+import { FQAGeneral, FQASupport, FQAOthers } from "@/constants";
 import { Accordion, AccordionItem as Item } from "@szhsin/react-accordion";
 import { useEffect, useState } from "react";
 import {
   ChatCircle,
   ChevronDown,
-  ChevronUp,
   House03,
   MoreHorizontal,
 } from "react-coolicons";
+import chevron from "../public/Icons/chevron-down.svg";
 
 export default function FAQ() {
   useEffect(() => {
@@ -41,6 +41,21 @@ export default function FAQ() {
     }
   }
 
+  // const [category, setCategory] = useState("General");
+  const [questions, setQuestions] = useState(FQAGeneral);
+  const handleQuestions = (title: string) => {
+    switch (title) {
+      case "General":
+        setQuestions(FQAGeneral);
+      case "Support":
+        setQuestions(FQASupport);
+      case "Others":
+        setQuestions(FQAOthers);
+      default:
+        setQuestions(FQAGeneral);
+    }
+  };
+
   return (
     <div className="flex w-full flex-col flex-wrap items-center justify-center gap-16 px-40 py-24">
       <div className="flex w-full max-w-[700px] flex-col gap-3 text-center">
@@ -56,20 +71,21 @@ export default function FAQ() {
       </div>
       <div className="flex flex-col gap-40 lg:flex-row">
         <div className="flex flex-col gap-24">
-          {Categories.map(({ id, title, icon }) => (
-            <div
+          {Categories.map(({ title, icon }, id) => (
+            <button
               key={id}
               className="flex select-none flex-row items-center gap-4"
+              onClick={() => handleQuestions(title)}
             >
               <div className="h-10 w-10">{icon}</div>
               <p className="text-2xl font-bold">{title}</p>
-            </div>
+            </button>
           ))}
         </div>
         <div className="hidden h-full w-[1px] rounded-full bg-gray-200 md:flex" />
 
         <Accordion allowMultiple={false} transition transitionTimeout={500}>
-          {Questions.map((question, id) => (
+          {questions.map((question, id) => (
             <AccordionItem
               header={question.question}
               key={id}
@@ -79,32 +95,6 @@ export default function FAQ() {
             </AccordionItem>
           ))}
         </Accordion>
-
-        {/* <div className="flex w-full flex-col lg:w-[700px]">
-          {Questions.map((question) => (
-            <div
-              key={question.id}
-              className="relative flex w-full flex-col overflow-hidden rounded-[20px] bg-white"
-            >
-              <div className="flex flex-row justify-between">
-                <h1
-                  onClick={() => {
-                    toggleActive(question.id);
-                  }}
-                  className={toggleActiveQuestion(question.id)}
-                >
-                  {question.question}
-                </h1>
-                <ChevronDown />
-                <ChevronUp />
-              </div>
-
-              <p className={toggleActiveAnswer(question.id)}>
-                {question.answer}
-              </p>
-            </div>
-          ))}
-        </div> */}
       </div>
     </div>
   );
@@ -114,30 +104,28 @@ const AccordionItem = ({ header, ...rest }) => (
   <Item
     {...rest}
     header={({ state: { isEnter } }) => (
-      <>
+      <div className="flex w-full flex-row items-center justify-between">
         {header}
-        <img
-          className={`ml-auto transition-transform duration-500 ease-out ${
+        <ChevronDown
+          className={`flex h-8 w-8 items-center justify-center transition-transform duration-500 ease-out ${
             isEnter && "rotate-180"
           }`}
-          src={"chevron"}
-          alt="C"
         />
-      </>
+      </div>
     )}
     className={({ isEnter }) =>
-      `flex w-full max-w-[900px] flex-col overflow-hidden border-b border-gray-100 text-left ${
-        isEnter && "rounded-[20px] border border-gray-100 shadow-xl"
+      `flex w-full max-w-[900px] flex-col overflow-hidden rounded-[20px] border-b border-gray-100 text-left ${
+        isEnter && "border border-gray-100 shadow-xl"
       }`
     }
     buttonProps={{
       className: ({ isEnter }) =>
-        `flex w-full text-left p-6 text-2xl font-bold ${isEnter && "text-accent-1"}`,
+        `flex w-[900px] text-left p-6 text-lg font-bold ${isEnter && "text-accent-1"}`,
     }}
     contentProps={{
       className: "transition-height duration-500 ease-out",
     }}
-    panelProps={{ className: "text-xl text-left px-6 pb-6" }}
+    panelProps={{ className: "w-full text-base text-left px-6 pb-6" }}
   />
 );
 

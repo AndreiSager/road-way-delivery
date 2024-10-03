@@ -1,3 +1,10 @@
+import {
+  FQAGeneral,
+  FQASupport,
+  FQAOthers,
+} from "./FrequentlyAskedQuestionsDB";
+export { FQAGeneral, FQASupport, FQAOthers };
+
 export const NavLinks = [
   { id: 1, href: "/", key: "Home", title: "Home" },
   { id: 2, href: "/about", key: "About", title: "About" },
@@ -379,42 +386,6 @@ export const BookingFormDate = [
       name: "drop-off date",
       id: "drop-off__date",
     },
-  },
-];
-
-export const FQAContent = [
-  {
-    id: 1,
-    question: "What areas do you cover for your road delivery service?",
-    answer:
-      " We provide road delivery services across the entire country. Our extensive network of drivers and vehicles enables us to reach even the most remote locations, ensuring prompt and reliable deliveries nationwide wherever there's a road availble.",
-  },
-  {
-    id: 2,
-    question:
-      "How do you ensure the safety and security of the packages during transportation?",
-    answer:
-      "The safety and security of our customers' packages are our top priorities. We employ robust packaging techniques and utilize specialized handling procedures to minimize the risk of damage. Additionally, our delivery vehicles are equipped with GPS tracking and real-time monitoring systems, allowing us to keep a close eye on the packages throughout the journey.",
-  },
-  {
-    id: 3,
-    question:
-      "What are the typical delivery times for your road way delivery service?",
-    answer:
-      "Our delivery times vary depending on the distance and location. Generally, we strive to deliver within 1-3 business days for domestic shipments, and 5-10 business days for international deliveries. However, for time-sensitive packages, we offer expedited shipping options to ensure a faster delivery.",
-  },
-  {
-    id: 4,
-    question: "How can customers track the status of their deliveries?",
-    answer:
-      "Customers can easily track the status of their deliveries using our online tracking system. Upon booking a delivery, they will receive a unique tracking code, which they can enter on our website or mobile app to get real-time updates on the package's location and estimated delivery time.",
-  },
-  {
-    id: 5,
-    question:
-      "What happens if there's an issue with the delivery, such as a delay or damaged package?",
-    answer:
-      "In the rare event of a delivery issue, our dedicated customer support team is available to assist 24/7 for filed requests. If a package is delayed, we proactively communicate with the customer and provide revised delivery estimates. Should a package arrive damaged, we have a straightforward claims process to resolve the matter promptly, offering compensation or arranging for a replacement shipment when necessary.",
   },
 ];
 

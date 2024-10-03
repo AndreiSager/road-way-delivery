@@ -222,7 +222,7 @@ export const Testimonials = [
   {
     avatar: "/avatar-2-male_compressed.jpg",
     alt: "avatar of a man",
-    client: "Mark Thompson in",
+    client: "Mark Thompson",
     residence: "Los Angeles",
     review:
       "Road Way Valley has been an invaluable partner for my business. Their reliable delivery service has helped me streamline operations and satisfy my customers. I'm grateful for their professionalism and attention to detail.",

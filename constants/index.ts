@@ -212,49 +212,44 @@ export const FooterLinks = [
 
 export const Testimonials = [
   {
-    id: 1,
     avatar: "/avatar-1-female_compressed.jpg",
     alt: "avatar of a woman",
     client: "Sarah Johnson",
-    residence: " New York City",
+    residence: "New York City",
     review:
-      '"I have been using Road Way Valley for all my delivery needs, and I couldn\'t be happier with their service. The drivers are always punctual, and my packages arrive in perfect condition. I highly recommend them!"',
+      "I have been using Road Way Valley for all my delivery needs, and I couldn't be happier with their service. The drivers are always punctual, and my packages arrive in perfect condition. I highly recommend them!",
   },
   {
-    id: 2,
     avatar: "/avatar-2-male_compressed.jpg",
     alt: "avatar of a man",
     client: "Mark Thompson in",
     residence: "Los Angeles",
     review:
-      '"Road Way Valley has been an invaluable partner for my business. Their reliable delivery service has helped me streamline operations and satisfy my customers. I\'m grateful for their professionalism and attention to detail."',
+      "Road Way Valley has been an invaluable partner for my business. Their reliable delivery service has helped me streamline operations and satisfy my customers. I'm grateful for their professionalism and attention to detail.",
   },
   {
-    id: 3,
     avatar: "/avatar-2-female_compressed.jpg",
     alt: "avatar of a woman",
     client: "Emily Davis",
     residence: "Chicago",
     review:
-      '"As an e-commerce entrepreneur, I rely on Road Way Valley for timely and efficient deliveries. Their exceptional customer service and seamless tracking system give me peace of mind. I couldn\'t ask for a better delivery partner!"',
+      "As an e-commerce entrepreneur, I rely on Road Way Valley for timely and efficient deliveries. Their exceptional customer service and seamless tracking system give me peace of mind. I couldn't ask for a better delivery partner!",
   },
   {
-    id: 4,
     avatar: "/avatar-1-male_compressed.jpg",
     alt: "avatar of a man",
     client: "David Rodriguez",
     residence: "Miami",
     review:
-      '"I\'ve used several delivery services in the past, but Road Way Valley stands out. Their drivers are friendly, and the team goes above and beyond to ensure my packages are delivered on time. I highly recommend their services."',
+      "I've used several delivery services in the past, but Road Way Valley stands out. Their drivers are friendly, and the team goes above and beyond to ensure my packages are delivered on time. I highly recommend their services.",
   },
   {
-    id: 5,
     avatar: "/avatar-3-female_compressed.jpg",
     alt: "avatar of a woman",
     client: "Lisa Smith",
     residence: "San Francisco",
     review:
-      '"Road Way Valley has been my go-to delivery service for years. Their commitment to professionalism and reliability is unmatched. I appreciate their attention to detail and the seamless experience they provide."',
+      "Road Way Valley has been my go-to delivery service for years. Their commitment to professionalism and reliability is unmatched. I appreciate their attention to detail and the seamless experience they provide.",
   },
 ];
 

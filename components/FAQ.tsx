@@ -1,8 +1,15 @@
 "use client";
 
 import { FQAContent as Questions } from "@/constants";
+import { Accordion, AccordionItem as Item } from "@szhsin/react-accordion";
 import { useEffect, useState } from "react";
-import { ChatCircle, House03, QrCode } from "react-coolicons";
+import {
+  ChatCircle,
+  ChevronDown,
+  ChevronUp,
+  House03,
+  MoreHorizontal,
+} from "react-coolicons";
 
 export default function FAQ() {
   useEffect(() => {
@@ -20,15 +27,15 @@ export default function FAQ() {
 
   function toggleActiveQuestion(index: number) {
     if (appState.objects[index] === appState.activeObject) {
-      return "cursor-pointer font-bold text-lg lg:text-left block p-6 shadow-xl rounded-lg bg-accent-1 text-white";
+      return "cursor-pointer font-bold text-lg lg:text-left block p-6 rounded-lg text-accent-1 shadow-xl";
     } else {
-      return "cursor-pointer font-bold text-lg lg:text-left block p-6 shadow-xl rounded-lg hover:bg-accent-1 hover:text-white";
+      return "cursor-pointer font-bold text-lg lg:text-left block p-6  rounded-lg hover:text-accent-1";
     }
   }
 
   function toggleActiveAnswer(index: number) {
     if (appState.objects[index] === appState.activeObject) {
-      return "rounded-lg font-medium text-md text-slate-600 text-justify block p-6 ease-in-out duration-150";
+      return "rounded-lg font-medium text-md text-slate-600 text-justify block p-6 ease-in-out duration-150 ";
     } else {
       return "rounded-lg font-medium text-md text-slate-600 text-justify block p-6 ease-in-out duration-150 absolute -top-[100%] -z-10";
     }
@@ -47,7 +54,7 @@ export default function FAQ() {
           with you.
         </p>
       </div>
-      <div className="flex flex-col gap-40 lg:flex-row lg:p-8">
+      <div className="flex flex-col gap-40 lg:flex-row">
         <div className="flex flex-col gap-24">
           {Categories.map(({ id, title, icon }) => (
             <div
@@ -59,31 +66,80 @@ export default function FAQ() {
             </div>
           ))}
         </div>
-        <div className="rounded-ful; hidded h-full w-[1px] bg-gray-200 md:flex" />
-        <div className="flex w-full flex-col lg:w-[700px]">
+        <div className="hidden h-full w-[1px] rounded-full bg-gray-200 md:flex" />
+
+        <Accordion allowMultiple={false} transition transitionTimeout={500}>
+          {Questions.map((question, id) => (
+            <AccordionItem
+              header={question.question}
+              key={id}
+              initialEntered={id === 0 ? true : false}
+            >
+              {question.answer}
+            </AccordionItem>
+          ))}
+        </Accordion>
+
+        {/* <div className="flex w-full flex-col lg:w-[700px]">
           {Questions.map((question) => (
             <div
               key={question.id}
-              className="relative flex w-full flex-col overflow-hidden border-t border-slate-300 bg-white"
+              className="relative flex w-full flex-col overflow-hidden rounded-[20px] bg-white"
             >
-              <h1
-                onClick={() => {
-                  toggleActive(question.id);
-                }}
-                className={toggleActiveQuestion(question.id)}
-              >
-                {question.question}
-              </h1>
+              <div className="flex flex-row justify-between">
+                <h1
+                  onClick={() => {
+                    toggleActive(question.id);
+                  }}
+                  className={toggleActiveQuestion(question.id)}
+                >
+                  {question.question}
+                </h1>
+                <ChevronDown />
+                <ChevronUp />
+              </div>
+
               <p className={toggleActiveAnswer(question.id)}>
                 {question.answer}
               </p>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );
 }
+
+const AccordionItem = ({ header, ...rest }) => (
+  <Item
+    {...rest}
+    header={({ state: { isEnter } }) => (
+      <>
+        {header}
+        <img
+          className={`ml-auto transition-transform duration-500 ease-out ${
+            isEnter && "rotate-180"
+          }`}
+          src={"chevron"}
+          alt="C"
+        />
+      </>
+    )}
+    className={({ isEnter }) =>
+      `flex w-full max-w-[900px] flex-col overflow-hidden border-b border-gray-100 text-left ${
+        isEnter && "rounded-[20px] border border-gray-100 shadow-xl"
+      }`
+    }
+    buttonProps={{
+      className: ({ isEnter }) =>
+        `flex w-full text-left p-6 text-2xl font-bold ${isEnter && "text-accent-1"}`,
+    }}
+    contentProps={{
+      className: "transition-height duration-500 ease-out",
+    }}
+    panelProps={{ className: "text-xl text-left px-6 pb-6" }}
+  />
+);
 
 const Categories = [
   {
@@ -99,6 +155,6 @@ const Categories = [
   {
     id: 2,
     title: "Others",
-    icon: <QrCode className="h-10 w-10" />,
+    icon: <MoreHorizontal className="h-10 w-10" />,
   },
 ];

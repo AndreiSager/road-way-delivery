@@ -34,6 +34,7 @@ export default function Testimonials() {
             pauseOnHover={false}
             speed={30}
             autoFill={true}
+            style={{ overflow: "visible" }}
           >
             <div className="first-letter: z-20 mr-3 flex w-full flex-row gap-3 md:mr-5 md:gap-5">
               {Reviews.map(({ review, residence, client, avatar, alt }, id) => (
@@ -55,6 +56,7 @@ export default function Testimonials() {
             pauseOnHover={false}
             speed={30}
             autoFill={true}
+            style={{ overflow: "visible" }}
           >
             <div className="first-letter: z-20 mr-3 flex w-full flex-row gap-3 md:mr-5 md:gap-5">
               {Reviews.map(({ review, residence, client, avatar, alt }, id) => (
@@ -85,20 +87,20 @@ type CardProps = {
 
 function Card({ review, residence, client, avatar, alt }: CardProps) {
   return (
-    <div className="flex aspect-video w-full flex-wrap gap-4 rounded-xl p-8 shadow-xl transition duration-100 hover:scale-105 sm:w-[350px]">
+    <div className="flex aspect-video w-full flex-wrap gap-4 rounded-xl p-8 shadow-xl transition duration-100 sm:w-[350px]">
       <div className="flex w-full flex-row items-center justify-between sm:w-[350px]">
         <BiMessageSquareDetail size={40} className="text-accent-1" />
         <div className="flex flex-row items-center">
           <div className="items-right mr-4 flex flex-col text-right">
-            <h1 className="text-md font-bold">{client}</h1>
-            <h2 className="text-sm font-semibold text-gray-500">{residence}</h2>
+            <h1 className="text-xs font-bold">{client}</h1>
+            <h2 className="text-xs font-semibold text-gray-500">{residence}</h2>
           </div>
           <div className="h-[50px] w-[50px] overflow-hidden rounded-full bg-black">
             <Image src={avatar} width={50} height={50} alt={alt} className="" />
           </div>
         </div>
       </div>
-      <p className="flex items-center text-sm text-black">{review}</p>
+      <p className="flex items-center text-xs text-black">{review}</p>
     </div>
   );
 }
@@ -119,6 +121,7 @@ function Numbers({ end, name }: NumbersProps) {
           end={end}
           duration={5}
           enableScrollSpy={true}
+          scrollSpyOnce={true}
         />
         <AddPlus className="h-6 w-6 text-accent-1" />
       </div>

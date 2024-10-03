@@ -9,7 +9,6 @@ import {
   House03,
   MoreHorizontal,
 } from "react-coolicons";
-import chevron from "../public/Icons/chevron-down.svg";
 
 export default function FAQ() {
   useEffect(() => {

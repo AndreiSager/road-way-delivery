@@ -17,7 +17,7 @@
 } */
 
 * {
-  @apply box-border
+  @apply box-border;
 }
 
 html {
@@ -25,56 +25,46 @@ html {
   scroll-behavior: smooth !important;
 }
 
-/* body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
-
 .navbar__white {
-  @apply text-white 
+  @apply text-white;
 }
 
 .navbar__black {
-  @apply text-black bg-white
+  @apply bg-white text-black;
 }
 
 .navbar__black a {
-  @apply hover:text-accent-1
+  @apply hover:text-accent-1;
 }
 
 .sectionHeader {
-  @apply text-4xl font-bold text-black mb-4
+  @apply mb-4 text-4xl font-bold text-black;
 }
 
 .sectionPadding {
-  @apply py-28 px-6
+  @apply px-6 py-28;
 }
 
 .callToAction {
-  @apply w-full max-h-16 flex-auto bg-accent-1 text-xl font-extrabold text-white p-4 rounded-lg hover:brightness-105 flex flex-row justify-center items-center gap-2 capitalize
+  @apply flex max-h-16 w-full flex-auto flex-row items-center justify-center gap-2 rounded-lg bg-accent-1 p-4 text-xl font-extrabold capitalize text-white hover:brightness-105;
 }
 
 .inputField {
-  @apply border border-solid border-slate-400 rounded-md p-4
+  @apply rounded-md border border-solid border-slate-400 p-4;
 }
 
 .textArea {
-  @apply h-[190px] resize-none
+  @apply h-[190px] resize-none;
 }
 
 .tableTitle {
-  @apply flex-1 flex flex-row justify-center items-center gap-2 bg-slate-500 text-white py-3 px-4 rounded-lg capitalize font-bold text-lg
+  @apply flex flex-1 flex-row items-center justify-center gap-2 rounded-lg bg-slate-500 px-4 py-3 text-lg font-bold capitalize text-white;
 }
 
 .tableContainer {
-  @apply w-full flex flex-row gap-2 lg:gap-4
+  @apply flex w-full flex-row gap-2 lg:gap-4;
 }
 
 .tableContent {
-  @apply flex-1 flex flex-row items-center gap-2 border border-slate-300 py-2 px-4 rounded-lg capitalize text-xs font-medium
+  @apply flex flex-1 flex-row items-center gap-2 rounded-lg border border-slate-300 px-4 py-2 text-xs font-medium capitalize;
 }

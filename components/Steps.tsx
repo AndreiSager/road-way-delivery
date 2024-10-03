@@ -1,127 +1,69 @@
-import { StepsContent } from "@/constants";
-import Image from "next/image";
-import { BookingFormSelect, BookingFormDate } from '@/constants';
-
-type SelectProps = {
-    id: number;
-    icon: string;
-    title: string;
-    select: SelectInputProps;
-    options: Array<OptionsProps>;
-}
-
-type SelectInputProps = {
-    name: string;
-    id: string;
-    default: string;
-}
-
-type OptionsProps = {
-    id: number;
-    value: string;
-    option: string;
-}
-
-const SelectColumn = ( {icon, title, select, options}:SelectProps ) => (
-    <div className="flex flex-col gap-2">
-        <label htmlFor="pick-up__date" className="font-bold capitalize flex flex-row gap-2 items-center">
-            <Image 
-                src={icon}
-                height={25}
-                width={25}
-                alt="No Icon"
-                />
-            {title}<span className="text-accent-1">*</span>
-        </label>
-        <select 
-            name={select.name} 
-            id={select.id}
-            defaultValue={select.default}
-            required
-            className="inputField"
-            >
-            {options.map((option) => (
-                <option key={option.id} value={option.value}>{option.option}</option>
-            ))}
-        </select>
-    </div>
-)
-
-type DateInputProps = Omit<SelectInputProps, "default">;
-
-type DateProps = {
-    id: number;
-    icon: string;
-    title: string;
-    date: DateInputProps;
-}
-
-const DateColumn = ( {icon, title, date}:DateProps ) => (
-    <div className="flex flex-col gap-2">
-        <label htmlFor="pick-up__date" className="font-bold capitalize flex flex-row gap-2 items-center">
-            <Image 
-                src={icon}
-                height={25}
-                width={25}
-                alt="No Icon"
-                />
-            {title}<span className="text-accent-1">*</span>
-        </label>
-        <input 
-            name={date.name}
-            id={date.id} 
-            type="date" 
-            className="inputField"
-            />
-    </div>
-)
-
-const Divider = () => (
-    <div className="w-full h-[5px] bg-slate-300"></div>
-)
-
 export default function Steps() {
-    const sizeIcon = 20;
-
-    return(
-        <div className="sectionPadding w-full flex flex-row flex-wrap gap-8 justify-center items-center">
-            <div className="flex flex-col justify-center items-center gap-16 w-full lg:w-3/5">
-                <h1 className="font-bold text-4xl text-center">Get Delivered In Four Easy Steps</h1>
-                <div className="flex flex-row flex-wrap justify-center items-center gap-12 w-full">
-                    {StepsContent.map((steps) => (
-                        <div key={steps.id} className="flex flex-row flex-wrap w-[300px] aspect-video text-center justify-center ">
-                            <h1 className="font-bold text-lg w-full lg:w-[205px]">{steps.title}: <span className="text-accent-1 uppercase">{steps.subtitle}</span></h1>
-                            <div className="flex flex-row justify-center items-center gap-4">
-                                <Image
-                                    src={steps.icon}
-                                    width={100}
-                                    height={100}
-                                    alt={steps.alt}
-                                    className="object-cover my-12 hover:scale-105 transition linear duration-200"
-                                    />
-                                <p className="font-medium text-gray-500">{steps.description}</p>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </div>
-            <div className="w-full lg:w-fit">
-                <form action="" className="flex flex-col gap-4 p-8 bg-slate-100 rounded-lg shadow-xl lg:w-[410px]">
-                    <SelectColumn id={BookingFormSelect[0].id} icon={BookingFormSelect[0].icon} title={BookingFormSelect[0].title} select={BookingFormSelect[0].select} options={BookingFormSelect[0].options}/>
-                    <Divider/>
-                    <SelectColumn id={BookingFormSelect[1].id} icon={BookingFormSelect[1].icon} title={BookingFormSelect[1].title} select={BookingFormSelect[1].select} options={BookingFormSelect[1].options}/>
-                    <SelectColumn id={BookingFormSelect[2].id} icon={BookingFormSelect[2].icon} title={BookingFormSelect[2].title} select={BookingFormSelect[2].select} options={BookingFormSelect[2].options}/>
-                    <Divider/>
-                    <DateColumn id={BookingFormDate[0].id} icon={BookingFormDate[0].icon} title={BookingFormDate[0].title} date={BookingFormDate[0].date}/>
-                    <DateColumn id={BookingFormDate[1].id} icon={BookingFormDate[1].icon} title={BookingFormDate[1].title} date={BookingFormDate[1].date}/>
-                    <Divider/>
-                    <input 
-                        type="button" 
-                        value="Book"
-                        className="callToAction"
-                        />
-                </form>
-            </div>
+  return (
+    <div className="flex w-full flex-col items-center justify-center">
+      <div className="flex w-full max-w-center flex-col items-center justify-center gap-24 px-40 py-24">
+        <h1 className="text-center text-4xl font-bold">
+          Roadway Delivery
+          <br />
+          <span className="text-accent-1">Step-by-Step</span>
+        </h1>
+        <div className="flex flex-row gap-12">
+          {StepsData.map(({ number, title, desc, image }, id) => (
+            <Step
+              key={id}
+              number={number}
+              title={title}
+              desc={desc}
+              image={image}
+            />
+          ))}
         </div>
-    )
+      </div>
+    </div>
+  );
 }
+
+type StepProps = {
+  number: number;
+  title: string;
+  desc: string;
+  image: string;
+};
+
+function Step({ number, title, desc, image }: StepProps) {
+  return (
+    <div className="flex w-full max-w-[420px] flex-col gap-16">
+      <div className="relative aspect-video h-[320px] w-full max-w-[420px] rounded-2xl bg-gray-500">
+        <div className="absolute -bottom-10 -left-10 flex h-20 w-20 items-center justify-center rounded-t-full rounded-bl-full bg-accent-1">
+          <p className="text-4xl font-bold text-white">{number}</p>
+        </div>
+      </div>
+
+      <div className="flex flex-col gap-2">
+        <h1 className="text-xl font-bold">{title}</h1>
+        <p className="text-xl">{desc}</p>
+      </div>
+    </div>
+  );
+}
+
+const StepsData = [
+  {
+    number: 1,
+    title: "Set Pickup & Destination",
+    desc: "Just enter your pickup and delivery locations, and we’ll find the fastest, most cost-effective route for your items.",
+    image: "",
+  },
+  {
+    number: 2,
+    title: "Track in Real Time",
+    desc: "Stay updated with real-time tracking, from pickup to drop-off. Never lose sight of your delivery again.",
+    image: "",
+  },
+  {
+    number: 3,
+    title: "Confirm Delivery",
+    desc: "Once delivered, you'll receive instant confirmation and proof of delivery right in the app.",
+    image: "",
+  },
+];

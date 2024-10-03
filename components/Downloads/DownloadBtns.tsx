@@ -1,6 +1,7 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
-import { BiLogoPlayStore } from "react-icons/bi";
 
 export default function DownloadBtns() {
   const handleButton = () => {

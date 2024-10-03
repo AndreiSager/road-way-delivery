@@ -6,6 +6,7 @@ import { AddPlus } from "react-coolicons";
 import CountUp from "react-countup";
 import Marquee from "react-fast-marquee";
 import { BiMessageSquareDetail } from "react-icons/bi";
+import DownloadBtns from "./Downloads/DownloadBtns";
 
 export default function Testimonials() {
   return (
@@ -29,6 +30,8 @@ export default function Testimonials() {
           <p className="font-medium text-gray-500">
             Register now and experience seamless, dependable delivery services.
           </p>
+
+          <DownloadBtns />
         </div>
         <div className="m-auto flex w-full max-w-center flex-row flex-wrap justify-center gap-8">
           <Marquee

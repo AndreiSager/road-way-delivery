@@ -1,18 +1,27 @@
-import Image from "next/image";
+"use client";
+
+import DownloadBtns from "./Downloads/DownloadBtns";
 
 export default function Hero() {
-    return(
-        <div className="flex flex-row flex-wrap px-0 py-16 lg:p-0 bg-truck bg-cover w-full h-[100vh] min-h-[1000px] max-h-[1000px] bg-center lg:bg-right">
-            <div className="order-1 lg:order-2 w-full lg:w-[800px] flex flex-col justify-center  p-6 lg:p-12 gap-8">
-                <div className="text-center lg:text-left flex flex-col items-center lg:items-start ">
-                    <h1 className="w-full md:w-[600px] font-bold text-3xl lg:text-5xl text-white uppercase">Where There's A <span className="text-green-600">Road</span>, There's A <span  className="text-green-600">Way</span>.</h1>
-                    <p className="w-full md:w-[600px] font-medium text-slate-200 text-lg mt-4">Embrace life's challenges with perseverance and unwavering belief in finding a way. With optimism and determination, unlock new opportunities and achieve your goals on this rewarding journey.</p>
-                </div>
-                <div className="flex flex-row gap-4 w-full lg:w-[450px]">
-                    <button type="button" className="callToAction">Book Now</button>
-                    <button type="button" className="callToAction !bg-transparent border border-accent-1 hover:!bg-accent-1">Learn More</button>
-                </div>
-            </div>
+  return (
+    <div className="flex w-full flex-col items-center justify-center">
+      <div className="flex h-[100vh] max-h-full w-full max-w-center flex-row items-center justify-between px-40 py-24">
+        <div>Place Mockup Here</div>
+        <div className="flex w-full max-w-[730px] flex-col gap-12">
+          <h1 className="text-5xl font-bold">
+            Where There’s A Road,
+            <br />
+            <span className="text-accent-1">There’s A Way</span>
+          </h1>
+          <div className="flex flex-col gap-6">
+            <p className="w-full max-w-[570px]">
+              Have your package delivered safe and sound to any location
+              connected with a road. Available on Android.
+            </p>
+          </div>
+          <DownloadBtns />
         </div>
-    )
+      </div>
+    </div>
+  );
 }

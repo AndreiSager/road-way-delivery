@@ -10,8 +10,8 @@ import DownloadBtns from "./Downloads/DownloadBtns";
 
 export default function Testimonials() {
   return (
-    <div className="w-full items-center justify-center">
-      <div className="flex flex-col items-center justify-center gap-24 px-40 py-24">
+    <div className="flex w-full items-center justify-center">
+      <div className="flex max-w-center flex-col items-center justify-center gap-24 py-24">
         <h1 className="text-5xl font-bold">Get Your Package Delivered Now!</h1>
 
         <div className="flex flex-row gap-40">
@@ -26,7 +26,7 @@ export default function Testimonials() {
           </p>
           <DownloadBtns />
         </div>
-        <div className="m-auto flex w-full max-w-center flex-row flex-wrap justify-center gap-8">
+        <div className="m-auto flex w-full flex-row flex-wrap justify-center gap-8">
           <Marquee
             play={true}
             direction={"left"}

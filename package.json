@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fluentui/react-icons": "^2.0.260",
     "@svgr-iconkit/entypo": "^0.4.1",
     "@szhsin/react-accordion": "^1.2.5",
     "@types/node": "20.4.1",

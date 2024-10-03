@@ -37,10 +37,10 @@ function Card({ icon, title, description }: CardProps) {
   return (
     <div className="group/card z-10 flex w-full max-w-[420px] flex-col gap-6 p-6">
       <div className="relative flex h-12 w-12">
-        <div className="z-20 h-12 w-12 text-accent-1 group-first/card:text-white group-hover/cards:group-hover/card:text-white group-hover/cards:text-accent-1 group-hover/cards:group-hover/card:group-first:text-accent-1">
+        <div className="z-20 h-12 w-12 text-accent-1 group-first/card:text-white group-hover/cards:group-hover/card:text-white group-hover/cards:text-accent-1 group-hover/cards:group-hover/card:group-first/card:text-white">
           {icon}
         </div>
-        <div className="absolute left-[50%] top-[50%] z-10 h-0 w-0 -translate-x-[50%] -translate-y-[50%] rounded-full bg-accent-1 duration-500 ease-in-out group-first/card:h-20 group-first/card:w-20 group-hover/card:h-20 group-hover/card:w-20 group-hover/cards:group-first/card:h-0 group-hover/cards:group-first/card:w-0" />
+        <div className="absolute left-[50%] top-[50%] z-10 h-0 w-0 -translate-x-[50%] -translate-y-[50%] rounded-full bg-accent-1 duration-500 ease-in-out group-first/card:h-20 group-first/card:w-20 group-hover/card:h-20 group-hover/card:w-20 group-hover/cards:group-first/card:h-0 group-hover/cards:group-hover/card:group-first/card:h-24 group-hover/cards:group-first/card:w-0 group-hover/cards:group-hover/card:group-first/card:w-24" />
       </div>
       <div>
         <h1 className="text-xl font-bold">{title}</h1>

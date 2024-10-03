@@ -7,9 +7,30 @@ import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Road Way Delivery",
-  description: "A create next app that only features front-end functionality.",
+export const metadata = {
+  metadataBase: new URL("https://andreiportfolio.vercel.app"),
+  favicon: "favicon.ico",
+  title: "Roadway Delivery",
+  description:
+    "Roadway Delivery (RWD) - Fast, reliable delivery service connecting customers with local couriers for seamless, on-time deliveries. Available on mobile.",
+  image: "/Me.png",
+  openGraph: {
+    image: "/Me.png",
+    url: "https://andreiportfolio.vercel.app",
+    siteName: "andreiportfolio.vercel.app",
+    title: "Roadway Delivery",
+    description:
+      "Roadway Delivery (RWD) - Fast, reliable delivery service connecting customers with local couriers for seamless, on-time deliveries. Available on mobile.",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    image: "/Me.png",
+    card: "summary_large_image",
+    title: "Roadway Delivery",
+    description:
+      "Roadway Delivery (RWD) - Fast, reliable delivery service connecting customers with local couriers for seamless, on-time deliveries. Available on mobile.",
+  },
 };
 
 export default function RootLayout({

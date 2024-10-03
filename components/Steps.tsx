@@ -32,7 +32,7 @@ type StepProps = {
 
 function Step({ number, title, desc, image }: StepProps) {
   return (
-    <div className="flex w-full max-w-[420px] flex-col gap-16">
+    <div className="flex w-full max-w-[420px] flex-col gap-16 [&:nth-of-type(2)]:mt-[100px] [&:nth-of-type(3)]:mt-[200px]">
       <div className="relative aspect-video h-[320px] w-full max-w-[420px] rounded-2xl bg-gray-500">
         <div className="absolute -bottom-10 -left-10 flex h-20 w-20 items-center justify-center rounded-t-full rounded-bl-full bg-accent-1">
           <p className="text-4xl font-bold text-white">{number}</p>

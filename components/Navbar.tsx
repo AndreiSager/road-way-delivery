@@ -1,95 +1,112 @@
-"use client"
+"use client";
 
-import { NavLinks as links } from "@/constants"
-import { MdAccountCircle } from "react-icons/md"
-import { IoMdNotifications } from "react-icons/io"
-import { GiCarWheel, GiHamburgerMenu } from "react-icons/gi"
-import { RxCross2 } from "react-icons/rx"
+import { NavLinks as links } from "@/constants";
+import { MdAccountCircle } from "react-icons/md";
+import { IoMdNotifications } from "react-icons/io";
+import { GiCarWheel, GiHamburgerMenu } from "react-icons/gi";
+import { RxCross2 } from "react-icons/rx";
 import { useState, useEffect } from "react";
-import Image from "next/image"
+import Image from "next/image";
 
 export default function Navbar() {
-    const sizeIcon = 35;
+  const sizeIcon = 35;
 
-    const [nav, setNav] = useState<true | false>(false);
-    const handleNav = () => (
-        setNav(!nav)
-    )
-   
-    const [logo, setLogo] = useState<'/rwd-logo_white.svg' | '/rwd-logo_black.svg'>('/rwd-logo_white.svg');
-    
-    useEffect(() => {
-        const onScroll = () => {
-            const navbar = document.getElementById("navbar")!;
-            const distance = 50;
-            if (document.documentElement.scrollTop > distance) {
-                navbar.classList.add("navbar__black");
-                setLogo("/rwd-logo_black.svg");
-            } else {
-                navbar.classList.remove("navbar__black");
-                setLogo("/rwd-logo_white.svg");
-            }
-        }
-        window.addEventListener("scroll", onScroll);
-    }, []);
+  const [nav, setNav] = useState<true | false>(false);
+  const handleNav = () => setNav(!nav);
 
-    const signedIn = useState<true | false>(true);
+  const [logo, setLogo] = useState<
+    "/rwd-logo_white.svg" | "/rwd-logo_black.svg"
+  >("/rwd-logo_white.svg");
 
-    return(
-        <nav className="w-full relative max-h-[85px]">
-            <div id="navbar" className="flex flex-row justify-between items-center w-full py-4 px-4 md:px-12 shadow-md navbar__white fixed top-0 left-auto right-auto z-50 backdrop-blur-sm max-w-screen-xl">
-                <div className="flex flex-row gap-8">
-                    <a href="/">
-                        <Image 
-                            src={logo}
-                            height={100}
-                            width={150}
-                            alt="Road Way Delivery">
-                        </Image>
-                    </a>
-                    <ul className="hidden lg:flex flex-row">
-                        {links.map((link) => (
-                            <li key={link.id} className="font-semibold text-md">
-                                <a href={link.href}
-                                    className="block p-4 hover:text-accent-1"
-                                    >{link.title}</a>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-                {signedIn ? (
-                    <div className="hidden lg:flex flex-row gap-8 justify-center items-center">
-                        <div className="flex flex-row gap-4 justify-center items-center">
-                            <IoMdNotifications size={sizeIcon} className="hover:text-accent-1"/>
-                            <MdAccountCircle size={sizeIcon} className="hover:text-accent-1"/>
-                        </div>
-                        <button type="button" className="callToAction !px-12 !py-4">Book Now</button>
-                    </div>
-                ) : ( 
-                    <div className="hidden lg:flex flex-row gap-8 justify-center items-center w-fit">
-                        <h1 className="block whitespace-nowrap hover:underline p-4">Sign-Up</h1>
-                        <button type="button" className="callToAction !px-12 !py-4">Sign-In</button>
-                    </div>
-                )}
-                <div onClick={handleNav} className="flex lg:hidden">
-                    <GiHamburgerMenu size={sizeIcon}/>
-                </div>
-            </div>
-            <div className={nav ? "flex flex-col justify-between items-center gap-8 bg-white w-full h-full fixed top-0 left-0 lg:hidden z-50 ease-in-out duration-500" : "flex flex-col justify-between items-center gap-8 bg-white w-full h-full fixed top-0 left-[-100%] lg:hidden z-50 ease-in-out duration-500"}>
-                <div onClick={handleNav} className="flex w-full h-[85px] justify-end items-center p-4 md:px-12">
-                    <RxCross2 size={sizeIcon}/>
-                </div>
-                <ul className="flex flex-col w-full text-center">
-                    {links.map((link) => (
-                        <li key={link.id} className="font-semibold text-md block w-full">
-                            <a onClick={handleNav} href={link.href}
-                                className="block p-4 w-full"
-                                >{link.title}</a>
-                        </li>
-                    ))}
-                </ul>
-                <div></div>
-            </div>
-        </nav>
-    )
+  useEffect(() => {
+    const onScroll = () => {
+      const navbar = document.getElementById("navbar")!;
+      const distance = 50;
+      if (document.documentElement.scrollTop > distance) {
+        navbar.classList.add("navbar__black");
+        setLogo("/rwd-logo_black.svg");
+      } else {
+        navbar.classList.remove("navbar__black");
+        setLogo("/rwd-logo_white.svg");
+      }
+    };
+    window.addEventListener("scroll", onScroll);
+  }, []);
+
+  return (
+    <nav className="relative flex max-h-[85px] w-full items-center justify-center">
+      <div
+        id="navbar"
+        className="navbar__white fixed left-auto right-auto top-0 z-50 flex w-full flex-row items-center justify-center px-4 py-4 shadow-md backdrop-blur-sm md:px-12"
+      >
+        <div className="flex w-full max-w-center items-center justify-between">
+          <a href="/">
+            <Image
+              src={logo}
+              height={100}
+              width={150}
+              alt="Road Way Delivery"
+            ></Image>
+          </a>
+          <div className="flex flex-row gap-8">
+            <ul className="hidden flex-row lg:flex">
+              {links.map((link) => (
+                <li key={link.id} className="text-md font-semibold">
+                  <a href={link.href} className="block p-4 hover:text-accent-1">
+                    {link.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="hidden flex-row items-center justify-center lg:flex">
+            <button
+              type="button"
+              className="rounded-full px-6 py-2 text-center text-base font-medium"
+            >
+              Login
+            </button>
+            <button
+              type="button"
+              className="rounded-full bg-accent-1 px-6 py-2 text-center text-base font-medium"
+            >
+              Sign Up
+            </button>
+          </div>
+
+          <div onClick={handleNav} className="flex lg:hidden">
+            <GiHamburgerMenu size={sizeIcon} />
+          </div>
+        </div>
+        <div
+          className={
+            nav
+              ? "fixed left-0 top-0 z-50 flex h-full w-full flex-col items-center justify-between gap-8 bg-white duration-500 ease-in-out lg:hidden"
+              : "fixed left-[-100%] top-0 z-50 flex h-full w-full flex-col items-center justify-between gap-8 bg-white duration-500 ease-in-out lg:hidden"
+          }
+        >
+          <div
+            onClick={handleNav}
+            className="flex h-[85px] w-full items-center justify-end p-4 md:px-12"
+          >
+            <RxCross2 size={sizeIcon} />
+          </div>
+          <ul className="flex w-full flex-col text-center">
+            {links.map((link) => (
+              <li key={link.id} className="text-md block w-full font-semibold">
+                <a
+                  onClick={handleNav}
+                  href={link.href}
+                  className="block w-full p-4"
+                >
+                  {link.title}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <div></div>
+        </div>
+      </div>
+    </nav>
+  );
 }

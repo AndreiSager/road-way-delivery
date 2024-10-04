@@ -23,7 +23,7 @@ export default function Hero() {
               {MockupsData1.map(({ src, alt }, id) => (
                 <div
                   key={id}
-                  className="mt-8 h-[600px] w-[320px] rounded-3xl bg-gray-600"
+                  className="mt-8 h-[600px] w-[320px] rounded-3xl bg-gray-100"
                 />
               ))}
             </Marquee>
@@ -43,7 +43,7 @@ export default function Hero() {
               {MockupsData2.map(({ src, alt }, id) => (
                 <div
                   key={id}
-                  className="mt-8 h-[600px] w-[320px] rounded-3xl bg-gray-600"
+                  className="mt-8 h-[600px] w-[320px] rounded-3xl bg-gray-100"
                 ></div>
               ))}
             </Marquee>

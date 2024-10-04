@@ -2,29 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */
-
-* {
-  @apply box-border scroll-pt-20;
-}
-
-html {
-  --scroll-behavior: smooth !important;
-  scroll-behavior: smooth !important;
-}
-
 .navbar__white {
   @apply text-black;
 }
@@ -37,7 +14,33 @@ html {
   @apply hover:text-accent-1;
 }
 
-.sectionHeader {
+@layer base {
+  * {
+    @apply box-border scroll-pt-20;
+  }
+
+  html {
+    --scroll-behavior: smooth !important;
+    scroll-behavior: smooth !important;
+  }
+}
+
+@layer utilities {
+  .spacing-vertical {
+    padding-block: clamp(1rem, 1rem + 10vw, 6.25rem);
+  }
+  .spacing-horizontal {
+    padding-inline: clamp(1rem, 1.5rem, 9.375rem);
+  }
+
+  @media (min-width: 40em) {
+    .spacing-horizontal {
+      padding-inline: clamp(1rem, 1rem + 15vw, 9.375rem);
+    }
+  }
+}
+
+/* .sectionHeader {
   @apply mb-4 text-4xl font-bold text-black;
 }
 
@@ -67,4 +70,4 @@ html {
 
 .tableContent {
   @apply flex flex-1 flex-row items-center gap-2 rounded-lg border border-slate-300 px-4 py-2 text-xs font-medium capitalize;
-}
+} */

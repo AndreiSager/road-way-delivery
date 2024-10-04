@@ -84,7 +84,7 @@ export default function Navbar() {
             <RxCross2 size={sizeIcon} />
           </div>
           <ul className="flex w-full flex-col text-center">
-            {links.map((link) => (
+            {NavLinksData.map((link) => (
               <li key={link.id} className="text-md block w-full font-semibold">
                 <a
                   onClick={handleNav}

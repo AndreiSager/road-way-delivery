@@ -42,10 +42,10 @@ export default function Navbar() {
           </a>
           <div className="flex flex-row gap-8">
             <ul className="hidden flex-row gap-4 lg:flex">
-              {NavLinksData.map((link) => (
-                <li key={link.id} className="text-md font-medium">
-                  <a href={link.href} className="block p-4 hover:text-accent-1">
-                    {link.title}
+              {NavLinksData.map(({ href, title }, id) => (
+                <li key={id} className="text-md font-medium">
+                  <a href={href} className="block p-4 hover:text-accent-1">
+                    {title}
                   </a>
                 </li>
               ))}
@@ -84,14 +84,10 @@ export default function Navbar() {
             <RxCross2 size={sizeIcon} />
           </div>
           <ul className="flex w-full flex-col text-center">
-            {NavLinksData.map((link) => (
-              <li key={link.id} className="text-md block w-full font-semibold">
-                <a
-                  onClick={handleNav}
-                  href={link.href}
-                  className="block w-full p-4"
-                >
-                  {link.title}
+            {NavLinksData.map(({ href, title }, id) => (
+              <li key={id} className="text-md block w-full font-semibold">
+                <a onClick={handleNav} href={href} className="block w-full p-4">
+                  {title}
                 </a>
               </li>
             ))}

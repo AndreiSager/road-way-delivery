@@ -38,7 +38,7 @@ export default function Navbar() {
         className="navbar__white fixed left-auto right-auto top-0 z-50 flex w-full flex-row items-center justify-center px-4 py-4 shadow-md backdrop-blur-sm md:px-12"
       >
         <div className="flex w-full max-w-center items-center justify-between">
-          <a href="/">
+          <a href="/" className="w-full max-w-[200px]">
             <Image
               src={"/rwd-logo_black.svg"}
               height={100}
@@ -57,7 +57,7 @@ export default function Navbar() {
               ))}
             </ul>
           </div>
-          <div className="hidden flex-row items-center justify-center lg:flex">
+          <div className="hidden max-w-[200px] flex-row items-center justify-center lg:flex">
             <button
               type="button"
               className="rounded-full px-6 py-2 text-center text-base font-medium"

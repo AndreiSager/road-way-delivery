@@ -1,6 +1,6 @@
 export default function PromotionalBanner() {
   return (
-    <div className="sectionPadding flex w-full flex-col items-center justify-center gap-6 bg-stone-900 text-center text-white">
+    <div className="spacing-horizontal spacing-vertical flex w-full flex-col items-center justify-center gap-6 bg-stone-900 text-center text-white">
       <p className="text-xl font-medium uppercase">
         food. gifts. products. furniture. people. you name it, we deliver!
       </p>

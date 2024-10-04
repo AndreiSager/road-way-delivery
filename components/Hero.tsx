@@ -1,64 +1,53 @@
 "use client";
 
+import Marquee from "react-easy-marquee";
 import DownloadBtns from "./Downloads/DownloadBtns";
 
 export default function Hero() {
   return (
     <div className="flex w-full flex-col items-center justify-center">
-      <div className="flex h-full w-full max-w-center flex-row items-center justify-between px-40">
+      <div className="flex h-full w-full max-w-center flex-row items-center justify-between overflow-hidden px-40">
         <div className="flex flex-row items-center justify-center gap-8">
-          {/* <Marquee
-            play={true}
-            direction={"down"}
-            loop={0}
-            pauseOnHover={false}
-            speed={30}
-            autoFill={true}
-            style={{
-              overflow: "visible",
-              height: "412px",
-              width: "917px",
-              display: "flex",
-              flexDirection: "row",
-              zIndex: 30,
-            }}
-          >
-            {MockupsData1.map(({ src, alt }, id) => (
-              <div
-                key={id}
-                className="h-[917px] w-[412px] rounded-3xl border border-[16px] border-black bg-gray-600"
-              ></div>
-            ))}
-          </Marquee> */}
-          <div className="flex flex-col gap-8">
-            <VerticalTicker duration={25000} easing="ease-out">
+          <div className="h-full max-h-[1000px] w-[320px]">
+            <Marquee
+              duration={20000}
+              background="transparent"
+              height="1500px"
+              width="auto"
+              axis="Y"
+              align="center"
+              pauseOnHover={false}
+              reverse={false}
+              className="flex flex-col gap-8"
+            >
               {MockupsData1.map(({ src, alt }, id) => (
                 <div
                   key={id}
-                  className="h-[917px] w-[412px] rounded-3xl border border-[16px] border-black bg-gray-600"
+                  className="mt-8 h-[600px] w-[320px] rounded-3xl bg-gray-600"
                 ></div>
               ))}
-            </VerticalTicker>
+            </Marquee>
           </div>
-
-          {/* <Marquee
-            play={true}
-            direction={"up"}
-            loop={0}
-            pauseOnHover={false}
-            speed={30}
-            autoFill={true}
-            style={{ overflow: "visible" }}
-          >
-            <div className="z-20 flex h-[917px] w-[412px] flex-col gap-8">
+          <div className="h-full max-h-[1000px] w-[320px]">
+            <Marquee
+              duration={20000}
+              background="transparent"
+              height="1500px"
+              width="auto"
+              axis="Y"
+              align="center"
+              pauseOnHover={false}
+              reverse={true}
+              className="flex flex-col gap-8"
+            >
               {MockupsData2.map(({ src, alt }, id) => (
                 <div
                   key={id}
-                  className="border-6 h-[412px] w-[917px] rounded-[20px] border border-[16px] border-black bg-gray-600"
+                  className="mt-8 h-[600px] w-[320px] rounded-3xl bg-gray-600"
                 ></div>
               ))}
-            </div>
-          </Marquee> */}
+            </Marquee>
+          </div>
         </div>
 
         <div className="flex w-full max-w-[730px] flex-col gap-12">
@@ -85,8 +74,24 @@ const MockupsData1 = [
     src: "",
     alt: "",
   },
+  {
+    src: "",
+    alt: "",
+  },
+  {
+    src: "",
+    alt: "",
+  },
 ];
 const MockupsData2 = [
+  {
+    src: "",
+    alt: "",
+  },
+  {
+    src: "",
+    alt: "",
+  },
   {
     src: "",
     alt: "",

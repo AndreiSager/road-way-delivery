@@ -22,6 +22,7 @@
     "react-coolicons": "^3.1.0",
     "react-countup": "^6.5.3",
     "react-dom": "18.2.0",
+    "react-easy-marquee": "^1.2.4",
     "react-fast-marquee": "^1.6.5",
     "react-icons": "^4.10.1",
     "tailwindcss": "3.3.2",

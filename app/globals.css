@@ -58,10 +58,12 @@
   }
 
   .spacing-vertical {
-    padding-block: clamp(1rem, 1rem + 10vw, 6.25rem);
+    /* padding-block: clamp(1rem, 1rem + 10vw, 6.25rem); */
+    @apply py-12 md:py-24;
   }
   .spacing-horizontal {
-    padding-inline: clamp(1rem, 1.5rem, 9.375rem);
+    /* padding-inline: clamp(1rem, 1.5rem, 9.375rem); */
+    @apply px-3 md:px-40;
   }
 
   @media (min-width: 40em) {

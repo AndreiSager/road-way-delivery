@@ -30,7 +30,7 @@ html {
 }
 
 .navbar__black {
-  @apply bg-white text-black;
+  @apply bg-white;
 }
 
 .navbar__black a {

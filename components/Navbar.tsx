@@ -1,9 +1,7 @@
 "use client";
 
 import { NavLinks as links } from "@/constants";
-import { MdAccountCircle } from "react-icons/md";
-import { IoMdNotifications } from "react-icons/io";
-import { GiCarWheel, GiHamburgerMenu } from "react-icons/gi";
+import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 import { useState, useEffect } from "react";
 import Image from "next/image";

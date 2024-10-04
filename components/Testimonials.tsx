@@ -11,7 +11,7 @@ import DownloadBtns from "./Downloads/DownloadBtns";
 export default function Testimonials() {
   return (
     <div id="testimonials" className="flex w-full items-center justify-center">
-      <div className="flex max-w-center flex-col items-center justify-center gap-24 overflow-hidden py-24">
+      <div className="spacing-vertical md:spacing-horizontal flex max-w-center flex-col items-center justify-center gap-24 overflow-hidden">
         <h1 className="text-5xl font-bold">Get Your Package Delivered Now!</h1>
 
         <div className="flex flex-row gap-40">

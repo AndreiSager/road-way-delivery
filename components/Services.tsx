@@ -1,3 +1,5 @@
+"use client";
+
 import { ServicesData } from "@/constants/ServicesDB";
 import React, { ReactNode } from "react";
 

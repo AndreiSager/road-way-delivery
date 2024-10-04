@@ -1,6 +1,6 @@
 "use client";
 
-import { NavLinks as links } from "@/constants";
+import { NavLinksData } from "@/constants";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 import { useState, useEffect } from "react";
@@ -42,7 +42,7 @@ export default function Navbar() {
           </a>
           <div className="flex flex-row gap-8">
             <ul className="hidden flex-row gap-4 lg:flex">
-              {links.map((link) => (
+              {NavLinksData.map((link) => (
                 <li key={link.id} className="text-md font-medium">
                   <a href={link.href} className="block p-4 hover:text-accent-1">
                     {link.title}

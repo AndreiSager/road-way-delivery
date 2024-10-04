@@ -14,7 +14,10 @@ export default function FAQ() {
   const [category, setCategory] = useState("General");
 
   return (
-    <div className="flex w-full flex-col flex-wrap items-center justify-center gap-16 px-40 py-24">
+    <div
+      id="fqa"
+      className="flex w-full flex-col flex-wrap items-center justify-center gap-16 px-40 py-24"
+    >
       <div className="flex w-full max-w-[700px] flex-col gap-3 text-center">
         <h1 className="text-4xl font-bold text-black">
           Frequently Asked Questions

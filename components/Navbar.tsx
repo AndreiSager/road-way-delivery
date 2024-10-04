@@ -32,7 +32,7 @@ export default function Navbar() {
         className="navbar__white fixed left-auto right-auto top-0 z-50 flex w-full flex-row items-center justify-center px-4 py-4 shadow-md backdrop-blur-sm md:px-12"
       >
         <div className="flex w-full max-w-center items-center justify-between">
-          <a href="/" className="w-full max-w-[200px]">
+          <a href="#" className="w-full max-w-[200px]">
             <Image
               src={"/rwd-logo_black.svg"}
               height={100}

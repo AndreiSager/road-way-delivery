@@ -5,7 +5,10 @@ import React, { ReactNode } from "react";
 
 export default function Services() {
   return (
-    <div className="flex w-full flex-col items-center justify-center">
+    <div
+      id="services"
+      className="flex w-full flex-col items-center justify-center"
+    >
       <div className="flex w-full max-w-center flex-row justify-between gap-16 px-40 py-24">
         <div className="flex w-full max-w-[490px] flex-col gap-6">
           <h1 className="text-5xl font-bold">

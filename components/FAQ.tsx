@@ -14,84 +14,83 @@ export default function FAQ() {
   const [category, setCategory] = useState("General");
 
   return (
-    <div
-      id="fqa"
-      className="flex w-full flex-col flex-wrap items-center justify-center gap-16 px-40 py-24"
-    >
-      <div className="flex w-full max-w-[700px] flex-col gap-3 text-center">
-        <h1 className="text-4xl font-bold text-black">
-          Frequently Asked Questions
-        </h1>
-        <p className="text-base font-medium text-gray-500">
-          Discover the positive impact we've made on the our clients by reading
-          through their testimonials. Our clients have experienced our service
-          and results, and they're eager to share their positive experiences
-          with you.
-        </p>
-      </div>
-      <div className="flex flex-col gap-40 lg:flex-row">
-        <div className="flex flex-col gap-24">
-          {Categories.map(({ title, icon }, id) => (
-            <button
-              key={id}
-              className="flex select-none flex-row items-center gap-4"
-              onClick={() => setCategory(title)}
-            >
-              {title === category ? (
-                <>
-                  <div className="h-10 w-10 text-accent-1">{icon}</div>
-                  <p className="text-xl font-bold text-accent-1">{title}</p>
-                </>
-              ) : (
-                <>
-                  <div className="h-10 w-10">{icon}</div>
-                  <p className="text-xl font-bold">{title}</p>
-                </>
-              )}
-            </button>
-          ))}
+    <div id="fqa" className="flex flex-col items-center justify-center">
+      <div className="spacing-horizontal spacing-vertical flex w-full max-w-center flex-col flex-wrap items-center justify-center gap-16">
+        <div className="flex w-full flex-col gap-3 text-center md:max-w-[700px]">
+          <h1 className="text-4xl font-bold text-black">
+            Frequently Asked Questions
+          </h1>
+          <p className="text-base font-medium text-gray-500">
+            Discover the positive impact we've made on the our clients by
+            reading through their testimonials. Our clients have experienced our
+            service and results, and they're eager to share their positive
+            experiences with you.
+          </p>
         </div>
-        <div className="hidden h-full w-[1px] rounded-full bg-gray-200 md:flex" />
+        <div className="flex flex-col gap-40 lg:flex-row">
+          <div className="flex flex-col gap-24">
+            {Categories.map(({ title, icon }, id) => (
+              <button
+                key={id}
+                className="flex select-none flex-row items-center gap-4"
+                onClick={() => setCategory(title)}
+              >
+                {title === category ? (
+                  <>
+                    <div className="h-10 w-10 text-accent-1">{icon}</div>
+                    <p className="text-xl font-bold text-accent-1">{title}</p>
+                  </>
+                ) : (
+                  <>
+                    <div className="h-10 w-10">{icon}</div>
+                    <p className="text-xl font-bold">{title}</p>
+                  </>
+                )}
+              </button>
+            ))}
+          </div>
+          <div className="hidden h-full w-[1px] rounded-full bg-gray-200 md:flex" />
 
-        {category === "General" && (
-          <Accordion allowMultiple={false} transition transitionTimeout={500}>
-            {FQAGeneral.map((question, id) => (
-              <AccordionItem
-                header={question.question}
-                key={id}
-                initialEntered={id === 0 ? true : false}
-              >
-                {question.answer}
-              </AccordionItem>
-            ))}
-          </Accordion>
-        )}
-        {category === "Support" && (
-          <Accordion allowMultiple={false} transition transitionTimeout={500}>
-            {FQASupport.map((question, id) => (
-              <AccordionItem
-                header={question.question}
-                key={id}
-                initialEntered={id === 0 ? true : false}
-              >
-                {question.answer}
-              </AccordionItem>
-            ))}
-          </Accordion>
-        )}
-        {category === "Others" && (
-          <Accordion allowMultiple={false} transition transitionTimeout={500}>
-            {FQAOthers.map((question, id) => (
-              <AccordionItem
-                header={question.question}
-                key={id}
-                initialEntered={id === 0 ? true : false}
-              >
-                {question.answer}
-              </AccordionItem>
-            ))}
-          </Accordion>
-        )}
+          {category === "General" && (
+            <Accordion allowMultiple={false} transition transitionTimeout={500}>
+              {FQAGeneral.map((question, id) => (
+                <AccordionItem
+                  header={question.question}
+                  key={id}
+                  initialEntered={id === 0 ? true : false}
+                >
+                  {question.answer}
+                </AccordionItem>
+              ))}
+            </Accordion>
+          )}
+          {category === "Support" && (
+            <Accordion allowMultiple={false} transition transitionTimeout={500}>
+              {FQASupport.map((question, id) => (
+                <AccordionItem
+                  header={question.question}
+                  key={id}
+                  initialEntered={id === 0 ? true : false}
+                >
+                  {question.answer}
+                </AccordionItem>
+              ))}
+            </Accordion>
+          )}
+          {category === "Others" && (
+            <Accordion allowMultiple={false} transition transitionTimeout={500}>
+              {FQAOthers.map((question, id) => (
+                <AccordionItem
+                  header={question.question}
+                  key={id}
+                  initialEntered={id === 0 ? true : false}
+                >
+                  {question.answer}
+                </AccordionItem>
+              ))}
+            </Accordion>
+          )}
+        </div>
       </div>
     </div>
   );
@@ -117,7 +116,7 @@ const AccordionItem = ({ header, ...rest }) => (
     }
     buttonProps={{
       className: ({ isEnter }) =>
-        `flex w-[900px] text-left p-6 text-lg font-bold ${isEnter && "text-accent-1"}`,
+        `flex md:min-w-[900px] text-left p-6 text-lg font-bold ${isEnter && "text-accent-1"}`,
     }}
     contentProps={{
       className: "transition-height duration-500 ease-out",

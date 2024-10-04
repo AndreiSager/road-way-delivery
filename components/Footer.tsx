@@ -17,7 +17,7 @@ export default function Footer() {
 
   return (
     <footer className="flex w-full flex-col items-center">
-      <div className="flex max-w-center flex-col items-center justify-center gap-24 px-5 py-24 md:px-40">
+      <div className="spacing-horizontal spacing-vertical flex w-full max-w-center flex-col items-center justify-center gap-24">
         <div className="flex max-w-center flex-col items-start justify-center gap-24 md:flex-row">
           <div className="flex w-full flex-col gap-8 lg:w-fit">
             <Image

@@ -12,24 +12,18 @@ export default function Navbar() {
   const [nav, setNav] = useState<true | false>(false);
   const handleNav = () => setNav(!nav);
 
-  // const [logo, setLogo] = useState<
-  //   "/rwd-logo_white.svg" | "/rwd-logo_black.svg"
-  // >("/rwd-logo_white.svg");
-
-  // useEffect(() => {
-  //   const onScroll = () => {
-  //     const navbar = document.getElementById("navbar")!;
-  //     const distance = 50;
-  //     if (document.documentElement.scrollTop > distance) {
-  //       navbar.classList.add("navbar__black");
-  //       setLogo("/rwd-logo_black.svg");
-  //     } else {
-  //       navbar.classList.remove("navbar__black");
-  //       setLogo("/rwd-logo_white.svg");
-  //     }
-  //   };
-  //   window.addEventListener("scroll", onScroll);
-  // }, []);
+  useEffect(() => {
+    const onScroll = () => {
+      const navbar = document.getElementById("navbar")!;
+      const distance = 50;
+      if (document.documentElement.scrollTop > distance) {
+        navbar.classList.add("navbar__black");
+      } else {
+        navbar.classList.remove("navbar__black");
+      }
+    };
+    window.addEventListener("scroll", onScroll);
+  }, []);
 
   return (
     <nav className="relative flex max-h-[85px] w-full items-center justify-center">

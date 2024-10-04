@@ -6,12 +6,10 @@ export default function NewsletterBanner() {
   const [email, setEmail] = useState("");
   const [isClient, setIsClient] = useState(false);
 
-  // Ensure that this code runs only on the client side
   useEffect(() => {
     setIsClient(true);
   }, []);
 
-  // Avoid rendering during SSR to prevent hydration mismatch
   if (!isClient) {
     return null;
   }

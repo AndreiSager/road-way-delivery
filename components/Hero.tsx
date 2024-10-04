@@ -24,7 +24,7 @@ export default function Hero() {
                 <div
                   key={id}
                   className="mt-8 h-[600px] w-[320px] rounded-3xl bg-gray-600"
-                ></div>
+                />
               ))}
             </Marquee>
           </div>

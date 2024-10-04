@@ -9,7 +9,7 @@ export default function Services() {
       id="services"
       className="flex w-full flex-col items-center justify-center"
     >
-      <div className="flex w-full max-w-center flex-row justify-between gap-16 px-40 py-24">
+      <div className="spacing-horizontal spacing-vertical flex w-full max-w-center flex-col justify-between gap-16 md:flex-row">
         <div className="flex w-full max-w-[490px] flex-col gap-6">
           <h1 className="text-5xl font-bold">
             Be Faster, Smarter, and{" "}
@@ -22,7 +22,7 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="group/cards grid grid-cols-2 gap-12">
+        <div className="group/cards grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-12">
           {ServicesData.map(({ icon, title, description }, id) => (
             <Card icon={icon} title={title} description={description} />
           ))}

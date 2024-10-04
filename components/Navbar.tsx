@@ -12,24 +12,24 @@ export default function Navbar() {
   const [nav, setNav] = useState<true | false>(false);
   const handleNav = () => setNav(!nav);
 
-  const [logo, setLogo] = useState<
-    "/rwd-logo_white.svg" | "/rwd-logo_black.svg"
-  >("/rwd-logo_white.svg");
+  // const [logo, setLogo] = useState<
+  //   "/rwd-logo_white.svg" | "/rwd-logo_black.svg"
+  // >("/rwd-logo_white.svg");
 
-  useEffect(() => {
-    const onScroll = () => {
-      const navbar = document.getElementById("navbar")!;
-      const distance = 50;
-      if (document.documentElement.scrollTop > distance) {
-        navbar.classList.add("navbar__black");
-        setLogo("/rwd-logo_black.svg");
-      } else {
-        navbar.classList.remove("navbar__black");
-        setLogo("/rwd-logo_white.svg");
-      }
-    };
-    window.addEventListener("scroll", onScroll);
-  }, []);
+  // useEffect(() => {
+  //   const onScroll = () => {
+  //     const navbar = document.getElementById("navbar")!;
+  //     const distance = 50;
+  //     if (document.documentElement.scrollTop > distance) {
+  //       navbar.classList.add("navbar__black");
+  //       setLogo("/rwd-logo_black.svg");
+  //     } else {
+  //       navbar.classList.remove("navbar__black");
+  //       setLogo("/rwd-logo_white.svg");
+  //     }
+  //   };
+  //   window.addEventListener("scroll", onScroll);
+  // }, []);
 
   return (
     <nav className="relative flex max-h-[85px] w-full items-center justify-center">
@@ -40,16 +40,16 @@ export default function Navbar() {
         <div className="flex w-full max-w-center items-center justify-between">
           <a href="/">
             <Image
-              src={logo}
+              src={"/rwd-logo_black.svg"}
               height={100}
               width={150}
               alt="Road Way Delivery"
             ></Image>
           </a>
           <div className="flex flex-row gap-8">
-            <ul className="hidden flex-row lg:flex">
+            <ul className="hidden flex-row gap-4 lg:flex">
               {links.map((link) => (
-                <li key={link.id} className="text-md font-semibold">
+                <li key={link.id} className="text-md font-medium">
                   <a href={link.href} className="block p-4 hover:text-accent-1">
                     {link.title}
                   </a>
@@ -66,7 +66,7 @@ export default function Navbar() {
             </button>
             <button
               type="button"
-              className="rounded-full bg-accent-1 px-6 py-2 text-center text-base font-medium"
+              className="rounded-full bg-accent-1 px-6 py-2 text-center text-base font-medium text-white"
             >
               Sign Up
             </button>

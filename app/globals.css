@@ -26,7 +26,7 @@ html {
 }
 
 .navbar__white {
-  @apply text-white;
+  @apply text-black;
 }
 
 .navbar__black {

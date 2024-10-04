@@ -9,8 +9,8 @@ export default function Value() {
       <div className="flex w-full max-w-center flex-row items-center justify-between px-40 py-24">
         <div className="flex w-full max-w-[730px] flex-col gap-12">
           <h1 className="text-5xl font-bold">
-            Your <span className="text-accent-1">All-in-One Solution</span> for
-            Fast Deliveries
+            Your <span className="text-accent-1">All-in-One Solution</span>
+            <br /> for Fast Deliveries
           </h1>
           <div className="flex flex-col gap-6">
             <p className="w-full max-w-[570px]">
@@ -44,9 +44,9 @@ export default function Value() {
           </div>
           <DownloadBtns />
         </div>
-        <div className="relative mb-[100px]">
-          <div className="absolute left-0 top-0 z-10 h-[600px] w-[320px] -translate-x-[80%] translate-y-[20%] rounded-[50px] border-8 border-black bg-gray-100" />
-          <div className="z-20 h-[600px] w-[320px] rounded-[50px] border-8 border-black bg-gray-100" />
+        <div className="relative mb-[100px] flex w-[570px] flex-col items-center justify-center">
+          <div className="absolute left-0 top-0 z-20 h-[600px] w-[320px] -translate-x-[45%] translate-y-[20%] rounded-[50px] border-8 border-black bg-gray-100" />
+          <div className="z-10 h-[600px] w-[320px] rounded-[50px] border-8 border-black bg-gray-100" />
         </div>
       </div>
     </div>

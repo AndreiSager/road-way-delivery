@@ -1,4 +1,21 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
 export default function NewsletterBanner() {
+  const [email, setEmail] = useState("");
+  const [isClient, setIsClient] = useState(false);
+
+  // Ensure that this code runs only on the client side
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  // Avoid rendering during SSR to prevent hydration mismatch
+  if (!isClient) {
+    return null;
+  }
+
   return (
     <div className="flex w-full flex-col items-center bg-white">
       <div className="w-full max-w-center py-24 md:px-40">
@@ -15,15 +32,14 @@ export default function NewsletterBanner() {
                 latest news from Road Way Delivery.
               </p>
             </div>
-            <form
-              action=""
-              className="z-10 flex w-full flex-col items-center gap-2 lg:flex-row"
-            >
+            <form className="z-10 flex w-full flex-col items-center gap-2 lg:flex-row">
               <input
                 type="email"
                 name="email"
                 placeholder="Enter your email..."
+                value={email}
                 className="inputField w-full max-w-[480px] focus:placeholder:italic"
+                onChange={(e) => setEmail(e.target.value)}
               />
               <button
                 type="button"
